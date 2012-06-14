@@ -36,3 +36,33 @@ not have to be in a datatypes view template.
 ## eZFlow block level
 
 By default eZ Exceed enables dark grey pencils for every eZFlow block on your page.
+
+## eZFlow custom zones
+
+If you use eZ Flow in your project and want to define custom zone templates
+you need to ensure that the blocks still get pencils.
+
+Normally ezflow implements block rendering in all zones by using a shared
+template (`parts/zone_block.tpl`) that looks like this:
+
+```smarty
+{if and( is_set( $zones[0].blocks ), $zones[0].blocks|count() )}
+{foreach $zones[0].blocks as $block}
+    {include uri='design:parts/zone_block.tpl' zone=$zones[0]}
+{/foreach}
+{/if}
+```
+
+The ideal approach for future proofing is to reuse this template, but as it has a tiny bit of markup
+that you might find not desirable you might want to completely roll your own.
+
+If you do so you need to continue including the _top_ and _bottom_ templates as this does.
+Write your template like this and you will still have pencils:
+
+```smarty
+{include uri='design:parts/zone_block_top.tpl'}
+
+<!-- My awesome block markup here -->
+
+{include uri='design:parts/zone_block_bottom.tpl'}
+```
