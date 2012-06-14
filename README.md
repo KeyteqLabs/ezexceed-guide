@@ -3,8 +3,8 @@ eZ Exceed documentation effort
 
 You can find guides on how to:
 
-* [Setup the sites content](./en/developer/content-setup.md)
-* [Enable direct manipulation](./en/developer/direct-manipulation.md)
+* [Setup the sites content](en/developer/content-setup.md)
+* [Enable direct manipulation](en/developer/direct-manipulation.md)
 
 ## Participating
 
