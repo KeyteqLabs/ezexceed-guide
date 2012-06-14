@@ -3,7 +3,7 @@ eZ Exceed documentation effort
 
 Guides are localized
 
-* [English](https://github.com/KeyteqLabs/ezexceed-guide/tree/master/en)
+* [English](https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/README.md)
 
 ## Participating
 
