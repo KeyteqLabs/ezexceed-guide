@@ -1,10 +1,9 @@
 eZ Exceed documentation effort
 ==============================
 
-You can find guides on how to:
+Guides are localized
 
-* [Setup the sites content](/KeyteqLabs/ezexceed-guide/en/developer/content-setup.md)
-* [Enable direct manipulation](/KeyteqLabs/ezexceed-guide/en/developer/direct-manipulation.md)
+* [English](https://github.com/KeyteqLabs/ezexceed-guide/tree/master/en)
 
 ## Participating
 
