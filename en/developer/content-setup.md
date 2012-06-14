@@ -42,5 +42,5 @@ ClassMap[tool]=Handtool.png
 ```
 This examples overrides content classes `Book` and `Tool`.
 
-See the complete [list of icon names](../../icon-names.md) or check out [helveticons.ch](http://helveticons.ch/)
+See the complete [list of icon names](https://github.com/KeyteqLabs/ezexceed-guide/blob/master/icon-names.md) or check out [helveticons.ch](http://helveticons.ch/)
 for previews.
