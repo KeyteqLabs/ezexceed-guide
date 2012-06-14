@@ -1,480 +1,480 @@
 Complete list of icon names
 ===========================
 
-3d-glasses
-3d
-Activity
-Add-page
-Add
-Adressbook
-Alarm-clock
-Alert-alt
-Alert
-Alt
-Arrival
-Arrow-down
-Arrow-left
-Arrow-right
-Arrow-up
-Article
-Attachment
-Autofill
-Award
-Baby-stroller
-Backspace
-Badge-add
-Badge-count
-Badge-remove
-Badge-restricted
-Ball
-Band-aid
-Barcode
-Bars
-Battery-low
-Battery
-Beer-glass
-Bell-off
-Bell
-Bill-dollar
-Bill-euro
-Bill-pound
-Bill-yen
-Bill
-Bills-dollar
-Bills-euro
-Bills-pound
-Bills-yen
-Bills
-Bird
-Block
-Bluetooth
-Bones
-Book-alt-2
-Book-alt
-Book
-Bookmark
-Books
-Box-alt
-Box-open
-Box
-Brick
-Briefcase
-Brush-alt-2
-Brush-alt
-Brush
-Bug
-Burn
-Bus
-Calculator
-Calendar-alt
-Calendar
-Camcorder
-Camera-roll
-Candy
-Caps-lock
-Car
-Chart-curve
-Chart
-Chat-active
-Chat
-Check
-Checkbox-dotted-active
-Checkbox-dotted
-Checkbox-empty
-Checkbox
-Chess
-Chip-alt
-Chip
-Cinema
-Circus
-Client
-Clothes-hanger
-Cloud-upload
-Cloud
-Cloudy
-Clubs
-Cocktail
-Code
-Coffee-cup
-Coin-dollar
-Coin-euro
-Coin-pound
-Coin-yen
-Coin
-Coins-alt
-Coins-dollar-alt
-Coins-dollar
-Coins-euro-alt
-Coins-euro
-Coins-pound-alt
-Coins-pound
-Coins-yen-alt
-Coins-yen
-Coins
-Color-bucket
-Color-picker
-Comb
-Combination-lock-open
-Combination-lock
-Command
-Company
-Compress
-Connection
-Console
-Contrast
-Conversation-alt
-Conversation
-Coverflow
-Credit-card-alt
-Credit-card
-Crop
-Crosshair
-Curve
-Cut
-Dashboard
-Delete-key
-Delete
-Departure
-Desk
-Diagnostics
-Diamond
-Diamonds
-Dice
-Directions-alt
-Directions
-Disc
-Display
-Dna
-Dock-connector
-Document-dashed-line
-Document
-Documents
-Dollar-bag
-Donate
-Download-alt
-Download
-Eco
-Economy
-Edit
-Eject
-Employee
-Energy-saving-bulb
-Enter
-Equalizer
-Escape
-Ethernet
-Euro-bag
-Exit-fullscreen
-Eye
-Factory
-Favorite
-Female-symbol
-Filter
-Fingerprint
-Firewire
-Flag-alt
-Flag
-Flash
-Flowerpot
-Folder
-Font
-Food
-Forking
-Frame-alt
-Frame
-Fullscreen-alt
-Fullscreen
-Game
-Geometry
-Gift
-Globe-alt
-Globe
-Gps
-Grid
-Hammer
-Hand-active-alt
-Hand-active
-Hand-pointer-alt
-Hand-pointer
-Handprint
-Handtool-alt
-Handtool
-Hard-drive
-Hat
-Hd
-Headphones
-Hearts
-Height
-Help-alt
-Help
-Home
-Hourglass
-Inactive-line
-Inbox
-Indent
-Infinity
-Info
-Iphone
-Key
-Keyboard
-Keyhole
-Lab
-Laptop
-Layers-alt
-Layers
-Layout
-Legal
-Lense
-Light-down
-Light-up
-Lightbulb-active
-Lightbulb
-Link
-Linux-tux
-List
-Load
-Loading
-Locate
-Lock
-Logout
-Magnet
-Mail-box
-Mail
-Male-and-female
-Male-symbol
-Map-alt
-Map
-Medal
-Medical-emergency
-Medicine
-Megaphone
-Merge
-Message-open
-Mindmap
-Mobile-phone
-Molecular-network
-Molecular
-Mountain
-Mouse-cursor
-Mouse
-Movie-alt
-Movie
-Music
-Name-badge
-Navigation-bottom
-Navigation-down
-Navigation-first
-Navigation-horizontal
-Navigation-last
-Navigation-left
-Navigation-right
-Navigation-road
-Navigation-top
-Navigation-up
-Navigation-vertical
-Navigation
-Navigational-arrow
-Network
-Next-media
-Next
-Notepad
-Old-key
-Open-folder
-Ordered-lista
-Ordered-listb
-Os-x
-Out
-Outbox
-Outdent
-Paint-roller
-Panel-close
-Panel-show
-Pants
-Parental-control
-Partly-cloudy
-Paste-in
-Path
-Pause
-Pc
-People-alt-2
-People-alt
-People
-Phone
-Picture
-Pictures-alt-2a
-Pictures-alt-2b
-Pictures
-Pie-chart
-Piggy-bank
-Pin-location
-Piracy
-Plane
-Planet
-Play
-Playing-cards
-Playlist
-Plugin
-Podcast
-Post-it
-Pound-bag
-Power-outlet
-Power
-Previous-media
-Previous
-Price-dollar
-Price-euro
-Price-pound
-Price-yen
-Print
-Printer-alt
-Pulse
-Pushpin
-Qr-code
-Quote
-Radio-alt
-Radio-receiver
-Radio
-Rain
-Rate
-Re-post
-Read-only
-Receipt-dollar
-Receipt-euro
-Receipt-pound
-Receipt-yen
-Record
-Redo
-Reload
-Remove-page
-Remove
-Repeat-one
-Repeat
-Reply-arrow
-Resize
-Restricted-page
-Road-sign
-Road
-Rocket
-Rss
-Ruler-alt
-Ruler
-Safe-dial
-Safe
-Satellite-dish
-Save
-Scan
-Science
-Screensharing
-Script-alt
-Script
-Scull
-Search
-Server-alt
-Server
-Settings
-Share-alt
-Share
-Sharing-iphone
-Shield
-Shift
-Shipping-box
-Shipping
-Shoe
-Shopping-basket-alt-2
-Shopping-basket-alt
-Shopping-basket
-Shorts
-Shuffle
-Simcard
-Single-note
-Sleep
-Slideshow
-Smiley-inverted
-Smiley
-Snow
-Sound-low
-Sound-medium
-Sound-off
-Sound
-Spades
-Speed-gauge
-Split-alt
-Split
-Ssd
-Stacked-disks
-Statistic-bar
-Stop-alt
-Stop-hand
-Stop
-Streaming
-Sunny
-Sweatshirt
-Sync
-T-shirt
-Tab-key
-Tab
-Tag
-Tags
-Takeaway-cup
-Target
-Temperature-alt
-Temperature
-Terminal
-Theater
-Theif
-Thumbdown
-Thumbnails-list
-Thumbnails-small
-Thumbnails
-Thumbs-up
-Ticket
-Time
-Timer
-Tools
-Top
-Traffic-alt
-Trafic
-Train
-Trash-alt
-Trash
-Tree
-Trophy
-Truck
-Tv-old
-Tv
-Umbrella
-Undo
-Universal
-Unlock
-Usb-connector
-Usb
-User-female
-User-females-alt
-User-females
-User
-Users--alt
-Users
-Utilities
-Vcard
-Video
-Voice
-Wall-plug
-Wallet
-Wand
-War
-Width
-Wifi
-Windows
-Wine-glass
-Wrench
-Wrong
-X-axis-rotation
-Y-axis-rotation-copy
-Yen-bag
-Z-axis-rotation
-Zip
-Zoom-in
-Zoom-out
-iMac
-iPad
-lightning
+* 3d-glasses
+* 3d
+* Activity
+* Add-page
+* Add
+* Adressbook
+* Alarm-clock
+* Alert-alt
+* Alert
+* Alt
+* Arrival
+* Arrow-down
+* Arrow-left
+* Arrow-right
+* Arrow-up
+* Article
+* Attachment
+* Autofill
+* Award
+* Baby-stroller
+* Backspace
+* Badge-add
+* Badge-count
+* Badge-remove
+* Badge-restricted
+* Ball
+* Band-aid
+* Barcode
+* Bars
+* Battery-low
+* Battery
+* Beer-glass
+* Bell-off
+* Bell
+* Bill-dollar
+* Bill-euro
+* Bill-pound
+* Bill-yen
+* Bill
+* Bills-dollar
+* Bills-euro
+* Bills-pound
+* Bills-yen
+* Bills
+* Bird
+* Block
+* Bluetooth
+* Bones
+* Book-alt-2
+* Book-alt
+* Book
+* Bookmark
+* Books
+* Box-alt
+* Box-open
+* Box
+* Brick
+* Briefcase
+* Brush-alt-2
+* Brush-alt
+* Brush
+* Bug
+* Burn
+* Bus
+* Calculator
+* Calendar-alt
+* Calendar
+* Camcorder
+* Camera-roll
+* Candy
+* Caps-lock
+* Car
+* Chart-curve
+* Chart
+* Chat-active
+* Chat
+* Check
+* Checkbox-dotted-active
+* Checkbox-dotted
+* Checkbox-empty
+* Checkbox
+* Chess
+* Chip-alt
+* Chip
+* Cinema
+* Circus
+* Client
+* Clothes-hanger
+* Cloud-upload
+* Cloud
+* Cloudy
+* Clubs
+* Cocktail
+* Code
+* Coffee-cup
+* Coin-dollar
+* Coin-euro
+* Coin-pound
+* Coin-yen
+* Coin
+* Coins-alt
+* Coins-dollar-alt
+* Coins-dollar
+* Coins-euro-alt
+* Coins-euro
+* Coins-pound-alt
+* Coins-pound
+* Coins-yen-alt
+* Coins-yen
+* Coins
+* Color-bucket
+* Color-picker
+* Comb
+* Combination-lock-open
+* Combination-lock
+* Command
+* Company
+* Compress
+* Connection
+* Console
+* Contrast
+* Conversation-alt
+* Conversation
+* Coverflow
+* Credit-card-alt
+* Credit-card
+* Crop
+* Crosshair
+* Curve
+* Cut
+* Dashboard
+* Delete-key
+* Delete
+* Departure
+* Desk
+* Diagnostics
+* Diamond
+* Diamonds
+* Dice
+* Directions-alt
+* Directions
+* Disc
+* Display
+* Dna
+* Dock-connector
+* Document-dashed-line
+* Document
+* Documents
+* Dollar-bag
+* Donate
+* Download-alt
+* Download
+* Eco
+* Economy
+* Edit
+* Eject
+* Employee
+* Energy-saving-bulb
+* Enter
+* Equalizer
+* Escape
+* Ethernet
+* Euro-bag
+* Exit-fullscreen
+* Eye
+* Factory
+* Favorite
+* Female-symbol
+* Filter
+* Fingerprint
+* Firewire
+* Flag-alt
+* Flag
+* Flash
+* Flowerpot
+* Folder
+* Font
+* Food
+* Forking
+* Frame-alt
+* Frame
+* Fullscreen-alt
+* Fullscreen
+* Game
+* Geometry
+* Gift
+* Globe-alt
+* Globe
+* Gps
+* Grid
+* Hammer
+* Hand-active-alt
+* Hand-active
+* Hand-pointer-alt
+* Hand-pointer
+* Handprint
+* Handtool-alt
+* Handtool
+* Hard-drive
+* Hat
+* Hd
+* Headphones
+* Hearts
+* Height
+* Help-alt
+* Help
+* Home
+* Hourglass
+* Inactive-line
+* Inbox
+* Indent
+* Infinity
+* Info
+* Iphone
+* Key
+* Keyboard
+* Keyhole
+* Lab
+* Laptop
+* Layers-alt
+* Layers
+* Layout
+* Legal
+* Lense
+* Light-down
+* Light-up
+* Lightbulb-active
+* Lightbulb
+* Link
+* Linux-tux
+* List
+* Load
+* Loading
+* Locate
+* Lock
+* Logout
+* Magnet
+* Mail-box
+* Mail
+* Male-and-female
+* Male-symbol
+* Map-alt
+* Map
+* Medal
+* Medical-emergency
+* Medicine
+* Megaphone
+* Merge
+* Message-open
+* Mindmap
+* Mobile-phone
+* Molecular-network
+* Molecular
+* Mountain
+* Mouse-cursor
+* Mouse
+* Movie-alt
+* Movie
+* Music
+* Name-badge
+* Navigation-bottom
+* Navigation-down
+* Navigation-first
+* Navigation-horizontal
+* Navigation-last
+* Navigation-left
+* Navigation-right
+* Navigation-road
+* Navigation-top
+* Navigation-up
+* Navigation-vertical
+* Navigation
+* Navigational-arrow
+* Network
+* Next-media
+* Next
+* Notepad
+* Old-key
+* Open-folder
+* Ordered-lista
+* Ordered-listb
+* Os-x
+* Out
+* Outbox
+* Outdent
+* Paint-roller
+* Panel-close
+* Panel-show
+* Pants
+* Parental-control
+* Partly-cloudy
+* Paste-in
+* Path
+* Pause
+* Pc
+* People-alt-2
+* People-alt
+* People
+* Phone
+* Picture
+* Pictures-alt-2a
+* Pictures-alt-2b
+* Pictures
+* Pie-chart
+* Piggy-bank
+* Pin-location
+* Piracy
+* Plane
+* Planet
+* Play
+* Playing-cards
+* Playlist
+* Plugin
+* Podcast
+* Post-it
+* Pound-bag
+* Power-outlet
+* Power
+* Previous-media
+* Previous
+* Price-dollar
+* Price-euro
+* Price-pound
+* Price-yen
+* Print
+* Printer-alt
+* Pulse
+* Pushpin
+* Qr-code
+* Quote
+* Radio-alt
+* Radio-receiver
+* Radio
+* Rain
+* Rate
+* Re-post
+* Read-only
+* Receipt-dollar
+* Receipt-euro
+* Receipt-pound
+* Receipt-yen
+* Record
+* Redo
+* Reload
+* Remove-page
+* Remove
+* Repeat-one
+* Repeat
+* Reply-arrow
+* Resize
+* Restricted-page
+* Road-sign
+* Road
+* Rocket
+* Rss
+* Ruler-alt
+* Ruler
+* Safe-dial
+* Safe
+* Satellite-dish
+* Save
+* Scan
+* Science
+* Screensharing
+* Script-alt
+* Script
+* Scull
+* Search
+* Server-alt
+* Server
+* Settings
+* Share-alt
+* Share
+* Sharing-iphone
+* Shield
+* Shift
+* Shipping-box
+* Shipping
+* Shoe
+* Shopping-basket-alt-2
+* Shopping-basket-alt
+* Shopping-basket
+* Shorts
+* Shuffle
+* Simcard
+* Single-note
+* Sleep
+* Slideshow
+* Smiley-inverted
+* Smiley
+* Snow
+* Sound-low
+* Sound-medium
+* Sound-off
+* Sound
+* Spades
+* Speed-gauge
+* Split-alt
+* Split
+* Ssd
+* Stacked-disks
+* Statistic-bar
+* Stop-alt
+* Stop-hand
+* Stop
+* Streaming
+* Sunny
+* Sweatshirt
+* Sync
+* T-shirt
+* Tab-key
+* Tab
+* Tag
+* Tags
+* Takeaway-cup
+* Target
+* Temperature-alt
+* Temperature
+* Terminal
+* Theater
+* Theif
+* Thumbdown
+* Thumbnails-list
+* Thumbnails-small
+* Thumbnails
+* Thumbs-up
+* Ticket
+* Time
+* Timer
+* Tools
+* Top
+* Traffic-alt
+* Trafic
+* Train
+* Trash-alt
+* Trash
+* Tree
+* Trophy
+* Truck
+* Tv-old
+* Tv
+* Umbrella
+* Undo
+* Universal
+* Unlock
+* Usb-connector
+* Usb
+* User-female
+* User-females-alt
+* User-females
+* User
+* Users--alt
+* Users
+* Utilities
+* Vcard
+* Video
+* Voice
+* Wall-plug
+* Wallet
+* Wand
+* War
+* Width
+* Wifi
+* Windows
+* Wine-glass
+* Wrench
+* Wrong
+* X-axis-rotation
+* Y-axis-rotation-copy
+* Yen-bag
+* Z-axis-rotation
+* Zip
+* Zoom-in
+* Zoom-out
+* iMac
+* iPad
+* lightning
