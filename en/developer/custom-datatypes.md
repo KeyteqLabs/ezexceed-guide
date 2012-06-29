@@ -6,8 +6,7 @@ steps. This is even more true the more complex the datatype is.
 
 ## The edit template basics
 
-The first thing you need is to ensure your datatype is wrapped in a container that is
-meant to be used for bootstrapping the client side interactions.
+The first thing you must do is making sure your datatype is wrapped in a container used for bootstrapping the client side interactions.
 
 ```smarty
 <div class="attribute-base" data-attribute-base="{$attribute_base}" data-id="{$attribute.id}"
@@ -16,22 +15,22 @@ meant to be used for bootstrapping the client side interactions.
 </div>
 ```
 
-By specifying the `data-handler` attribute you map this to a javascript Backbone view
+By specifying the `data-handler` attribute you map this to a JavaScript Backbone view
 that will handle the attribute.
 
 ## Skip autosave triggering on input fields
 
-Some fields doesnt need to trigger autosave. This can be turned off on a per-element
+Some fields doesn't need to trigger autosave. This can be turned off on a per-element
 level like this:
 
 ```html
 <input type="text" data-autosave="off" />
 ```
 
-## The javascript attribute handler
+## The JavaScript attribute handler
 
 You should extend a base view that eZ Exceed provides, and implement a few methods
-to have your javascript pick up handling:
+to have your JavaScript pick up handling:
 
 ```javascript
 MyNamespace.views.MyHandler = eZExceed.ContentEditor.Base.extend(
