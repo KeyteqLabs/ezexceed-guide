@@ -10,7 +10,7 @@ Table of Contents
 
 It is recommended to hide, preferrably remove, any non essential siteaccesses.
 For instance, the admin siteaccesse should not be listed in the siteaccess list.
-Make sure you reset and properly set this;
+Make sure you reset and properly set this in your `settings/siteaccess/<siteaccessname>/site.ini.append.php`;
 
 ```ini
 AvailableSiteAccessList[]
