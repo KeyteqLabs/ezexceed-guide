@@ -3,17 +3,17 @@ Complete list of icon names
 
 <ul>
     <li>
-        [Payment / currency](#payment--currency)
+        ![Payment / currency](#payment--currency)
         <ul>
-            <li>[Generic](#generic)</li>
-            <li>[$ Dollar](#-dollar)</li>
-            <li>[€ Euro](#-euro)</li>
-            <li>[£ Pound](#-pound)</li>
-            <li>[¥ Yen](#-yen)</li>
+            <li>![Generic](#generic)</li>
+            <li>![$ Dollar](#-dollar)</li>
+            <li>![€ Euro](#-euro)</li>
+            <li>![£ Pound](#-pound)</li>
+            <li>![¥ Yen](#-yen)</li>
         </ul>
     </li>
     <li>
-        [Miscellaneous](#miscellaneous)
+        ![Miscellaneous](#miscellaneous)
     </li>
 </ul>
 
@@ -28,6 +28,7 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills.png" style="float: left; margin-right: 8px;" alt="Bills" />Bills</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Credit-card.png" style="float: left; margin-right: 8px;" alt="Credit-card" />Credit-card</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Credit-card-alt.png" style="float: left; margin-right: 8px;" alt="Credit-card-alt" />Credit-card-alt</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Wallet.png" style="float: left; margin-right: 8px;" alt="Wallet" />Wallet</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Donate.png" style="float: left; margin-right: 8px;" alt="Donate" />Donate</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Economy.png" style="float: left; margin-right: 8px;" alt="Economy" />Economy</li>
 </ul>
@@ -526,7 +527,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Video.png" style="float: left; margin-right: 8px;" alt="Video" />Video</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Voice.png" style="float: left; margin-right: 8px;" alt="Voice" />Voice</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Wall-plug.png" style="float: left; margin-right: 8px;" alt="Wall-plug" />Wall-plug</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Wallet.png" style="float: left; margin-right: 8px;" alt="Wallet" />Wallet</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Wand.png" style="float: left; margin-right: 8px;" alt="Wand" />Wand</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/War.png" style="float: left; margin-right: 8px;" alt="War" />War</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Width.png" style="float: left; margin-right: 8px;" alt="Width" />Width</li>
