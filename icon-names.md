@@ -1,5 +1,64 @@
 Complete list of icon names
 ===========================
+
+## Payment / currency
+
+### Generic
+<ul style="list-style: none">
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coin.png" style="float: left; margin-right: 8px;" alt="Coin" />Coin</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins.png" style="float: left; margin-right: 8px;" alt="Coins" />Coins</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-alt.png" style="float: left; margin-right: 8px;" alt="Coins-alt" />Coins-alt</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bill.png" style="float: left; margin-right: 8px;" alt="Bill" />Bill</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills.png" style="float: left; margin-right: 8px;" alt="Bills" />Bills</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Credit-card.png" style="float: left; margin-right: 8px;" alt="Credit-card" />Credit-card</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Donate.png" style="float: left; margin-right: 8px;" alt="Donate" />Donate</li>
+</ul>
+
+### $ Dollar
+<ul style="list-style: none">
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coin-dollar.png" style="float: left; margin-right: 8px;" alt="Coin-dollar" />Coin-dollar</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-dollar.png" style="float: left; margin-right: 8px;" alt="Coins-dollar" />Coins-dollar</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-dollar-alt.png" style="float: left; margin-right: 8px;" alt="Coins-dollar-alt" />Coins-dollar-alt</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bill-dollar.png" style="float: left; margin-right: 8px;" alt="Bill-dollar" />Bill-dollar</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills-dollar.png" style="float: left; margin-right: 8px;" alt="Bills-dollar" />Bills-dollar</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Dollar-bag.png" style="float: left; margin-right: 8px;" alt="Dollar-bag" />Dollar-bag</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Receipt-dollar.png" style="float: left; margin-right: 8px;" alt="Receipt-dollar" />Receipt-dollar</li>
+</ul>
+
+### € Euro
+<ul style="list-style: none">
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coin-euro.png" style="float: left; margin-right: 8px;" alt="Coin-euro" />Coin-euro</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-euro.png" style="float: left; margin-right: 8px;" alt="Coins-euro" />Coins-euro</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-euro-alt.png" style="float: left; margin-right: 8px;" alt="Coins-euro-alt" />Coins-euro-alt</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bill-euro.png" style="float: left; margin-right: 8px;" alt="Bill-euro" />Bill-euro</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills-euro.png" style="float: left; margin-right: 8px;" alt="Bills-euro" />Bills-euro</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Euro-bag.png" style="float: left; margin-right: 8px;" alt="Euro-bag" />Euro-bag</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Receipt-euro.png" style="float: left; margin-right: 8px;" alt="Receipt-euro" />Receipt-euro</li>
+</ul>
+
+### £ Pound
+<ul style="list-style: none">
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coin-pound.png" style="float: left; margin-right: 8px;" alt="Coin-pound" />Coin-pound</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-pound.png" style="float: left; margin-right: 8px;" alt="Coins-pound" />Coins-pound</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-pound-alt.png" style="float: left; margin-right: 8px;" alt="Coins-pound-alt" />Coins-pound-alt</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bill-pound.png" style="float: left; margin-right: 8px;" alt="Bill-pound" />Bill-pound</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills-pound.png" style="float: left; margin-right: 8px;" alt="Bills-pound" />Bills-pound</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Pound-bag.png" style="float: left; margin-right: 8px;" alt="Pound-bag" />Pound-bag</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Receipt-pound.png" style="float: left; margin-right: 8px;" alt="Receipt-pound" />Receipt-pound</li>
+</ul>
+
+### ¥ Yen
+<ul style="list-style: none">
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coin-yen.png" style="float: left; margin-right: 8px;" alt="Coin-yen" />Coin-yen</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-yen.png" style="float: left; margin-right: 8px;" alt="Coins-yen" />Coins-yen</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-yen-alt.png" style="float: left; margin-right: 8px;" alt="Coins-yen-alt" />Coins-yen-alt</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bill-yen.png" style="float: left; margin-right: 8px;" alt="Bill-yen" />Bill-yen</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills-yen.png" style="float: left; margin-right: 8px;" alt="Bills-yen" />Bills-yen</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Yen-bag.png" style="float: left; margin-right: 8px;" alt="Yen-bag" />Yen-bag</li>
+<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Receipt-yen.png" style="float: left; margin-right: 8px;" alt="Receipt-yen" />Receipt-yen</li>
+</ul>
+
+## Miscellaneous
 <ul style="list-style: none">
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/3d-glasses.png" style="float: left; margin-right: 8px;" alt="3d-glasses" />3d-glasses</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/3d.png" style="float: left; margin-right: 8px;" alt="3d" />3d</li>
@@ -35,16 +94,6 @@ Complete list of icon names
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Beer-glass.png" style="float: left; margin-right: 8px;" alt="Beer-glass" />Beer-glass</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bell-off.png" style="float: left; margin-right: 8px;" alt="Bell-off" />Bell-off</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bell.png" style="float: left; margin-right: 8px;" alt="Bell" />Bell</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bill-dollar.png" style="float: left; margin-right: 8px;" alt="Bill-dollar" />Bill-dollar</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bill-euro.png" style="float: left; margin-right: 8px;" alt="Bill-euro" />Bill-euro</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bill-pound.png" style="float: left; margin-right: 8px;" alt="Bill-pound" />Bill-pound</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bill-yen.png" style="float: left; margin-right: 8px;" alt="Bill-yen" />Bill-yen</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bill.png" style="float: left; margin-right: 8px;" alt="Bill" />Bill</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills-dollar.png" style="float: left; margin-right: 8px;" alt="Bills-dollar" />Bills-dollar</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills-euro.png" style="float: left; margin-right: 8px;" alt="Bills-euro" />Bills-euro</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills-pound.png" style="float: left; margin-right: 8px;" alt="Bills-pound" />Bills-pound</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills-yen.png" style="float: left; margin-right: 8px;" alt="Bills-yen" />Bills-yen</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bills.png" style="float: left; margin-right: 8px;" alt="Bills" />Bills</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bird.png" style="float: left; margin-right: 8px;" alt="Bird" />Bird</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Block.png" style="float: left; margin-right: 8px;" alt="Block" />Block</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bluetooth.png" style="float: left; margin-right: 8px;" alt="Bluetooth" />Bluetooth</li>
@@ -96,21 +145,6 @@ Complete list of icon names
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Cocktail.png" style="float: left; margin-right: 8px;" alt="Cocktail" />Cocktail</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Code.png" style="float: left; margin-right: 8px;" alt="Code" />Code</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coffee-cup.png" style="float: left; margin-right: 8px;" alt="Coffee-cup" />Coffee-cup</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coin-dollar.png" style="float: left; margin-right: 8px;" alt="Coin-dollar" />Coin-dollar</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coin-euro.png" style="float: left; margin-right: 8px;" alt="Coin-euro" />Coin-euro</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coin-pound.png" style="float: left; margin-right: 8px;" alt="Coin-pound" />Coin-pound</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coin-yen.png" style="float: left; margin-right: 8px;" alt="Coin-yen" />Coin-yen</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coin.png" style="float: left; margin-right: 8px;" alt="Coin" />Coin</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-alt.png" style="float: left; margin-right: 8px;" alt="Coins-alt" />Coins-alt</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-dollar-alt.png" style="float: left; margin-right: 8px;" alt="Coins-dollar-alt" />Coins-dollar-alt</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-dollar.png" style="float: left; margin-right: 8px;" alt="Coins-dollar" />Coins-dollar</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-euro-alt.png" style="float: left; margin-right: 8px;" alt="Coins-euro-alt" />Coins-euro-alt</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-euro.png" style="float: left; margin-right: 8px;" alt="Coins-euro" />Coins-euro</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-pound-alt.png" style="float: left; margin-right: 8px;" alt="Coins-pound-alt" />Coins-pound-alt</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-pound.png" style="float: left; margin-right: 8px;" alt="Coins-pound" />Coins-pound</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-yen-alt.png" style="float: left; margin-right: 8px;" alt="Coins-yen-alt" />Coins-yen-alt</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins-yen.png" style="float: left; margin-right: 8px;" alt="Coins-yen" />Coins-yen</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coins.png" style="float: left; margin-right: 8px;" alt="Coins" />Coins</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Color-bucket.png" style="float: left; margin-right: 8px;" alt="Color-bucket" />Color-bucket</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Color-picker.png" style="float: left; margin-right: 8px;" alt="Color-picker" />Color-picker</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Comb.png" style="float: left; margin-right: 8px;" alt="Comb" />Comb</li>
@@ -126,7 +160,6 @@ Complete list of icon names
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Conversation.png" style="float: left; margin-right: 8px;" alt="Conversation" />Conversation</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Coverflow.png" style="float: left; margin-right: 8px;" alt="Coverflow" />Coverflow</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Credit-card-alt.png" style="float: left; margin-right: 8px;" alt="Credit-card-alt" />Credit-card-alt</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Credit-card.png" style="float: left; margin-right: 8px;" alt="Credit-card" />Credit-card</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Crop.png" style="float: left; margin-right: 8px;" alt="Crop" />Crop</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Crosshair.png" style="float: left; margin-right: 8px;" alt="Crosshair" />Crosshair</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Curve.png" style="float: left; margin-right: 8px;" alt="Curve" />Curve</li>
@@ -149,8 +182,6 @@ Complete list of icon names
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Document-dashed-line.png" style="float: left; margin-right: 8px;" alt="Document-dashed-line" />Document-dashed-line</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Document.png" style="float: left; margin-right: 8px;" alt="Document" />Document</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Documents.png" style="float: left; margin-right: 8px;" alt="Documents" />Documents</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Dollar-bag.png" style="float: left; margin-right: 8px;" alt="Dollar-bag" />Dollar-bag</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Donate.png" style="float: left; margin-right: 8px;" alt="Donate" />Donate</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Download-alt.png" style="float: left; margin-right: 8px;" alt="Download-alt" />Download-alt</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Download.png" style="float: left; margin-right: 8px;" alt="Download" />Download</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Eco.png" style="float: left; margin-right: 8px;" alt="Eco" />Eco</li>
@@ -163,7 +194,6 @@ Complete list of icon names
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Equalizer.png" style="float: left; margin-right: 8px;" alt="Equalizer" />Equalizer</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Escape.png" style="float: left; margin-right: 8px;" alt="Escape" />Escape</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Ethernet.png" style="float: left; margin-right: 8px;" alt="Ethernet" />Ethernet</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Euro-bag.png" style="float: left; margin-right: 8px;" alt="Euro-bag" />Euro-bag</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Exit-fullscreen.png" style="float: left; margin-right: 8px;" alt="Exit-fullscreen" />Exit-fullscreen</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Eye.png" style="float: left; margin-right: 8px;" alt="Eye" />Eye</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Factory.png" style="float: left; margin-right: 8px;" alt="Factory" />Factory</li>
@@ -316,7 +346,6 @@ Complete list of icon names
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Plugin.png" style="float: left; margin-right: 8px;" alt="Plugin" />Plugin</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Podcast.png" style="float: left; margin-right: 8px;" alt="Podcast" />Podcast</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Post-it.png" style="float: left; margin-right: 8px;" alt="Post-it" />Post-it</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Pound-bag.png" style="float: left; margin-right: 8px;" alt="Pound-bag" />Pound-bag</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Power-outlet.png" style="float: left; margin-right: 8px;" alt="Power-outlet" />Power-outlet</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Power.png" style="float: left; margin-right: 8px;" alt="Power" />Power</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Previous-media.png" style="float: left; margin-right: 8px;" alt="Previous-media" />Previous-media</li>
@@ -338,10 +367,6 @@ Complete list of icon names
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Rate.png" style="float: left; margin-right: 8px;" alt="Rate" />Rate</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Re-post.png" style="float: left; margin-right: 8px;" alt="Re-post" />Re-post</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Read-only.png" style="float: left; margin-right: 8px;" alt="Read-only" />Read-only</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Receipt-dollar.png" style="float: left; margin-right: 8px;" alt="Receipt-dollar" />Receipt-dollar</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Receipt-euro.png" style="float: left; margin-right: 8px;" alt="Receipt-euro" />Receipt-euro</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Receipt-pound.png" style="float: left; margin-right: 8px;" alt="Receipt-pound" />Receipt-pound</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Receipt-yen.png" style="float: left; margin-right: 8px;" alt="Receipt-yen" />Receipt-yen</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Record.png" style="float: left; margin-right: 8px;" alt="Record" />Record</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Redo.png" style="float: left; margin-right: 8px;" alt="Redo" />Redo</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Reload.png" style="float: left; margin-right: 8px;" alt="Reload" />Reload</li>
@@ -470,7 +495,6 @@ Complete list of icon names
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Wrong.png" style="float: left; margin-right: 8px;" alt="Wrong" />Wrong</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/X-axis-rotation.png" style="float: left; margin-right: 8px;" alt="X-axis-rotation" />X-axis-rotation</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Y-axis-rotation-copy.png" style="float: left; margin-right: 8px;" alt="Y-axis-rotation-copy" />Y-axis-rotation-copy</li>
-<li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Yen-bag.png" style="float: left; margin-right: 8px;" alt="Yen-bag" />Yen-bag</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Z-axis-rotation.png" style="float: left; margin-right: 8px;" alt="Z-axis-rotation" />Z-axis-rotation</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Zip.png" style="float: left; margin-right: 8px;" alt="Zip" />Zip</li>
 <li style="line-height: 16px;"><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Zoom-in.png" style="float: left; margin-right: 8px;" alt="Zoom-in" />Zoom-in</li>
