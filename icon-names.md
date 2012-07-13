@@ -3,18 +3,16 @@ Complete list of icon names
 
 <ul>
     <li>
-        ![Payment / currency](#payment--currency)
+        <a href="#payment--currency">Payment / currency</a>
         <ul>
-            <li>![Generic](#generic)</li>
-            <li>![$ Dollar](#-dollar)</li>
-            <li>![€ Euro](#-euro)</li>
-            <li>![£ Pound](#-pound)</li>
-            <li>![¥ Yen](#-yen)</li>
+            <li><a href="#generic">Generic</a></li>
+            <li><a href="#-dollar">$ Dollar</a></li>
+            <li><a href="#-euro">€ Euro</a></li>
+            <li><a href="#-pound">£ Pound</a></li>
+            <li><a href="#-yen">¥ Yen</a></li>
         </ul>
     </li>
-    <li>
-        ![Miscellaneous](#miscellaneous)
-    </li>
+    <li><a href="#miscellaneous">Miscellaneous</a></li>
 </ul>
 
 ## Payment / currency
