@@ -12,7 +12,22 @@ Complete list of icon names
             <li><a href="#-yen">¥ Yen</a></li>
         </ul>
     </li>
-    <li><a href="#miscellaneous">Miscellaneous</a></li>
+    <li>
+        <a href="#devices">Devices</a>
+        <ul>
+            <li><a href="#generic-1">Generic</a></li>
+            <li><a href="#-apple"> Apple</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#controls">Controls</a>
+        <ul>
+            <li><a href="#playback">Playback</a></li>
+            <li><a href="#navigation">Navigation</a></li>
+        </ul>
+    </li>
+    <li><a href="#users">Users</a></li>
+    <li><a href="#miscellaneous-1">Miscellaneous</a></li>
 </ul>
 
 ## Payment / currency
@@ -77,14 +92,7 @@ Complete list of icon names
 
 ## Devices
 
-###  Apple
-<ul>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Iphone.png" style="float: left; margin-right: 8px;" alt="Iphone" />Iphone</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/iPad.png" style="float: left; margin-right: 8px;" alt="iPad" />iPad</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/iMac.png" style="float: left; margin-right: 8px;" alt="iMac" />iMac</li>
-</ul>
-
-### Miscellaneous
+### Generic
 <ul>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Calculator.png" style="float: left; margin-right: 8px;" alt="Calculator" />Calculator</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Gps.png" style="float: left; margin-right: 8px;" alt="Gps" />Gps</li>
@@ -94,6 +102,13 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Tv-old.png" style="float: left; margin-right: 8px;" alt="Tv-old" />Tv-old</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Pc.png" style="float: left; margin-right: 8px;" alt="Pc" />Pc</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Display.png" style="float: left; margin-right: 8px;" alt="Display" />Display</li>
+</ul>
+
+###  Apple
+<ul>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Iphone.png" style="float: left; margin-right: 8px;" alt="Iphone" />Iphone</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/iPad.png" style="float: left; margin-right: 8px;" alt="iPad" />iPad</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/iMac.png" style="float: left; margin-right: 8px;" alt="iMac" />iMac</li>
 </ul>
 
 ## Controls
