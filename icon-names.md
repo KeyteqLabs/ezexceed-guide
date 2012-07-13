@@ -27,6 +27,9 @@ Complete list of icon names
         </ul>
     </li>
     <li><a href="#users">Users</a></li>
+    <li><a href="#travel">Travel</a></li>
+    <li><a href="#space">Space</a></li>
+    <li><a href="#business">Business</a></li>
     <li><a href="#miscellaneous-1">Miscellaneous</a></li>
 </ul>
 
@@ -98,9 +101,14 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Gps.png" style="float: left; margin-right: 8px;" alt="Gps" />Gps</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Mobile-phone.png" style="float: left; margin-right: 8px;" alt="Mobile-phone" />Mobile-phone</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Phone.png" style="float: left; margin-right: 8px;" alt="Phone" />Phone</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Camcorder.png" style="float: left; margin-right: 8px;" alt="Camcorder" />Camcorder</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Headphones.png" style="float: left; margin-right: 8px;" alt="Headphones" />Headphones</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Tv.png" style="float: left; margin-right: 8px;" alt="Tv" />Tv</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Tv-old.png" style="float: left; margin-right: 8px;" alt="Tv-old" />Tv-old</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Pc.png" style="float: left; margin-right: 8px;" alt="Pc" />Pc</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hard-drive.png" style="float: left; margin-right: 8px;" alt="Hard-drive" />Hard-drive</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Mouse.png" style="float: left; margin-right: 8px;" alt="Mouse" />Mouse</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Keyboard.png" style="float: left; margin-right: 8px;" alt="Keyboard" />Keyboard</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Display.png" style="float: left; margin-right: 8px;" alt="Display" />Display</li>
 </ul>
 
@@ -151,6 +159,24 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Users--alt.png" style="float: left; margin-right: 8px;" alt="Users--alt" />Users--alt</li>
 </ul>
 
+## Travel
+<ul>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Departure.png" style="float: left; margin-right: 8px;" alt="Departure" />Departure</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Arrival.png" style="float: left; margin-right: 8px;" alt="Arrival" />Arrival</li>
+</ul>
+
+## Space
+<ul>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Globe.png" style="float: left; margin-right: 8px;" alt="Globe" />Globe</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Rocket.png" style="float: left; margin-right: 8px;" alt="Rocket" />Rocket</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Planet.png" style="float: left; margin-right: 8px;" alt="Planet" />Planet</li>
+</ul>
+
+## Business
+<ul>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Briefcase.png" style="float: left; margin-right: 8px;" alt="Briefcase" />Briefcase</li>
+</ul>
+
 ## Miscellaneous
 <ul>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/3d-glasses.png" style="float: left; margin-right: 8px;" alt="3d-glasses" />3d-glasses</li>
@@ -163,7 +189,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Alert-alt.png" style="float: left; margin-right: 8px;" alt="Alert-alt" />Alert-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Alert.png" style="float: left; margin-right: 8px;" alt="Alert" />Alert</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Alt.png" style="float: left; margin-right: 8px;" alt="Alt" />Alt</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Arrival.png" style="float: left; margin-right: 8px;" alt="Arrival" />Arrival</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Arrow-down.png" style="float: left; margin-right: 8px;" alt="Arrow-down" />Arrow-down</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Arrow-left.png" style="float: left; margin-right: 8px;" alt="Arrow-left" />Arrow-left</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Arrow-right.png" style="float: left; margin-right: 8px;" alt="Arrow-right" />Arrow-right</li>
@@ -200,7 +225,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Box-open.png" style="float: left; margin-right: 8px;" alt="Box-open" />Box-open</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Box.png" style="float: left; margin-right: 8px;" alt="Box" />Box</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Brick.png" style="float: left; margin-right: 8px;" alt="Brick" />Brick</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Briefcase.png" style="float: left; margin-right: 8px;" alt="Briefcase" />Briefcase</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Brush-alt-2.png" style="float: left; margin-right: 8px;" alt="Brush-alt-2" />Brush-alt-2</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Brush-alt.png" style="float: left; margin-right: 8px;" alt="Brush-alt" />Brush-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Brush.png" style="float: left; margin-right: 8px;" alt="Brush" />Brush</li>
@@ -209,7 +233,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bus.png" style="float: left; margin-right: 8px;" alt="Bus" />Bus</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Calendar-alt.png" style="float: left; margin-right: 8px;" alt="Calendar-alt" />Calendar-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Calendar.png" style="float: left; margin-right: 8px;" alt="Calendar" />Calendar</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Camcorder.png" style="float: left; margin-right: 8px;" alt="Camcorder" />Camcorder</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Camera-roll.png" style="float: left; margin-right: 8px;" alt="Camera-roll" />Camera-roll</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Candy.png" style="float: left; margin-right: 8px;" alt="Candy" />Candy</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Caps-lock.png" style="float: left; margin-right: 8px;" alt="Caps-lock" />Caps-lock</li>
@@ -258,7 +281,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Dashboard.png" style="float: left; margin-right: 8px;" alt="Dashboard" />Dashboard</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Delete-key.png" style="float: left; margin-right: 8px;" alt="Delete-key" />Delete-key</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Delete.png" style="float: left; margin-right: 8px;" alt="Delete" />Delete</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Departure.png" style="float: left; margin-right: 8px;" alt="Departure" />Departure</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Desk.png" style="float: left; margin-right: 8px;" alt="Desk" />Desk</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Diagnostics.png" style="float: left; margin-right: 8px;" alt="Diagnostics" />Diagnostics</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Diamond.png" style="float: left; margin-right: 8px;" alt="Diamond" />Diamond</li>
@@ -307,7 +329,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Geometry.png" style="float: left; margin-right: 8px;" alt="Geometry" />Geometry</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Gift.png" style="float: left; margin-right: 8px;" alt="Gift" />Gift</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Globe-alt.png" style="float: left; margin-right: 8px;" alt="Globe-alt" />Globe-alt</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Globe.png" style="float: left; margin-right: 8px;" alt="Globe" />Globe</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Grid.png" style="float: left; margin-right: 8px;" alt="Grid" />Grid</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hammer.png" style="float: left; margin-right: 8px;" alt="Hammer" />Hammer</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hand-active-alt.png" style="float: left; margin-right: 8px;" alt="Hand-active-alt" />Hand-active-alt</li>
@@ -317,10 +338,8 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Handprint.png" style="float: left; margin-right: 8px;" alt="Handprint" />Handprint</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Handtool-alt.png" style="float: left; margin-right: 8px;" alt="Handtool-alt" />Handtool-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Handtool.png" style="float: left; margin-right: 8px;" alt="Handtool" />Handtool</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hard-drive.png" style="float: left; margin-right: 8px;" alt="Hard-drive" />Hard-drive</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hat.png" style="float: left; margin-right: 8px;" alt="Hat" />Hat</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hd.png" style="float: left; margin-right: 8px;" alt="Hd" />Hd</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Headphones.png" style="float: left; margin-right: 8px;" alt="Headphones" />Headphones</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hearts.png" style="float: left; margin-right: 8px;" alt="Hearts" />Hearts</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Height.png" style="float: left; margin-right: 8px;" alt="Height" />Height</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Help-alt.png" style="float: left; margin-right: 8px;" alt="Help-alt" />Help-alt</li>
@@ -333,7 +352,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Infinity.png" style="float: left; margin-right: 8px;" alt="Infinity" />Infinity</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Info.png" style="float: left; margin-right: 8px;" alt="Info" />Info</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Key.png" style="float: left; margin-right: 8px;" alt="Key" />Key</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Keyboard.png" style="float: left; margin-right: 8px;" alt="Keyboard" />Keyboard</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Keyhole.png" style="float: left; margin-right: 8px;" alt="Keyhole" />Keyhole</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Lab.png" style="float: left; margin-right: 8px;" alt="Lab" />Lab</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Laptop.png" style="float: left; margin-right: 8px;" alt="Laptop" />Laptop</li>
@@ -372,7 +390,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Molecular.png" style="float: left; margin-right: 8px;" alt="Molecular" />Molecular</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Mountain.png" style="float: left; margin-right: 8px;" alt="Mountain" />Mountain</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Mouse-cursor.png" style="float: left; margin-right: 8px;" alt="Mouse-cursor" />Mouse-cursor</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Mouse.png" style="float: left; margin-right: 8px;" alt="Mouse" />Mouse</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Movie-alt.png" style="float: left; margin-right: 8px;" alt="Movie-alt" />Movie-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Movie.png" style="float: left; margin-right: 8px;" alt="Movie" />Movie</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Music.png" style="float: left; margin-right: 8px;" alt="Music" />Music</li>
@@ -407,7 +424,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Pin-location.png" style="float: left; margin-right: 8px;" alt="Pin-location" />Pin-location</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Piracy.png" style="float: left; margin-right: 8px;" alt="Piracy" />Piracy</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Plane.png" style="float: left; margin-right: 8px;" alt="Plane" />Plane</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Planet.png" style="float: left; margin-right: 8px;" alt="Planet" />Planet</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Playing-cards.png" style="float: left; margin-right: 8px;" alt="Playing-cards" />Playing-cards</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Plugin.png" style="float: left; margin-right: 8px;" alt="Plugin" />Plugin</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Podcast.png" style="float: left; margin-right: 8px;" alt="Podcast" />Podcast</li>
@@ -443,7 +459,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Restricted-page.png" style="float: left; margin-right: 8px;" alt="Restricted-page" />Restricted-page</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Road-sign.png" style="float: left; margin-right: 8px;" alt="Road-sign" />Road-sign</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Road.png" style="float: left; margin-right: 8px;" alt="Road" />Road</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Rocket.png" style="float: left; margin-right: 8px;" alt="Rocket" />Rocket</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Rss.png" style="float: left; margin-right: 8px;" alt="Rss" />Rss</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Ruler-alt.png" style="float: left; margin-right: 8px;" alt="Ruler-alt" />Ruler-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Ruler.png" style="float: left; margin-right: 8px;" alt="Ruler" />Ruler</li>
