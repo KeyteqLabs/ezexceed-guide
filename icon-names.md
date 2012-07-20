@@ -7,16 +7,16 @@ Complete list of icon names
         <ul>
             <li><a href="#generic">Generic</a></li>
             <li><a href="#-dollar">$ Dollar</a></li>
-            <li><a href="#-euro">€ Euro</a></li>
-            <li><a href="#-pound">£ Pound</a></li>
-            <li><a href="#-yen">¥ Yen</a></li>
+            <li><a href="#%E2%82%AC-euro">€ Euro</a></li>
+            <li><a href="#%C2%A3-pound">£ Pound</a></li>
+            <li><a href="#%C2%A5-yen">¥ Yen</a></li>
         </ul>
     </li>
     <li>
         <a href="#devices">Devices</a>
         <ul>
             <li><a href="#generic-1">Generic</a></li>
-            <li><a href="#-apple"> Apple</a></li>
+            <li><a href="#%EF%A3%BF-apple"> Apple</a></li>
         </ul>
     </li>
     <li>
@@ -26,12 +26,21 @@ Complete list of icon names
             <li><a href="#navigation">Navigation</a></li>
         </ul>
     </li>
-    <li><a href="#users">Users</a></li>
-    <li><a href="#travel">Travel</a></li>
+    <li><a href="#users--people">Users & People</a></li>
+    <li><a href="#travel--transportation">Travel & Transportation</a></li>
     <li><a href="#space">Space</a></li>
     <li><a href="#business">Business</a></li>
     <li><a href="#programming">Programming</a></li>
-    <li><a href="#miscellaneous-1">Miscellaneous</a></li>
+    <li><a href="#graphics--photo-editing">Graphics & Photo editing</a></li>
+    <li><a href="#food--drink">Food & Drink</a></li>
+    <li><a href="#games--sports">Games & Sports</a></li>
+    <li><a href="#weather">Weather</a></li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#operating-systems">Operating systems</a></li>
+    <li><a href="#keyboard-keys">Keyboard Keys</a></li>
+    <li><a href="#messaging">Messaging</a></li>
+    <li><a href="#time--date">Time & Date</a></li>
+    <li><a href="#miscellaneous">Miscellaneous</a></li>
 </ul>
 
 ## Payment / currency
