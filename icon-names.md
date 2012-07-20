@@ -32,6 +32,7 @@ Complete list of icon names
     <li><a href="#space">Space</a></li>
     <li><a href="#business">Business</a></li>
     <li><a href="#programming">Programming</a></li>
+    <li><a href="#communication-technologies">Communication technologies</a></li>
     <li><a href="#graphics--photo-editing">Graphics & Photo editing</a></li>
     <li><a href="#food--drink">Food & Drink</a></li>
     <li><a href="#games--sports">Games & Sports</a></li>
@@ -260,6 +261,17 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bug.png" alt="Bug" />Bug</li>
 </ul>
 
+## Communication technologies
+<ul>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Ethernet.png" alt="Ethernet" />Ethernet</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Wifi.png" alt="Wifi" />Wifi</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Usb.png" alt="Usb" />Usb</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Firewire.png" alt="Firewire" />Firewire</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bluetooth.png" alt="Bluetooth" />Bluetooth</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Radio.png" alt="Radio" />Radio</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Radio-alt.png" alt="Radio-alt" />Radio-alt</li>
+</ul>
+
 ## Graphics & Photo editing
 <ul>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Crop.png" alt="Crop" />Crop</li>
@@ -271,11 +283,14 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Brush.png" alt="Brush" />Brush</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Brush-alt.png" alt="Brush-alt" />Brush-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Brush-alt-2.png" alt="Brush-alt-2" />Brush-alt-2</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Paint-roller.png" alt="Paint-roller" />Paint-roller</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Crosshair.png" alt="Crosshair" />Crosshair</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Layers.png" alt="Layers" />Layers</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Layers-alt.png" alt="Layers-alt" />Layers-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Ruler.png" alt="Ruler" />Ruler</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Ruler-alt.png" alt="Ruler-alt" />Ruler-alt</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Zoom-in.png" alt="Zoom-in" />Zoom-in</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Zoom-out.png" alt="Zoom-out" />Zoom-out</li>
 </ul>
 
 ## Food & Drink
@@ -375,7 +390,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bell.png" alt="Bell" />Bell</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bird.png" alt="Bird" />Bird</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Block.png" alt="Block" />Block</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bluetooth.png" alt="Bluetooth" />Bluetooth</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Bones.png" alt="Bones" />Bones</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Book-alt-2.png" alt="Book-alt-2" />Book-alt-2</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Book-alt.png" alt="Book-alt" />Book-alt</li>
@@ -428,12 +442,10 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Edit.png" alt="Edit" />Edit</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Energy-saving-bulb.png" alt="Energy-saving-bulb" />Energy-saving-bulb</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Equalizer.png" alt="Equalizer" />Equalizer</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Ethernet.png" alt="Ethernet" />Ethernet</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Eye.png" alt="Eye" />Eye</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Favorite.png" alt="Favorite" />Favorite</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Filter.png" alt="Filter" />Filter</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Fingerprint.png" alt="Fingerprint" />Fingerprint</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Firewire.png" alt="Firewire" />Firewire</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Flag-alt.png" alt="Flag-alt" />Flag-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Flag.png" alt="Flag" />Flag</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Flash.png" alt="Flash" />Flash</li>
@@ -502,7 +514,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Ordered-listb.png" alt="Ordered-listb" />Ordered-listb</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Out.png" alt="Out" />Out</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Outdent.png" alt="Outdent" />Outdent</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Paint-roller.png" alt="Paint-roller" />Paint-roller</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Panel-close.png" alt="Panel-close" />Panel-close</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Panel-show.png" alt="Panel-show" />Panel-show</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Pants.png" alt="Pants" />Pants</li>
@@ -526,8 +537,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Pushpin.png" alt="Pushpin" />Pushpin</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Qr-code.png" alt="Qr-code" />Qr-code</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Quote.png" alt="Quote" />Quote</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Radio-alt.png" alt="Radio-alt" />Radio-alt</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Radio.png" alt="Radio" />Radio</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Rate.png" alt="Rate" />Rate</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Re-post.png" alt="Re-post" />Re-post</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Read-only.png" alt="Read-only" />Read-only</li>
@@ -596,7 +605,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Thumbnails.png" alt="Thumbnails" />Thumbnails</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Thumbs-up.png" alt="Thumbs-up" />Thumbs-up</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Ticket.png" alt="Ticket" />Ticket</li>
-
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Top.png" alt="Top" />Top</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Trash-alt.png" alt="Trash-alt" />Trash-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Trash.png" alt="Trash" />Trash</li>
@@ -606,7 +614,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Universal.png" alt="Universal" />Universal</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Unlock.png" alt="Unlock" />Unlock</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Usb-connector.png" alt="Usb-connector" />Usb-connector</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Usb.png" alt="Usb" />Usb</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Utilities.png" alt="Utilities" />Utilities</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Video.png" alt="Video" />Video</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Voice.png" alt="Voice" />Voice</li>
@@ -614,12 +621,9 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Wand.png" alt="Wand" />Wand</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/War.png" alt="War" />War</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Width.png" alt="Width" />Width</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Wifi.png" alt="Wifi" />Wifi</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Wrong.png" alt="Wrong" />Wrong</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/X-axis-rotation.png" alt="X-axis-rotation" />X-axis-rotation</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Y-axis-rotation-copy.png" alt="Y-axis-rotation-copy" />Y-axis-rotation-copy</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Z-axis-rotation.png" alt="Z-axis-rotation" />Z-axis-rotation</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Zip.png" alt="Zip" />Zip</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Zoom-in.png" alt="Zoom-in" />Zoom-in</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Zoom-out.png" alt="Zoom-out" />Zoom-out</li>
 </ul>
