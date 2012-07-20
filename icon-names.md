@@ -25,6 +25,7 @@ Complete list of icon names
             <li><a href="#playback">Playback</a></li>
             <li><a href="#navigation">Navigation</a></li>
             <li><a href="#keyboard-keys">Keyboard Keys</a></li>
+            <li><a href="#cursors">Cursors</a></li>
         </ul>
     </li>
     <li><a href="#users--people">Users & People</a></li>
@@ -149,11 +150,14 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Stop.png" alt="Stop" />Stop</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Next.png" alt="Next" />Next</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Next-media.png" alt="Next-media" />Next-media</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Repeat.png" alt="Repeat" />Repeat</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Repeat-one.png" alt="Repeat-one" />Repeat-one</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Shuffle.png" alt="Shuffle" />Shuffle</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Playlist.png" alt="Playlist" />Playlist</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Fullscreen.png" alt="Fullscreen" />Fullscreen</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Fullscreen-alt.png" alt="Fullscreen-alt" />Fullscreen-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Exit-fullscreen.png" alt="Exit-fullscreen" />Exit-fullscreen</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Eject.png" alt="Eject" />Eject</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Playlist.png" alt="Playlist" />Playlist</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Streaming.png" alt="Streaming" />Streaming</li>
 </ul>
 
@@ -192,6 +196,18 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Light-down.png" alt="Light-down" />Light-down</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Light-up.png" alt="Light-up" />Light-up</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Dashboard.png" alt="Dashboard" />Dashboard</li>
+</ul>
+
+### Cursors
+<ul>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Mouse-cursor.png" alt="Mouse-cursor" />Mouse-cursor</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hand-pointer.png" alt="Hand-pointer" />Hand-pointer</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hand-pointer-alt.png" alt="Hand-pointer-alt" />Hand-pointer-alt</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hand-active.png" alt="Hand-active" />Hand-active</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hand-active-alt.png" alt="Hand-active-alt" />Hand-active-alt</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Handprint.png" alt="Handprint" />Handprint</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Handtool.png" alt="Handtool" />Handtool</li>
+<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Handtool-alt.png" alt="Handtool-alt" />Handtool-alt</li>
 </ul>
 
 ## Users & People
@@ -458,13 +474,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Geometry.png" alt="Geometry" />Geometry</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Gift.png" alt="Gift" />Gift</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Grid.png" alt="Grid" />Grid</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hand-active-alt.png" alt="Hand-active-alt" />Hand-active-alt</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hand-active.png" alt="Hand-active" />Hand-active</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hand-pointer-alt.png" alt="Hand-pointer-alt" />Hand-pointer-alt</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hand-pointer.png" alt="Hand-pointer" />Hand-pointer</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Handprint.png" alt="Handprint" />Handprint</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Handtool-alt.png" alt="Handtool-alt" />Handtool-alt</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Handtool.png" alt="Handtool" />Handtool</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hat.png" alt="Hat" />Hat</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Hd.png" alt="Hd" />Hd</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Height.png" alt="Height" />Height</li>
@@ -502,7 +511,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Molecular-network.png" alt="Molecular-network" />Molecular-network</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Molecular.png" alt="Molecular" />Molecular</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Mountain.png" alt="Mountain" />Mountain</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Mouse-cursor.png" alt="Mouse-cursor" />Mouse-cursor</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Movie-alt.png" alt="Movie-alt" />Movie-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Movie.png" alt="Movie" />Movie</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Music.png" alt="Music" />Music</li>
@@ -544,8 +552,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Reload.png" alt="Reload" />Reload</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Remove-page.png" alt="Remove-page" />Remove-page</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Remove.png" alt="Remove" />Remove</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Repeat-one.png" alt="Repeat-one" />Repeat-one</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Repeat.png" alt="Repeat" />Repeat</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Restricted-page.png" alt="Restricted-page" />Restricted-page</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Rss.png" alt="Rss" />Rss</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Safe-dial.png" alt="Safe-dial" />Safe-dial</li>
@@ -571,7 +577,6 @@ Complete list of icon names
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Shopping-basket-alt.png" alt="Shopping-basket-alt" />Shopping-basket-alt</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Shopping-basket.png" alt="Shopping-basket" />Shopping-basket</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Shorts.png" alt="Shorts" />Shorts</li>
-<li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Shuffle.png" alt="Shuffle" />Shuffle</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Simcard.png" alt="Simcard" />Simcard</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Single-note.png" alt="Single-note" />Single-note</li>
 <li><img src="https://github.com/KeyteqLabs/ezexceed/raw/master/design/ezexceed/images/kp/16x16/Sleep.png" alt="Sleep" />Sleep</li>
