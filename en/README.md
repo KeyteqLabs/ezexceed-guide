@@ -23,4 +23,5 @@ This should be sufficient in the majority of cases.
 
 * [Enable direct manipulation](https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/developer/direct-manipulation.md)
 * [Custom datatypes and eZ Exceed](https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/developer/custom-datatypes.md)
+* [Adding toolbar buttons](https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/developer/adding-toolbar-buttons.md)
 * [FAQ](https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/faq.md)
