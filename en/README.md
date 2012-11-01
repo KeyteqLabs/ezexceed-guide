@@ -26,9 +26,8 @@ eZ Exceed support most common eZ Publish extensions, but some can create a few w
 
 #### ezie
 
-When ezie is enabled it will load a version of jquery into the global scope, this will probably make your jquery/zepto
-on `$` unusable as its overwritten by this later on. In order to handle this you can override
-the template `ezie/jscss.tpl` and implement it like eZ Exceed does except for the jquery inclusion.
+If you are using `ezie` you need to make sure you specify and load your jquery through ezjscore `ezjsc::jquery`
+If not, you will have two jquery scripts loaded into global scope and thus ezie overrides your jquery.
 
 In general we advise you to not use the `ezie` extension and instead prefer the `keymedia` extension / product for image handling.
 
