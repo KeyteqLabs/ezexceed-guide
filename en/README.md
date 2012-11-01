@@ -20,6 +20,18 @@ AvailableSiteAccessList[]=<mainsiteaccess>
 
 This should be sufficient in the majority of cases.
 
+### Extension support
+
+eZ Exceed support most common eZ Publish extensions, but some can create a few woes.
+
+#### ezie
+
+When ezie is enabled it will load a version of jquery into the global scope, this will probably make your jquery/zepto
+on `$` unusable as its overwritten by this later on. In order to handle this you can override
+the template `ezie/jscss.tpl` and implement it like eZ Exceed does except for the jquery inclusion.
+
+In general we advise you to not use the `ezie` extension and instead prefer the `keymedia` extension / product for image handling.
+
 ## Site development
 
 * [Special handling of rootNodes when adding nodes to objects](https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/developer/root-nodes.md)
