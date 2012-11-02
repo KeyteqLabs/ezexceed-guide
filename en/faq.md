@@ -1,6 +1,20 @@
 Frequently asked questions
 ==========================
 
+## My jquery plugins are gone / my jquery is overwritten
+
+This is due to how Exceed supports the `ezie` extension. Specify your jquery dependency through `ezjscore` and the
+`ezjsc::jquery` loading strategy to solve this.
+
+```ini
+[eZJSCore]
+ExternalScripts[jquery]=://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.js
+```
+
+```jade
+{ezscript_require(array('ezjsc::jquery'))}
+```
+
 ## I cant see my changes without publishing
 
 This most likely implies you ar running eZ Publish 4.6 where previews of unpublished
