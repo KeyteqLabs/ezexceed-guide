@@ -1,6 +1,10 @@
 Table of Contents
 =================
 
+## Install eZ Exceed
+
+* [Installation](https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/INSTALL.md)
+
 ## Site setup
 
 * [Setup the site's content](https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/developer/content-setup.md)
