@@ -20,8 +20,16 @@ Installation guide
     [DesignSettings]
     AdditionalSiteDesignList[]=ezexceed
     ```
+6. *Optional*: Ensure your pagelayout is rendering the toolbar:
+    
+    If you have custom pagelayouts you might need to do this to include the actual toolbar and kickstart Exceed:
 
-6. Clear cache and regenerate autoloads.
+    ```smarty
+    {def $current_node_id=$module_result.node_id}
+    {include uri="design:parts/website_toolbar.tpl"}
+    ```
+
+7. Clear cache and regenerate autoloads.
    php bin/php/ezpgenerateautoloads.php; php bin/php/ezcache.php --clear-all --purge
 
 If you are planning on using an IE-browser older than IE 9.0, you should be aware of that we have overriden page_head_script.tpl for this purpose.
@@ -64,10 +72,6 @@ eZTags
 ### Url for previewing of drafts user drafts
 In order to make it possible for anonymous users or not administrators to view a preview of a users draft, user must have access to eZExceed preview module.
 The eZExceed ini setting **[eZExceedPushNotification][SignKey]** must also be set in order to make it work
-
-### Set unique icons for your content classes
-
-Edit `icons.ini.append.php` inside the ezexceed extension folder to set icons to your content classes. We recommend that you use icons from the `/images/kp/` folder to keep the consistent design.
 
 ### Make the content edit tighter
 
