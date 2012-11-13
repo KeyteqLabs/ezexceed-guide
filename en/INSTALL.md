@@ -31,9 +31,12 @@ Dependencies
 * eZ Publish version **4.7** or higher.
   * 4.6 **might** work, but it is not a target
   * 5.x we are working on proper support for eZ Publish 5
-* eZ Publish extensions:
-  * ezjscore **1.3.0** or higher ( http://projects.ez.no/ezjscore )
-  * ezwebin **1.8.0** or higher ( https://github.com/ezsystems/ezwebin )
+* ezjscore **1.3.0** or higher ( http://projects.ez.no/ezjscore )
+* ezwebin **1.8.0** or higher ( https://github.com/ezsystems/ezwebin )
+
+    eZ Exceed overrides the `parts/website_toolbar.tpl` template in order to inject itself to a page.
+    Thus you should continue including the toolbar as you did with the eZ Publish website toolbar.
+
 * Apache version **1.3** or **2.x in `prefork`** mode
 * PHP version **5.3** or higher, 5.4 is recommended
 * Database server: Mysql 5 (UTF-8 is required)
