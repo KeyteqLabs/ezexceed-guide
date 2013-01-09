@@ -34,6 +34,17 @@ Installation guide
 
 If you are planning on using an IE-browser older than IE 9.0, you should be aware of that we have overriden page_head_script.tpl for this purpose.
 
+Special instructions for eZ Publish 5
+-------------------------------------
+
+eZ Publish 5 requires you to add the toolbar to your twig pagelayout file like this:
+
+    ```twig
+    {% ez_legacy_include "design:parts/website_toolbar.tpl" with {
+        'current_node_id': app.request.attributes.get('locationId')
+    } %}
+    ```
+
 Dependencies
 ------------
 * eZ Publish version **4.7** or higher.
