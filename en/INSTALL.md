@@ -39,11 +39,11 @@ Special instructions for eZ Publish 5
 
 eZ Publish 5 requires you to add the toolbar to your twig pagelayout file like this:
 
-    ```twig
-    {% ez_legacy_include "design:parts/website_toolbar.tpl" with {
-        'current_node_id': app.request.attributes.get('locationId')
-    } %}
-    ```
+```jinja
+{% ez_legacy_include "design:parts/website_toolbar.tpl" with {
+    'current_node_id': app.request.attributes.get('locationId')
+} %}
+```
 
 Dependencies
 ------------
