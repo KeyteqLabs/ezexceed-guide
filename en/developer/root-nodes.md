@@ -1,12 +1,24 @@
 Root nodes [eZExceedSiteMap]
 ========================
 
-eZ Exceed implements some custom settings for root-nodes.
+All examples are to be set in `ezeexceed.ini`
+You can override what root nodes are used in the Sitemap of eZ Exceed.
+For example you can set the global root node that is always used for the **Content** part:
 
-The sitemap will use the "rootNode"-setting when in global context.
+```ini
+[eZExceedSiteMap]
 
-When adding nodes to an object you may specify root-nodes for each contentclass individually.
+RootNode=2
+```
 
-Sitemap will then use the rootnode specified for the given contentclass.
+## When adding object to a Page
 
-The contentclass "user" defaults to the node with id 5. This is the default for new eZ-installations.
+This is the default behaviour:
+
+```ini
+[eZExceedSiteMap]
+
+ClassRoot[user]=5
+```
+
+But you can add other content classes default root nodes as you see fit.
