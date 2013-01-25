@@ -12,6 +12,8 @@ eZExceed.on('stack:push', function(view)
 
 # List of events
 
+## Anatomy
+
 * {system}:{verb}
 * {component}:{verb}
 
@@ -46,10 +48,8 @@ This is not a priority, but a look into what a complete implementation might off
 * finder:rootselect
 * finder:upload
 * finder:see
-
 * create:show
 * create:create
-
 * edit:publish
 * edit:revert
 * edit:location:add
@@ -57,7 +57,6 @@ This is not a priority, but a look into what a complete implementation might off
 * edit:activity:post
 * edit:activity:comment
 * edit:translation
-
 * find:search
 * find:filter
 * find:sort
@@ -66,23 +65,19 @@ This is not a priority, but a look into what a complete implementation might off
 * find:publish
 * find:delete
 * find:edit
-
 * publish:show
 * publish:publish
-
 * activity:show
 * activity:post
 * activity:comment
 * activity:tab
 * activity:like
 * activity:delete
-
 * preview:show
 * preview:timeline
 * preview:mirror
 * preview:preview
 * preview:device:remove
-
 * zones:editblock
 * zones:removeblock
 * zones:addblock
