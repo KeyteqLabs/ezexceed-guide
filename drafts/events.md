@@ -34,6 +34,22 @@ Arguments
 * **path** The current path string
 * **view** The view being popped
 
+### Example implementation
+
+What would ideally happen when an admin clicks edit for their home page:
+
+```js
+/**
+ * path as different things are done:
+ * Opens homepage = /edit
+ * Adds a new location to homepage = /edit/finder
+ */
+eZExceed.on('stack:push', function(path, view, options)
+{
+      FancyStats.push(path);
+})
+```
+
 ## Inner-component events
 
 This is not a priority, but a look into what a complete implementation might offer.
