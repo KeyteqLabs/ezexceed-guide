@@ -30,9 +30,6 @@ eZ Exceed support most common eZ Publish extensions, but some can create a few w
 
 #### ezie
 
-If you are using `ezie` you need to make sure you specify and load your jquery through ezjscore `ezjsc::jquery`
-If not, you will have two jquery scripts loaded into global scope and thus ezie overrides your jquery.
-
 In general we advise you to not use the `ezie` extension and instead prefer the `keymedia` extension / product for image handling.
 
 ## Site development
