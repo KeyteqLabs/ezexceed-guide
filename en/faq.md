@@ -1,6 +1,13 @@
 Frequently asked questions
 ==========================
 
+## I cant see the changes even though I've published
+
+1. Very often this is because a site is configured with two translation languages where one is the default used for editing,
+  and the other is the one actually displayed! Ensure you are editing the correct translation, and if both languages are not used,
+  make sure it is removed from the installation.
+2. If **#1** did not work, the issue is often cache blocks that are overly eager.
+
 ## My jquery plugins are gone / my jquery is overwritten
 
 This is due to how Exceed supports the `ezie` extension. Specify your jquery dependency through `ezjscore` and the
