@@ -31,4 +31,3 @@ Table of contents
 7. Disclaimers
     - Browser support
 8. Getting help / Troubleshooting
-
