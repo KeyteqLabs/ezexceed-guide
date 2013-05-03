@@ -1,9 +1,16 @@
 module.exports = function(grunt) {
     grunt.initConfig(
     {
-        pkg: grunt.file.readJSON('package.json')
+        pkg: grunt.file.readJSON('package.json'),
+
+        markdown: {
+            docs: {
+                files: 'src/*.md',
+                dest: 'docs/'
+            }
+        }
     });
     
-    grunt.loadNpmTasks('grunt-docco');
-    grunt.registerTask('default', ['grunt-docco']);
+    grunt.loadNpmTasks('grunt-markdown');
+    grunt.registerTask('default', ['markdown']);
 };
