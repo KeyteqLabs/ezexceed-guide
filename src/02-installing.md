@@ -3,7 +3,6 @@ Installing
 
 ## Common
 1. Ensure dependencies are met:
-
     - eZ Publish version **4.7** or higher
         - 4.6 *might* work, but it's not a target
         - We are working on proper support for eZ Publish 5
