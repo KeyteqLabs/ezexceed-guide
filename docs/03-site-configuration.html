@@ -1,0 +1,138 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <title>doc</title>
+    <style>
+      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
+      pre code {
+        display: block; padding: 0.5em;
+        color: #333;
+        background: #f8f8ff
+      }
+      pre .comment,
+      pre .template_comment,
+      pre .diff .header,
+      pre .javadoc {
+        color: #998;
+        font-style: italic
+      }
+      pre .keyword,
+      pre .css .rule .keyword,
+      pre .winutils,
+      pre .javascript .title,
+      pre .nginx .title,
+      pre .subst,
+      pre .request,
+      pre .status {
+        color: #333;
+        font-weight: bold
+      }
+      pre .number,
+      pre .hexcolor,
+      pre .ruby .constant {
+        color: #099;
+      }
+      pre .string,
+      pre .tag .value,
+      pre .phpdoc,
+      pre .tex .formula {
+        color: #d14
+      }
+      pre .title,
+      pre .id {
+        color: #900;
+        font-weight: bold
+      }
+      pre .javascript .title,
+      pre .lisp .title,
+      pre .clojure .title,
+      pre .subst {
+        font-weight: normal
+      }
+      pre .class .title,
+      pre .haskell .type,
+      pre .vhdl .literal,
+      pre .tex .command {
+        color: #458;
+        font-weight: bold
+      }
+      pre .tag,
+      pre .tag .title,
+      pre .rules .property,
+      pre .django .tag .keyword {
+        color: #000080;
+        font-weight: normal
+      }
+      pre .attribute,
+      pre .variable,
+      pre .lisp .body {
+        color: #008080
+      }
+      pre .regexp {
+        color: #009926
+      }
+      pre .class {
+        color: #458;
+        font-weight: bold
+      }
+      pre .symbol,
+      pre .ruby .symbol .string,
+      pre .lisp .keyword,
+      pre .tex .special,
+      pre .prompt {
+        color: #990073
+      }
+      pre .built_in,
+      pre .lisp .title,
+      pre .clojure .built_in {
+        color: #0086b3
+      }
+      pre .preprocessor,
+      pre .pi,
+      pre .doctype,
+      pre .shebang,
+      pre .cdata {
+        color: #999;
+        font-weight: bold
+      }
+      pre .deletion {
+        background: #fdd
+      }
+      pre .addition {
+        background: #dfd
+      }
+      pre .diff .change {
+        background: #0086b3
+      }
+      pre .chunk {
+        color: #aaa
+      }
+    </style>
+  </head>
+  <body>  
+    <h1>Site configuration</h1>
+<h2>Content classes</h2>
+<h3>Content class icons</h3>
+<h3>Field definition setup</h3>
+<p>In order to make the Content edit layout tighter and more user friendly, consider editing <code>contenteditor.ini.append.php</code> inside the eZ Exceed extension to make many or most of the FieldDefinitions use only half of the available width and thus render side by side other less space consuming FieldDefinitions:</p>
+<pre><code>```ini
+[ByType]
+fieldname=half
+
+# - or -
+
+[ByClassIdentifier]
+contentclass[fieldname]=half
+```</code></pre>
+<h2>URL for previewing of user drafts</h2>
+<p>In order to make it possible for anonymous users or non-administrators to preview a user&#39;s draft, users must have access to eZ Exceed&#39;s preview module. The following INI setting must also be set in order to make it work:</p>
+<pre><code>```ini
+[eZExceedPushNotification]
+ID=&lt;youruniqueid&gt;
+SignKey=&lt;youruniquesignkey&gt;
+```</code></pre>
+<p>Contact Keyteq to get your signkey.</p>
+<h1>TODO: Merge the PUSH info from <a href="https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/INSTALL.md">https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/INSTALL.md</a> here (rewrite previous block)</h1>
+
+  </body>
+</html>

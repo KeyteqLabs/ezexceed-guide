@@ -11,9 +11,9 @@ Table of contents
     - eZ 5
 3. Site configuration
     - Content classes
-        - Attribute setup
+        - Content class icons
+        - Field definition setup
     - Push notifications
-    - Icons
 4. Extensibility
     - Building a datatype for eZ Exceed
     - APIs
