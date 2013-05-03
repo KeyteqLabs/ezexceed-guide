@@ -6,16 +6,30 @@ module.exports = function(grunt) {
         markdown: {
             docs: {
                 files: 'src/*.md',
-                dest: 'docs/'
+                dest: 'docs/',
+                template: 'template/partial.html'
             }
         },
-
 
         connect: {
             docs: {
                 options: {
                     port: 9092,
-                    base: 'docs/'
+                    base: './',
+                    keepalive: true
+                }
+            }
+        },
+
+        htmlbuild: {
+            dist: {
+                src: 'template/index.html',
+                dest: '',
+                options: {
+                    beautify: true,
+                    sections: {
+                        views: 'docs/*.html'
+                    }
                 }
             }
         },
@@ -23,7 +37,7 @@ module.exports = function(grunt) {
         watch: {
             docs: {
                 files: 'src/*',
-                tasks: ['markdown']
+                tasks: ['markdown', 'htmlbuild']
             }
         }
     });
@@ -31,5 +45,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-markdown');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-html-build');
+
     grunt.registerTask('default', ['markdown']);
 };
