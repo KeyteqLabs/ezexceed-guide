@@ -40,10 +40,10 @@ module.exports = function(grunt) {
                         views: 'docs/[0-9]*-*.html'
                     },
                     styles: {
-                        dist: 'assets/*.css'
+                        dist: 'assets/css/*.css'
                     },
                     scripts: {
-                        dist: ['assets/prism.js', 'assets/*.js']
+                        dist: ['assets/js/prism.js', 'assets/js/*.js']
                     }
                 }
             }
