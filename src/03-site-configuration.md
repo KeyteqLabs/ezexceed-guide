@@ -24,6 +24,8 @@ ClassMap[cookbook]=Book.png
 ClassMap[pin]=Pushpin.png
 ```
 
+[Full overview of the available icons](03/01-icons-available.md).
+
 ## FieldDefinition setup
 
 ### Naming
