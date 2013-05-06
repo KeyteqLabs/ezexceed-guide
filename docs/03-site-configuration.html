@@ -1,7 +1,14 @@
 <h1>Site configuration</h1>
-<h2><a name="site-configuration-content-classes"></a> Content classes</h2>
-<h3><a name="site-configuration-content-class-icons"></a> Content class icons</h3>
-<h3><a name="site-configuration-field-setup"></a> Field definition setup</h3>
+<h2><a name="site-configuration-content-types"></a> ContentTypes</h2>
+<h3>Initial cleaning</h3>
+<p>Keep only the ContentTypes you need for your site. Either move the ones you don&#39;t use out of the ContentTypeGroup <em>Content</em>, or delete them altogether. This prevents the user interface from appearing bloated to the editor and makes editing faster by presenting only a few but real choices.</p>
+<h3>ContentType icons</h3>
+<p>In order to make it even easier to identify the different ContentTypes and tell them apart, assign unique icons to them. Create or edit <code>icon.ini</code>:</p>
+<pre><code class="lang-ini">[ClassIcons]
+ClassMap[recipe]=Food.png
+ClassMap[cookbook]=Book.png
+ClassMap[pin]=Pushpin.png</code></pre>
+<h3>FieldDefinition setup</h3>
 <p>In order to make the Content edit layout tighter and more user friendly, consider editing <code>contenteditor.ini.append.php</code> inside the eZ Exceed extension to make many or most of the FieldDefinitions use only half of the available width and thus render side by side other less space consuming FieldDefinitions:</p>
 <pre><code class="lang-ini">[ByType]
 fieldname=half
@@ -10,26 +17,8 @@ fieldname=half
 
 [ByClassIdentifier]
 contentclass[fieldname]=half</code></pre>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<h2>Shareable preview URLs</h2>
-<h1>In order to make it possible for anyone to preview a user&#39;s draft, the desired groups of users must be granted access to eZ Exceed&#39;s preview module. The following INI setting must also be set in order to make it work:</h1>
-<h2><a name="site-configuration-preview-url"></a> URL for previewing of user drafts</h2>
-<p>In order to make it possible for anonymous users or non-administrators to preview a user&#39;s draft, users must have access to eZ Exceed&#39;s preview module. The following INI setting must also be set in order to make it work:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>Added anchors to headings</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<h2><a name="site-configuration-preview-url"></a> Shareable preview URLs</h2>
+<p>In order to make it possible for anyone to preview a user&#39;s draft, the desired groups of users must be granted access to eZ Exceed&#39;s preview module. The following INI setting must also be set in order to make it work:</p>
 <pre><code class="lang-ini">[eZExceedPushNotification]
 SignKey=&lt;yoursignkey&gt;</code></pre>
 <p><a href="mailto:support@keyteq.no" title="Send email to support@keyteq.no">Contact Keyteq</a> to obtain your SignKey.</p>
