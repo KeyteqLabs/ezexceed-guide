@@ -58,7 +58,7 @@ Group FieldDefinitions (e.g meta information) enabling the editor to open or clo
 
 ### Typeface
 
-Change the default typeface inside the text editor to the same typeface used in the site's design. To do this, override content.css inside the TinyMCE iframe. This creates a better connection between the site being edited and the edit area.
+Change the default typeface inside the text editor to the same typeface used in the site's design. To do this, override `content.css` inside the TinyMCE iframe. This creates a better connection between the site being edited and the edit area.
 
 ### eZ Exceed improved link
 

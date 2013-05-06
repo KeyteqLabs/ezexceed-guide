@@ -104,10 +104,8 @@
  git clone git@github.com:KeyteqLabs/ezexceed.git
  cd ezexceed</code></pre>
 
+            <p>eZ Exceed is currently only available as an <em>extension</em>. If you are running on eZ Publish 5, you have to put it in legacy mode and install it in your <code>/ezpublish_legacy/extension/</code> folder.</p>
         </li>
-    </ol>
-    <p>eZ Exceed is currently only available as an <em>extension</em>. If you are running on eZ Publish 5, you have to put it in legacy mode and install it in your <code>/ezpublish_legacy/extension/</code> folder.</p>
-    <ol>
         <li>
             <p>Run the included SQL script to add eZ Exceed specifics to your database</p>
 <pre><code> mysql -h host -u user -D my-database-name -p &lt; sql/mysql/schema.sql</code></pre>
@@ -192,7 +190,8 @@ contentclass[fieldname]=half</code></pre>
     
 <h3>Typeface</h3>
 
-    <p>Change the default typeface inside the text editor to the same typeface used in the site&#39;s design. To do this, override content.css inside the TinyMCE iframe. This creates a better connection between the site being edited and the edit area.</p>
+    <p>Change the default typeface inside the text editor to the same typeface used in the site&#39;s design. To do this, override <code>content.css</code> inside the TinyMCE iframe. This creates a better connection between the site being edited and the edit
+        area.</p>
     
 <h3>eZ Exceed improved link</h3>
 
@@ -307,7 +306,7 @@ ID=&lt;yourid&gt;</code></pre>
     
 <h3>eZ Form token</h3>
 
-    <p>If you&#39;re running eZ Publish 5, Deactivate your eZ Form token legacy extension</p>
+    <p>If you&#39;re running eZ Publish 5, Deactivate your eZ Form token legacy extension.</p>
     
 <h1>Getting help / Troubleshooting</h1>
 
