@@ -12,10 +12,17 @@ Make sure that Javascript support is enabled in your web browser.
 
 Note: IE 8 & 9 are only supported functionally; issues that only cause visual artifacts will not be prioritized unless they're easy to fix and does not limit the capabilities of modern browsers.
 
+---
+
+Keeping your install outside of root (`/`) can cause errors inside the eZ Online Editor (`ezoe`).
+
 ## <a name="disclaimers-extensions"></a> Extensions
 
 ### eZ Tags
 You do not have to disable the extension, but we do not support editing of the eZ Tags Field yet.
 
 ### eZ Form token
-If you're running eZ Publish 5, Deactivate your eZ Form token legacy extension
+If you're running eZ Publish 5, Deactivate your eZ Form token legacy extension.
+
+### eZDemo design
+If the eZDemo design has higher priority than the eZExceed design it will overwrite, and break, the datetime attribute type.

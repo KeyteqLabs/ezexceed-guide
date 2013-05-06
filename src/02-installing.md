@@ -20,7 +20,7 @@ Installing the eZ Exceed extension
     cd ezexceed
     ```
 
-eZ Exceed is currently only available as an *extension*. If you are running on eZ Publish 5, you have to put it in legacy mode and install it in your `/ezpublish_legacy/extension/` folder.
+    eZ Exceed is currently only available as an *extension*. If you are running on eZ Publish 5, you have to put it in legacy mode and install it in your `/ezpublish_legacy/extension/` folder.
 
 3. Run the included SQL script to add eZ Exceed specifics to your database
     
