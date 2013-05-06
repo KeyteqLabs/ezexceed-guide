@@ -43,7 +43,17 @@ module.exports = function(grunt) {
                 files: 'src/*',
                 tasks: ['default']
             }
+        },
+
+        toc: {
+            docs: {
+                'docs/toc.html': 'docs/[0-9]*-*'
+            }
         }
+    });
+
+    grunt.task.registerMultiTask('toc', 'Generate TOC', function() {
+        grunt.log.writeln(this.target + ':' + this.data);
     });
     
     grunt.loadNpmTasks('grunt-markdown');
