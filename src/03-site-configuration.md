@@ -19,16 +19,24 @@ fieldname=half
 contentclass[fieldname]=half
 ```
 
-
-## URL for previewing of user drafts
-In order to make it possible for anonymous users or non-administrators to preview a user's draft, users must have access to eZ Exceed's preview module. The following INI setting must also be set in order to make it work:
+## Shareable preview URLs
+In order to make it possible for anyone to preview a user's draft, the desired groups of users must be granted access to eZ Exceed's preview module. The following INI setting must also be set in order to make it work:
 
 ```ini
 [eZExceedPushNotification]
-ID=<youruniqueid>
-SignKey=<youruniquesignkey>
+SignKey=<yoursignkey>
 ```
 
-Contact Keyteq to get your signkey.
+[mailto:support@keyteq.no](Contact Keyteq "Send email to support@keyteq.no") to obtain your SignKey.
 
-### TODO: Merge the PUSH info from https://github.com/KeyteqLabs/ezexceed-guide/blob/master/en/INSTALL.md here (rewrite previous block)
+## Push notifications for [the eZ Exceed iOS app](https://itunes.apple.com/app/id567405821 "Exceed at iTunes App Store")
+
+To be able to send Push Notifications to the users' iOS devices, you need both an ID and a SignKey. [mailto:support@keyteq.no](Contact Keyteq "Send email to support@keyteq.no") to obtain this info.
+
+Create or edit `ezexceed.ini` in the level that suit your needs best – override or siteaccess. Add the following block:
+
+```ini
+[eZExceedPushNotification]
+SignKey=<yoursignkey>
+ID=<yourid>
+```
