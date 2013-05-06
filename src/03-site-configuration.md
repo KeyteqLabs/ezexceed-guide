@@ -3,13 +3,19 @@ Site configuration
 
 ## <a name="site-configuration-content-types"></a> ContentTypes
 
-### Initial cleaning
+### Clean up
 
-Keep only the ContentTypes you need for your site. Either move the ones you don't use out of the ContentTypeGroup *Content*, or delete them altogether. This prevents the user interface from appearing bloated to the editor and makes editing faster by presenting only a few but real choices.
+Only keep the ContentTypes relevant for your site. Either move the ones you don't use out of the ContentTypeGroup *Content*, or delete them altogether. Less complexity gives better usability and thus faster editing.
+
+### Separate technical and editable ContentTypes
+
+Put content you want the editor to be able to edit inside the ContentTypeGroup *Content* – it will then get a more prominent place in the design. Put ContentTypes that are used in a technical manner, for settings or otherwise, inside a ContentTypeGroup of its own to hide it. This makes for a clearer interface for the editor.
 
 ### ContentType icons
 
-In order to make it even easier to identify the different ContentTypes and tell them apart, assign unique icons to them. Create or edit `icon.ini`:
+In order to make it even easier to identify the different ContentTypes and tell them apart, assign unique icons to them. Unique icons for each ContentType makes for a much clearer interface, and editors will be more efficient if you set an icon, so please do.
+
+Create or edit `icon.ini`:
 
 ```ini
 [ClassIcons]
@@ -18,7 +24,13 @@ ClassMap[cookbook]=Book.png
 ClassMap[pin]=Pushpin.png
 ```
 
-### FieldDefinition setup
+## FieldDefinition setup
+
+### Naming
+
+Take care in naming FieldDefinition, descriptions and states. Make it crystal clear and easy to understand. This makes up a good part of the experience – make it great.
+
+### Righty tighty
 
 In order to make the Content edit layout tighter and more user friendly, consider editing `contenteditor.ini.append.php` inside the eZ Exceed extension to make many or most of the FieldDefinitions use only half of the available width and thus render side by side other less space consuming FieldDefinitions:
 
@@ -31,6 +43,18 @@ fieldname=half
 [ByClassIdentifier]
 contentclass[fieldname]=half
 ```
+
+### Order of FieldDefinitions
+
+Make the attributes order follow the order it displays on the page. E.g a footer text FieldDefinition should reside at the bottom of the edit area, if it sits at the bottom of the page. This is called 'cognitive mapping' and makes it easy for the editor to relate to the Content she's editing.
+
+### Make use of FieldDefinitionGroups
+
+Group FieldDefinitions (e.g meta information) enabling the editor to open or close a group of FieldDefinitions. Another example for grouping is global attributes, e.g footer information, or other static information. You can create FieldDefinitionGroups in `content.ini`.
+
+### Text editor typeface
+
+Change the default typeface inside the text editor to the same typeface used in the site's design. To do this, override content.css inside the TinyMCE iframe. This creates a better connection between the site being edited and the edit area.
 
 ## <a name="site-configuration-preview-url"></a> Shareable preview URLs
 In order to make it possible for anyone to preview a user's draft, the desired groups of users must be granted access to eZ Exceed's preview module. The following INI setting must also be set in order to make it work:
