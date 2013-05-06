@@ -1,7 +1,7 @@
 Disclaimers
 ===========
 
-## <a name="disclaimers-supported-web-browsers"></a> Supported web browsers
+## <a name="disclaimers-supported-web-browsers" href="#disclaimers-supported-web-browsers"></a> Supported web browsers
 
 - Latest Google Chrome
 - Latest Mozilla Firefox
@@ -16,7 +16,7 @@ Note: IE 8 & 9 are only supported functionally; issues that only cause visual ar
 
 Keeping your install outside of root (`/`) can cause errors inside the eZ Online Editor (`ezoe`).
 
-## <a name="disclaimers-extensions"></a> Extensions
+## <a name="disclaimers-extensions" href="#disclaimers-extensions"></a> Extensions
 
 ### eZ Tags
 You do not have to disable the extension, but we do not support editing of the eZ Tags Field yet.
