@@ -14,7 +14,7 @@ Installing the eZ Exceed extension
 
 2. Install extension into /my/ez/extension/ezexceed
 
-    ```
+    ```bash
     cd /my/ez/extension
     git clone git@github.com:KeyteqLabs/ezexceed.git
     cd ezexceed

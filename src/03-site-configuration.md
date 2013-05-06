@@ -40,7 +40,7 @@ In order to make the Content edit layout tighter and more user friendly, conside
 [ByType]
 fieldid=half
 
-# - or -
+# or
 
 [ByClassIdentifier]
 contentclass[fieldname]=half
