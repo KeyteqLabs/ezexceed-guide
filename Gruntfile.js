@@ -1,3 +1,8 @@
+var _ = require('underscore');
+var cheerio = require('cheerio');
+var eyes = require('eyes');
+var S = require('string');
+
 module.exports = function(grunt) {
     grunt.initConfig(
     {
@@ -46,14 +51,27 @@ module.exports = function(grunt) {
         },
 
         toc: {
-            docs: {
-                'docs/toc.html': 'docs/[0-9]*-*'
-            }
+            'docs/toc.html': 'docs/[0-9]*-*'
         }
     });
 
     grunt.task.registerMultiTask('toc', 'Generate TOC', function() {
-        grunt.log.writeln(this.target + ':' + this.data);
+        var files = grunt.file.expand(this.data);
+        var content = _.reduce(files, function(memo,file) {
+            var $ = cheerio.load(grunt.file.read(file));
+            var nodes = $('a[name]');
+            var title = file.trim().replace(/docs\/[0-9]*-(.*).html/, '$1');
+            var html = '<h2>' + S(title).capitalize().s + '</h2>';
+            html += '<ul>';
+            html += nodes.map(function(i, elem) {
+                var node = $(this);
+                var title = node.parent().text().trim();
+                return '<li><a href="#' + node.attr('name') + '">' + title + '</a></li>';
+            });
+            html += '</ul>';
+            return memo + html;
+        }, '');
+        grunt.file.write(this.target, content);
     });
     
     grunt.loadNpmTasks('grunt-markdown');
@@ -61,5 +79,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-html-build');
 
-    grunt.registerTask('default', ['markdown', 'htmlbuild']);
+    grunt.registerTask('default', ['markdown', 'toc', 'htmlbuild']);
 };
