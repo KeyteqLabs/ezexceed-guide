@@ -38,6 +38,12 @@ module.exports = function(grunt) {
                     sections: {
                         toc: 'docs/toc.html',
                         views: 'docs/[0-9]*-*.html'
+                    },
+                    styles: {
+                        dist: 'assets/*.css'
+                    },
+                    scripts: {
+                        dist: 'assets/*.js'
                     }
                 }
             }
