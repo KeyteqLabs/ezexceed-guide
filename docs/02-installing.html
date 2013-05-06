@@ -22,7 +22,7 @@
 <p> eZ Exceed is currently only available as an <em>extension</em>. If you are running on eZ Publish 5, you have to put it in legacy mode and install it in your <code>/ezpublish_legacy/extension/</code> folder.</p>
 </li>
 <li><p>Run the included SQL script to add eZ Exceed specifics to your database</p>
-<p> <code>mysql -h host -u user -D my-database-name -p &lt; sql/mysql/schema.sql</code></p>
+<pre><code class="lang-bash"> mysql -h host -u user -D my-database-name -p &lt; sql/mysql/schema.sql</code></pre>
 </li>
 <li><p>Activate the eZ Exceed extension in for every siteaccess where you want eZ Exceed enabled. In <code>site.ini</code>:</p>
 <pre><code class="lang-ini"> [ExtensionSettings]
