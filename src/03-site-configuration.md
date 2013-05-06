@@ -30,7 +30,7 @@ ClassMap[pin]=Pushpin.png
 
 ### Naming
 
-Take care in naming FieldDefinition, descriptions and states. Make it crystal clear and easy to understand. This makes up a good part of the experience – make it great.
+Take care in naming FieldDefinitions, descriptions and states. Make it crystal clear and easy to understand. This makes up a good part of the experience – make it great.
 
 ### Righty tighty
 
