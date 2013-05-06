@@ -8,7 +8,7 @@ steps. This is even more true the more complex the datatype is.
 
 The first thing you must do is making sure your datatype is wrapped in a container used for bootstrapping the client side interactions.
 
-```smarty+html
+```html+smarty
 <div class="attribute-base" data-attribute-base="{$attribute_base}" data-id="{$attribute.id}"
 	data-handler='MyNamespace.views.MyHandler'>
 <!-- My attributes real markup -->
