@@ -24,7 +24,7 @@ Our core principles are
 
 The main interaction pattern in eZ Exceed is the stack:
 
-<img src="assets/gfx/01-stack.png">
+<img src="assets/img/01-stack.png">
 
 The stack allows editors to work with layered content without leaving the initial context.
 As the example screenshot shows the stack has a context path with `Sitemap -> Object edit -> Add location` and
