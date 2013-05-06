@@ -1,10 +1,10 @@
 Contributing
 ============
 
-## Submitting an issue
+## <a name="contributing-submitting-an-issue"></a> Submitting an issue
 
-## Translations
+## <a name="contributing-translations"></a> Translations
 
-## Patches
+## <a name="contributing-patches"></a> Patches
 
-## Technologies / libraries?
+## <a name="contributing-technologies"></a> Technologies / libraries?

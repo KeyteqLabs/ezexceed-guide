@@ -1,8 +1,8 @@
 Extensibility
 =============
 
-## Building a datatype for eZ Exceed
+## <a name="extensibility-building-a-datatype"></a> Building a datatype for eZ Exceed
 
-## APIs
+## <a name="extensibility-apis"></a> APIs
 
-## Creating an app
+## <a name="extensibility-creating-an-app"></a> Creating an app

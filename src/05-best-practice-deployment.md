@@ -1,10 +1,10 @@
 Best practice deployment
 ========================
 
-## SQL
+## <a name="deployment-sql"></a> SQL
 
-## Other extensions
+## <a name="deployment-extensions"></a> Other extensions
 
-## Server side support
+## <a name="deployment-server-side"></a> Server side support
 
-## Security
+## <a name="deployment-security"></a> Security

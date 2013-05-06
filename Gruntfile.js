@@ -7,7 +7,10 @@ module.exports = function(grunt) {
             docs: {
                 files: 'src/*.md',
                 dest: 'docs/',
-                template: 'template/partial.html'
+                template: 'template/partial.html',
+                options: {
+                    gfm: true
+                }
             }
         },
 
@@ -28,7 +31,8 @@ module.exports = function(grunt) {
                 options: {
                     beautify: true,
                     sections: {
-                        views: 'docs/*.html'
+                        toc: 'docs/toc.html',
+                        views: 'docs/[0-9]*-*.html'
                     }
                 }
             }
@@ -37,7 +41,7 @@ module.exports = function(grunt) {
         watch: {
             docs: {
                 files: 'src/*',
-                tasks: ['markdown', 'htmlbuild']
+                tasks: ['default']
             }
         }
     });
@@ -47,5 +51,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-html-build');
 
-    grunt.registerTask('default', ['markdown']);
+    grunt.registerTask('default', ['markdown', 'htmlbuild']);
 };

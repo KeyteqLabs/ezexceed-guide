@@ -1,7 +1,7 @@
 Installing the eZ Exceed extension
 ==================================
 
-## Common
+## <a name="common"></a> Common
 1. Ensure dependencies are met:
     - eZ Publish version **4.7** or higher
         - 4.6 *might* work, but it's not a target

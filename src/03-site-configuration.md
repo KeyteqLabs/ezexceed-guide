@@ -1,7 +1,7 @@
 Site configuration
 ==================
 
-## ContentTyps
+## <a name="site-configuration-content-types"></a> ContentTypes
 
 ### Initial cleaning
 
@@ -32,7 +32,7 @@ fieldname=half
 contentclass[fieldname]=half
 ```
 
-## Shareable preview URLs
+## <a name="site-configuration-preview-url"></a> Shareable preview URLs
 In order to make it possible for anyone to preview a user's draft, the desired groups of users must be granted access to eZ Exceed's preview module. The following INI setting must also be set in order to make it work:
 
 ```ini
