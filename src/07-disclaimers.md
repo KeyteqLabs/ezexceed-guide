@@ -14,8 +14,8 @@ Note: IE 8 & 9 are only supported functionally; issues that only cause visual ar
 
 ## Extensions
 
-### eZTags
-You do not have to disable the extension, but we do not support editing of the eZTag-type yet.
+### eZ Tags
+You do not have to disable the extension, but we do not support editing of the eZ Tags Field yet.
 
 ### eZ Form token
 If you're running eZ Publish 5, Deactivate your eZ Form token legacy extension
