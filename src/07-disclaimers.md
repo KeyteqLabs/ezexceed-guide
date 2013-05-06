@@ -24,5 +24,5 @@ You do not have to disable the extension, but we do not support editing of the e
 ### eZ Form token
 If you're running eZ Publish 5, Deactivate your eZ Form token legacy extension.
 
-### eZDemo design
-If the eZDemo design has higher priority than the eZExceed design it will overwrite, and break, the datetime attribute type.
+### eZ Demo design
+If the eZ Demo design has higher priority than the eZExceed design it will overwrite, and break, the datetime attribute type.
