@@ -54,9 +54,23 @@ Make the attributes order follow the order it displays on the page. E.g a footer
 
 Group FieldDefinitions (e.g meta information) enabling the editor to open or close a group of FieldDefinitions. Another example for grouping is global attributes, e.g footer information, or other static information. You can create FieldDefinitionGroups in `content.ini`.
 
-### Text editor typeface
+## Text editor
+
+### Typeface
 
 Change the default typeface inside the text editor to the same typeface used in the site's design. To do this, override content.css inside the TinyMCE iframe. This creates a better connection between the site being edited and the edit area.
+
+### eZ Exceed improved link
+
+eZ Exceed provides a better way to link to *Locations* – not only *Contents*. This is an editor plugin, and needs to be activated in the override settings, in `ezoe.ini`:
+
+```ini
+[EditorSettings]
+Plugins[]=ezexceedlink
+
+[EditorLayout]
+Buttons[]=ezexceedlink
+```
 
 ## <a name="site-configuration-preview-url"></a> Shareable preview URLs
 In order to make it possible for anyone to preview a user's draft, the desired groups of users must be granted access to eZ Exceed's preview module. The following INI setting must also be set in order to make it work:
