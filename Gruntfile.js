@@ -67,7 +67,7 @@ module.exports = function(grunt) {
                 var node = $(this);
                 var title = node.parent().text().trim();
                 return '<li><a href="#' + node.attr('name') + '">' + title + '</a></li>';
-            });
+            }).join('');
             html += '</ul>';
             return memo + html;
         }, '');
