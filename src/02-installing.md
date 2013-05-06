@@ -1,7 +1,7 @@
 Installing the eZ Exceed extension
 ==================================
 
-## <a name="installing-common" href="#installing-common"></a> Common
+## <a id="installing-common" href="#installing-common"></a> Common
 1. Ensure dependencies are met:
     - eZ Publish version **4.7** or higher
         - 4.6 *might* work, but it's not a target
@@ -24,9 +24,7 @@ Installing the eZ Exceed extension
 
 3. Run the included SQL script to add eZ Exceed specifics to your database
     
-    ```
-    mysql -h host -u user -D my-database-name -p < sql/mysql/schema.sql
-    ```
+    `mysql -h host -u user -D my-database-name -p < sql/mysql/schema.sql`
 
 4. Activate the eZ Exceed extension in for every siteaccess where you want eZ Exceed enabled. In `site.ini`:
 

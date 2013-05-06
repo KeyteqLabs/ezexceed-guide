@@ -1,7 +1,7 @@
 Site configuration
 ==================
 
-## <a name="site-configuration-content-types" href="#site-configuration-content-types"></a> ContentTypes
+## <a id="site-configuration-content-types" href="#site-configuration-content-types"></a> ContentTypes
 
 ### Clean up
 
@@ -26,7 +26,7 @@ ClassMap[pin]=Pushpin.png
 
 [Full overview of the available icons](03/01-icons-available.md).
 
-## <a name="site-configuration-field-definition-setup" href="#site-configuration-field-definition-setup"></a> FieldDefinition setup
+## <a id="site-configuration-field-definition-setup" href="#site-configuration-field-definition-setup"></a> FieldDefinition setup
 
 ### Naming
 
@@ -38,7 +38,7 @@ In order to make the Content edit layout tighter and more user friendly, conside
 
 ```ini
 [ByType]
-fieldname=half
+fieldid=half
 
 # - or -
 
@@ -54,7 +54,7 @@ Make the attributes order follow the order it displays on the page. E.g a footer
 
 Group FieldDefinitions (e.g meta information) enabling the editor to open or close a group of FieldDefinitions. Another example for grouping is global attributes, e.g footer information, or other static information. You can create FieldDefinitionGroups in `content.ini`.
 
-## <a name="site-configuration-text-editor" href="#site-configuration-text-editor"></a> Text editor
+## <a id="site-configuration-text-editor" href="#site-configuration-text-editor"></a> Text editor
 
 ### Typeface
 
@@ -72,7 +72,7 @@ Plugins[]=ezexceedlink
 Buttons[]=ezexceedlink
 ```
 
-## <a name="site-configuration-preview-url" href="#site-configuration-preview-url"></a> Shareable preview URLs
+## <a id="site-configuration-preview-url" href="#site-configuration-preview-url"></a> Shareable preview URLs
 In order to make it possible for anyone to preview a user's draft, the desired groups of users must be granted access to eZ Exceed's preview module. The following INI setting must also be set in order to make it work:
 
 ```ini
@@ -82,7 +82,7 @@ SignKey=<yoursignkey>
 
 [Contact Keyteq](mailto:support@keyteq.no "Send email to support@keyteq.no") to obtain your SignKey.
 
-## <a name="site-configuration-push-notifications" href="#site-configuration-push-notifications"></a> Push notifications for [the eZ Exceed iOS app](https://itunes.apple.com/app/id567405821 "Exceed at iTunes App Store")
+## <a id="site-configuration-push-notifications" href="#site-configuration-push-notifications"></a> Push notifications for [the eZ Exceed iOS app](https://itunes.apple.com/app/id567405821 "Exceed at iTunes App Store")
 
 To be able to send Push Notifications to the users' iOS devices, you need both an ID and a SignKey. [Contact Keyteq](mailto:support@keyteq.no "Send email to support@keyteq.no") to obtain this info.
 

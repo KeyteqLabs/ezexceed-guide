@@ -1,5 +1,5 @@
 <h1>Site configuration</h1>
-<h2><a name="site-configuration-content-types" href="#site-configuration-content-types"></a> ContentTypes</h2>
+<h2><a id="site-configuration-content-types" href="#site-configuration-content-types"></a> ContentTypes</h2>
 <h3>Clean up</h3>
 <p>Only keep the ContentTypes relevant for your site. Either move the ones you don&#39;t use out of the ContentTypeGroup <em>Content</em>, or delete them altogether. Less complexity gives better usability and thus faster editing.</p>
 <h3>Separate technical and editable ContentTypes</h3>
@@ -12,13 +12,13 @@ ClassMap[recipe]=Food.png
 ClassMap[cookbook]=Book.png
 ClassMap[pin]=Pushpin.png</code></pre>
 <p><a href="03/01-icons-available.md">Full overview of the available icons</a>.</p>
-<h2><a name="site-configuration-field-definition-setup" href="#site-configuration-field-definition-setup"></a> FieldDefinition setup</h2>
+<h2><a id="site-configuration-field-definition-setup" href="#site-configuration-field-definition-setup"></a> FieldDefinition setup</h2>
 <h3>Naming</h3>
 <p>Take care in naming FieldDefinition, descriptions and states. Make it crystal clear and easy to understand. This makes up a good part of the experience – make it great.</p>
 <h3>Righty tighty</h3>
 <p>In order to make the Content edit layout tighter and more user friendly, consider editing <code>contenteditor.ini.append.php</code> inside the eZ Exceed extension to make many or most of the FieldDefinitions use only half of the available width and thus render side by side other less space consuming FieldDefinitions:</p>
 <pre><code class="lang-ini">[ByType]
-fieldname=half
+fieldid=half
 
 # - or -
 
@@ -28,7 +28,7 @@ contentclass[fieldname]=half</code></pre>
 <p>Make the attributes order follow the order it displays on the page. E.g a footer text FieldDefinition should reside at the bottom of the edit area, if it sits at the bottom of the page. This is called &#39;cognitive mapping&#39; and makes it easy for the editor to relate to the Content she&#39;s editing.</p>
 <h3>Make use of FieldDefinitionGroups</h3>
 <p>Group FieldDefinitions (e.g meta information) enabling the editor to open or close a group of FieldDefinitions. Another example for grouping is global attributes, e.g footer information, or other static information. You can create FieldDefinitionGroups in <code>content.ini</code>.</p>
-<h2><a name="site-configuration-text-editor" href="#site-configuration-text-editor"></a> Text editor</h2>
+<h2><a id="site-configuration-text-editor" href="#site-configuration-text-editor"></a> Text editor</h2>
 <h3>Typeface</h3>
 <p>Change the default typeface inside the text editor to the same typeface used in the site&#39;s design. To do this, override <code>content.css</code> inside the TinyMCE iframe. This creates a better connection between the site being edited and the edit area.</p>
 <h3>eZ Exceed improved link</h3>
@@ -38,12 +38,12 @@ Plugins[]=ezexceedlink
 
 [EditorLayout]
 Buttons[]=ezexceedlink</code></pre>
-<h2><a name="site-configuration-preview-url" href="#site-configuration-preview-url"></a> Shareable preview URLs</h2>
+<h2><a id="site-configuration-preview-url" href="#site-configuration-preview-url"></a> Shareable preview URLs</h2>
 <p>In order to make it possible for anyone to preview a user&#39;s draft, the desired groups of users must be granted access to eZ Exceed&#39;s preview module. The following INI setting must also be set in order to make it work:</p>
 <pre><code class="lang-ini">[eZExceedPushNotification]
 SignKey=&lt;yoursignkey&gt;</code></pre>
 <p><a href="mailto:support@keyteq.no" title="Send email to support@keyteq.no">Contact Keyteq</a> to obtain your SignKey.</p>
-<h2><a name="site-configuration-push-notifications" href="#site-configuration-push-notifications"></a> Push notifications for <a href="https://itunes.apple.com/app/id567405821" title="Exceed at iTunes App Store">the eZ Exceed iOS app</a></h2>
+<h2><a id="site-configuration-push-notifications" href="#site-configuration-push-notifications"></a> Push notifications for <a href="https://itunes.apple.com/app/id567405821" title="Exceed at iTunes App Store">the eZ Exceed iOS app</a></h2>
 <p>To be able to send Push Notifications to the users&#39; iOS devices, you need both an ID and a SignKey. <a href="mailto:support@keyteq.no" title="Send email to support@keyteq.no">Contact Keyteq</a> to obtain this info.</p>
 <p>Create or edit <code>ezexceed.ini</code> in the level that suit your needs best – override or siteaccess. Add the following block:</p>
 <pre><code class="lang-ini">[eZExceedPushNotification]

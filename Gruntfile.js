@@ -65,14 +65,14 @@ module.exports = function(grunt) {
         var files = grunt.file.expand(this.data);
         var content = _.reduce(files, function(memo,file) {
             var $ = cheerio.load(grunt.file.read(file));
-            var nodes = $('a[name]');
+            var nodes = $('a[id]');
             var title = file.trim().replace(/docs\/[0-9]*-(.*).html/, '$1');
             var html = '<h2>' + S(title).capitalize().s + '</h2>';
             html += '<ul>';
             html += nodes.map(function(i, elem) {
                 var node = $(this);
                 var title = node.parent().text().trim();
-                return '<li><a href="#' + node.attr('name') + '">' + title + '</a></li>';
+                return '<li><a href="#' + node.attr('id') + '">' + title + '</a></li>';
             }).join('');
             html += '</ul>';
             return memo + html;
