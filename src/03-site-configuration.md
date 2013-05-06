@@ -3,7 +3,20 @@ Site configuration
 
 ## Content classes
 
+### Initial cleaning
+
+Keep only the ContentTypes you need for your site. Either move the ones you don't use out of the ContentTypeGroup *Content*, or delete them altogether. This prevents the user interface from appearing bloated to the editor and makes editing faster by presenting only a few but real choices.
+
 ### Content class icons
+
+In order to make it even easier to identify the different ContentTypes and tell them apart, assign unique icons to them. Create or edit `icon.ini`:
+
+```ini
+[ClassIcons]
+ClassMap[recipe]=Food.png
+ClassMap[cookbook]=Book.png
+ClassMap[pin]=Pushpin.png
+```
 
 ### Field definition setup
 
