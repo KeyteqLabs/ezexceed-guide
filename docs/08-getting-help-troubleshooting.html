@@ -5,7 +5,7 @@
 <h4>eZ Publish 4.x:</h4>
 <pre><code class="lang-smarty">{include uri=&quot;design:parts/website_toolbar.tpl&quot; current_node_id=$module_result.node_id}</code></pre>
 <h4>eZ Publish 5.x:</h4>
-<pre><code class="lang-jinja">{% ez_legacy_include &quot;design:parts/website_toolbar.tpl&quot; with {
+<pre><code class="lang-twig">{% ez_legacy_include &quot;design:parts/website_toolbar.tpl&quot; with {
     &#39;current_node_id&#39;: app.request.attributes.get(&#39;locationId&#39;)
 } %}</code></pre>
 

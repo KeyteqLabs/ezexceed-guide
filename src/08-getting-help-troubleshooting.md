@@ -13,7 +13,7 @@ Ensure that your pagelayout template is rendering the toolbar. This is only nece
 
 #### eZ Publish 5.x:
 
-```jinja
+```twig
 {% ez_legacy_include "design:parts/website_toolbar.tpl" with {
     'current_node_id': app.request.attributes.get('locationId')
 } %}

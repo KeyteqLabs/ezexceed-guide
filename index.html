@@ -367,7 +367,7 @@ ID=&lt;yourid&gt;</code></pre>
                     
 <h4>eZ Publish 5.x:</h4>
 
-<pre><code class="lang-jinja">{% ez_legacy_include &quot;design:parts/website_toolbar.tpl&quot; with {
+<pre><code class="lang-twig">{% ez_legacy_include &quot;design:parts/website_toolbar.tpl&quot; with {
     &#39;current_node_id&#39;: app.request.attributes.get(&#39;locationId&#39;)
 } %}</code></pre>
 
@@ -375,6 +375,9 @@ ID=&lt;yourid&gt;</code></pre>
             </div>
         </div>
         <script type="text/javascript" src="assets/prism.js"></script>
+        <script type="text/javascript" src="assets/prism-ini.js"></script>
+        <script type="text/javascript" src="assets/prism-smarty.js"></script>
+        <script type="text/javascript" src="assets/prism-twig.js"></script>
     </body>
 
 </html>

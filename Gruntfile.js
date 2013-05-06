@@ -43,7 +43,7 @@ module.exports = function(grunt) {
                         dist: 'assets/*.css'
                     },
                     scripts: {
-                        dist: 'assets/*.js'
+                        dist: ['assets/prism.js', 'assets/*.js']
                     }
                 }
             }
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 
         watch: {
             docs: {
-                files: 'src/*',
+                files: ['src/*', 'assets/*'],
                 tasks: ['default']
             }
         },
