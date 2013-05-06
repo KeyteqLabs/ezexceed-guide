@@ -3,9 +3,38 @@
 <p>Building datatypes that support the eZ Exceed interface can require a custom design implementation for eZ Exceed.
 If your interface only require basic controls like <code>input</code> fields this is supported out of the box, but if you have custom interaction in your datatype
 you are required to implement this in a custom <code>ezexceed</code> design.</p>
-<h3>Boilerplate</h3>
-<h3>Saving data</h3>
+<h3>Boilerplate markup</h3>
+<p>In your <code>content/datatype/edit/mytype.tpl</code> you can wrap your code in a <em>div</em> like this in order
+to instruct eZ Exceed to load a javascript module:</p>
+<pre><code class="lang-markup">&lt;div class=&quot;attribute-base&quot;
+    data-handler=&#39;mytype/main&#39;
+    data-paths=&#39;{
+        &quot;mytype&quot; : &quot;/extension/mytype/design/ezexceed/javascript/&quot;
+    }&#39;
+    data-url-root=&#39;{&quot;/&quot;|ezurl(&quot;no&quot;)}&#39;&gt;
+
+&lt;!-- My attributes markup --&gt;
+
+&lt;/div&gt;</code></pre>
+<p>The previous code basically instructs <em>eZ Exceed</em> to load a javascript module named <code>mytype/main.js</code> using <strong>Require.js</strong>.
+We will get to how you need to implement this javascript module in a second.</p>
+<h3>Boilerplate JavaScipt</h3>
+<p>We build JavaScript modules for eZ Exceed using <strong>Backbone.js</strong> and your <strong>handler</strong> needs to extend / or quack like the module <code>edit/datatypes/base</code>:</p>
+<pre><code class="lang-javascript">define([&#39;edit/datatypes/base&#39;], function(Base)
+{
+    return Base.extend({
+        render: function() { return this; },
+        parseEdited: function() { return []; }
+    });
+});</code></pre>
+<p>There are two methods you must implement to ensure your handler will work:</p>
+<h4>render</h4>
+<p>This method will be called when its time for your GUI to display itself</p>
+<h4>parseEdited</h4>
+<p>This method is called when autosave is triggered for your attribute, and it needs to
+return exactly what should be sent to the <code>content/save</code> module in eZ</p>
 <h3>Using the stack</h3>
+<h3>Saving data</h3>
 <h2><a id="extensibility-creating-an-app" href="#extensibility-creating-an-app"></a> Creating an app</h2>
 <h2><a id="extensibility-apis" href="#extensibility-apis"></a> APIs</h2>
 
