@@ -16,4 +16,3 @@ you are required to implement this in a custom `ezexceed` design.
 ## <a id="extensibility-creating-an-app" href="#extensibility-creating-an-app"></a> Creating an app
 
 ## <a id="extensibility-apis" href="#extensibility-apis"></a> APIs
-

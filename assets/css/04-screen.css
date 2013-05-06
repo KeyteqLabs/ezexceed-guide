@@ -61,7 +61,7 @@
                 top: 50%;
                 left: -40px;
                 margin-top: -20px;
-                background: url(/assets/gfx/icon/32/link.png) 0 0 no-repeat;
+                background: url(assets/gfx/icon/32/link.png) 0 0 no-repeat;
                 opacity: .5;
                 display: none;
             }
