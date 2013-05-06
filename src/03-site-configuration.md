@@ -26,7 +26,7 @@ ClassMap[pin]=Pushpin.png
 
 [Full overview of the available icons](03/01-icons-available.md).
 
-## FieldDefinition setup
+## <a name="site-configuration-field-definition-setup"></a> FieldDefinition setup
 
 ### Naming
 
@@ -54,7 +54,7 @@ Make the attributes order follow the order it displays on the page. E.g a footer
 
 Group FieldDefinitions (e.g meta information) enabling the editor to open or close a group of FieldDefinitions. Another example for grouping is global attributes, e.g footer information, or other static information. You can create FieldDefinitionGroups in `content.ini`.
 
-## Text editor
+## <a name="site-configuration-text-editor"></a> Text editor
 
 ### Typeface
 
@@ -82,7 +82,7 @@ SignKey=<yoursignkey>
 
 [Contact Keyteq](mailto:support@keyteq.no "Send email to support@keyteq.no") to obtain your SignKey.
 
-## Push notifications for [the eZ Exceed iOS app](https://itunes.apple.com/app/id567405821 "Exceed at iTunes App Store")
+## <a name="site-configuration-push-notifications"></a> Push notifications for [the eZ Exceed iOS app](https://itunes.apple.com/app/id567405821 "Exceed at iTunes App Store")
 
 To be able to send Push Notifications to the users' iOS devices, you need both an ID and a SignKey. [Contact Keyteq](mailto:support@keyteq.no "Send email to support@keyteq.no") to obtain this info.
 
