@@ -53,7 +53,7 @@
             position: relative;
         }
         
-            .content h2 a[name] {
+            .content h2 a[href^="#"] {
                 width: 32px;
                 height: 32px;
                 padding-right: 8px;
@@ -66,8 +66,8 @@
                 display: none;
             }
             
-                .content h2:hover a[name] { display: block; }
-                    .content h2:hover a[name]:hover { opacity: 1; }
+                .content h2:hover a[href^="#"] { display: block; }
+                    .content h2:hover a[href^="#"]:hover { opacity: 1; }
         
         .content h3 {
             font-size: 21px;
