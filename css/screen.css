@@ -58,7 +58,22 @@
             padding: 0 0 6px;
             border-bottom: 1px solid #eee;
             margin: 0 0 12px;
+            position: relative;
         }
+        
+            .content h2 a[name] {
+                width: 32px;
+                height: 32px;
+                padding-right: 8px;
+                position: absolute;
+                top: 50%;
+                left: -40px;
+                margin-top: -20px;
+                display: none;
+                background: url(/gfx/icon/32/link.png) 0 0 no-repeat;
+            }
+            
+                .content h2:hover a[name] { display: block; }
         
         .content h3 {
             font-size: 21px;
