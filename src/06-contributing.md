@@ -20,8 +20,6 @@ Contributing with Pull Requests for bug fixes and / or new features is very welc
 If you are adding new, or changing existing functionality, please register this as an issue before you start coding so you
 know that the patch will be accepted before you undergo a lot of work.
 
-## <a id="contributing-coding-standard" href="#contributing-coding-standard"></a> Coding standard
-
 ## <a id="contributing-technologies" href="#contributing-technologies"></a> Technologies
 
 Technologies used in eZ Exceed include, but are not limited to:

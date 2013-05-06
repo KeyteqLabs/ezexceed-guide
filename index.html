@@ -27,6 +27,8 @@
                         </li>
                         <li><a href="#download">Download</a>
                         </li>
+                        <li><a href="#concepts">Important concepts</a>
+                        </li>
                     </ul>
                     <h2>Installing</h2>
                     <ul>
@@ -50,9 +52,9 @@
                     <ul>
                         <li><a href="#extensibility-building-a-datatype">Building a datatype for eZ Exceed</a>
                         </li>
-                        <li><a href="#extensibility-apis">APIs</a>
-                        </li>
                         <li><a href="#extensibility-creating-an-app">Creating an app</a>
+                        </li>
+                        <li><a href="#extensibility-apis">APIs</a>
                         </li>
                     </ul>
                     <h2>Best-practice-deployment</h2>
@@ -73,8 +75,6 @@
                         <li><a href="#contributing-translations">Translations</a>
                         </li>
                         <li><a href="#contributing-patches">Patches</a>
-                        </li>
-                        <li><a href="#contributing-coding-standard">Coding standard</a>
                         </li>
                         <li><a href="#contributing-technologies">Technologies</a>
                         </li>
@@ -108,6 +108,28 @@
 
                     <p><a href="https://github.com/KeyteqLabs/ezexceed" title="eZ Exceed at GitHub">Download from GitHub</a>
                     </p>
+                    
+<h2><a id="concepts" href="#concepts"></a> Important concepts</h2>
+
+                    <p>There are a few important concepts in eZ Exceed you need to grasp in order to use it, implement for it and customise it.</p>
+                    <p>Our core principles are</p>
+                    <ul>
+                        <li>Touch first</li>
+                        <li>Stay in context</li>
+                        <li>Forward-leaning</li>
+                    </ul>
+                    
+<h3>The Stack</h3>
+
+                    <p>The main interaction pattern in eZ Exceed is the stack:</p>
+                    <p>
+                        <img src="assets/gfx/01-stack.png">
+                    </p>
+                    <p>The stack allows editors to work with layered content without leaving the initial context. As the example screenshot shows the stack has a context path with <code>Sitemap -&gt; Object edit -&gt; Add location</code> and it makes it easy to see this <em>breadcrumb</em> as
+                        well as jump in it.</p>
+                    <p>The uniqueness of the stack is that everything you try to do in eZ Exceed simply opens a new level in the stack, meaning you never leave the page and have to juggle multiple tabs to keep sane.</p>
+                    <p>When an editor clicks an action inside eZ Exceed it <strong>pushes</strong> a stack level with some UI, and when the editor is done using that stack level a context is passed back to the overarching stack level — the initiator — with enough data to store
+                        the users interaction. For example clicking <em>Add location</em> pushes a <em>Sitemap</em> UI and it returns one, or several <code>locationId</code>.</p>
                     
 <h1>Installing the eZ Exceed extension</h1>
 
@@ -258,11 +280,22 @@ ID=&lt;yourid&gt;</code></pre>
                     
 <h2><a id="extensibility-building-a-datatype" href="#extensibility-building-a-datatype"></a> Building a datatype for eZ Exceed</h2>
 
+                    <p>Building datatypes that support the eZ Exceed interface can require a custom design implementation for eZ Exceed. If your interface only require basic controls like <code>input</code> fields this is supported out of the box, but if you have custom interaction
+                        in your datatype you are required to implement this in a custom <code>ezexceed</code> design.</p>
                     
-<h2><a id="extensibility-apis" href="#extensibility-apis"></a> APIs</h2>
+<h3>Boilerplate</h3>
+
+                    
+<h3>Saving data</h3>
+
+                    
+<h3>Using the stack</h3>
 
                     
 <h2><a id="extensibility-creating-an-app" href="#extensibility-creating-an-app"></a> Creating an app</h2>
+
+                    
+<h2><a id="extensibility-apis" href="#extensibility-apis"></a> APIs</h2>
 
                     
 <h1>Best practice deployment</h1>
@@ -302,9 +335,6 @@ ID=&lt;yourid&gt;</code></pre>
 
                     <p>Contributing with Pull Requests for bug fixes and / or new features is very welcommed, but please make sure you&#39;ve read our <a href="https://github.com/KeyteqLabs/ezexceed/blob/dev/CONTRIBUTING.md">contributor documentation</a>. If you are adding
                         new, or changing existing functionality, please register this as an issue before you start coding so you know that the patch will be accepted before you undergo a lot of work.</p>
-                    
-<h2><a id="contributing-coding-standard" href="#contributing-coding-standard"></a> Coding standard</h2>
-
                     
 <h2><a id="contributing-technologies" href="#contributing-technologies"></a> Technologies</h2>
 
