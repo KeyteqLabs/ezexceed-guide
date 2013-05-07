@@ -44,15 +44,6 @@
                         <li><a href="#site-configuration-push-notifications">Push notifications for the eZ Exceed iOS app</a>
                         </li>
                     </ul>
-                    <h2>Extensibility</h2>
-                    <ul>
-                        <li><a href="#extensibility-building-a-datatype">Building a datatype for eZ Exceed</a>
-                        </li>
-                        <li><a href="#extensibility-creating-an-app">Creating an app</a>
-                        </li>
-                        <li><a href="#extensibility-apis">APIs</a>
-                        </li>
-                    </ul>
                     <h2>Important-concepts</h2>
                     <ul>
                         <li><a href="#important-concepts-core-principles">Our core principles are</a>
@@ -60,35 +51,11 @@
                         <li><a href="#important-concepts-the stack">The Stack</a>
                         </li>
                     </ul>
-                    <h2>Best-practice-deployment</h2>
-                    <ul>
-                        <li><a href="#deployment-sql">SQL</a>
-                        </li>
-                        <li><a href="#deployment-extensions">Other extensions</a>
-                        </li>
-                        <li><a href="#deployment-server-side">Server side support</a>
-                        </li>
-                        <li><a href="#deployment-security">Security</a>
-                        </li>
-                    </ul>
                     <h2>Disclaimers</h2>
                     <ul>
                         <li><a href="#disclaimers-supported-web-browsers">Supported web browsers</a>
                         </li>
                         <li><a href="#disclaimers-extensions">Extensions</a>
-                        </li>
-                    </ul>
-                    <h2>Contributing</h2>
-                    <ul>
-                        <li><a href="#concepts">Important concepts</a>
-                        </li>
-                        <li><a href="#contributing-submitting-an-issue">Submitting an issue</a>
-                        </li>
-                        <li><a href="#contributing-translations">Translations</a>
-                        </li>
-                        <li><a href="#contributing-patches">Patches</a>
-                        </li>
-                        <li><a href="#contributing-technologies">Technologies</a>
                         </li>
                     </ul>
                     <h2>Extensibility</h2>
@@ -111,13 +78,6 @@
                         <li><a href="#deployment-security">Security</a>
                         </li>
                     </ul>
-                    <h2>Disclaimers</h2>
-                    <ul>
-                        <li><a href="#disclaimers-supported-web-browsers">Supported web browsers</a>
-                        </li>
-                        <li><a href="#disclaimers-extensions">Extensions</a>
-                        </li>
-                    </ul>
                     <h2>Contributing</h2>
                     <ul>
                         <li><a href="#contributing-submitting-an-issue">Submitting an issue</a>
@@ -127,11 +87,6 @@
                         <li><a href="#contributing-patches">Patches</a>
                         </li>
                         <li><a href="#contributing-technologies">Technologies</a>
-                        </li>
-                    </ul>
-                    <h2>Getting-help-troubleshooting</h2>
-                    <ul>
-                        <li><a href="#getting-help-faq">Frequently Asked Questions</a>
                         </li>
                     </ul>
                     <h2>Getting-help-troubleshooting</h2>
@@ -301,63 +256,6 @@ SignKey=&lt;yoursignkey&gt;
 ID=&lt;yourid&gt;</code></pre>
 
                     
-<h1>Extensibility</h1>
-
-                    
-<h2><a id="extensibility-building-a-datatype" href="#extensibility-building-a-datatype"></a> Building a datatype for eZ Exceed</h2>
-
-                    <p>Building datatypes that support the eZ Exceed interface can require a custom design implementation for eZ Exceed. If your interface only require basic controls like <code>input</code> fields this is supported out of the box, but if you have custom interaction
-                        in your datatype you are required to implement this in a custom <code>ezexceed</code> design.</p>
-                    
-<h3>Boilerplate markup</h3>
-
-                    <p>In your <code>content/datatype/edit/mytype.tpl</code> you can wrap your code in a <em>div</em> like this in order to instruct eZ Exceed to load a javascript module:</p>
-<pre><code class="lang-markup">&lt;div class=&quot;attribute-base&quot;
-    data-handler=&#39;mytype/main&#39;
-    data-paths=&#39;{
-        &quot;mytype&quot; : &quot;/extension/mytype/design/ezexceed/javascript/&quot;
-    }&#39;
-    data-url-root=&#39;{&quot;/&quot;|ezurl(&quot;no&quot;)}&#39;&gt;
-
-&lt;!-- My attributes markup --&gt;
-
-&lt;/div&gt;</code></pre>
-
-                    <p>The previous code basically instructs <em>eZ Exceed</em> to load a javascript module named <code>mytype/main.js</code> using <strong>Require.js</strong>. We will get to how you need to implement this javascript module in a second.</p>
-                    
-<h3>Boilerplate JavaScipt</h3>
-
-                    <p>We build JavaScript modules for eZ Exceed using <strong>Backbone.js</strong> and your <strong>handler</strong> needs to extend / or quack like the module <code>edit/datatypes/base</code>:</p>
-<pre><code class="lang-javascript">define([&#39;edit/datatypes/base&#39;], function(Base)
-{
-    return Base.extend({
-        render: function() { return this; },
-        parseEdited: function() { return []; }
-    });
-});</code></pre>
-
-                    <p>There are two methods you must implement to ensure your handler will work:</p>
-                    
-<h4>render</h4>
-
-                    <p>This method will be called when its time for your GUI to display itself</p>
-                    
-<h4>parseEdited</h4>
-
-                    <p>This method is called when autosave is triggered for your attribute, and it needs to return exactly what should be sent to the <code>content/save</code> module in eZ</p>
-                    
-<h3>Using the stack</h3>
-
-                    
-<h3>Saving data</h3>
-
-                    
-<h2><a id="extensibility-creating-an-app" href="#extensibility-creating-an-app"></a> Creating an app</h2>
-
-                    
-<h2><a id="extensibility-apis" href="#extensibility-apis"></a> APIs</h2>
-
-                    
 <h1>Important concepts</h1>
 
                     <p>There are a few important concepts in eZ Exceed you need to grasp in order to use it, implement for it and customise it.</p>
@@ -382,21 +280,6 @@ ID=&lt;yourid&gt;</code></pre>
                     <p>When an editor clicks an action inside eZ Exceed it <strong>pushes</strong> a stack level with some UI, and when the editor is done using that stack level a context is passed back to the overarching stack level — the initiator — with enough data to store
                         the users interaction. For example clicking <em>Add location</em> pushes a <em>Sitemap</em> UI and it returns one, or several <code>locationId</code>s.</p>
                     
-<h1>Best practice deployment</h1>
-
-                    
-<h2><a id="deployment-sql" href="#deployment-sql"></a> SQL</h2>
-
-                    
-<h2><a id="deployment-extensions" href="#deployment-extensions"></a> Other extensions</h2>
-
-                    
-<h2><a id="deployment-server-side" href="#deployment-server-side"></a> Server side support</h2>
-
-                    
-<h2><a id="deployment-security" href="#deployment-security"></a> Security</h2>
-
-                    
 <h1>Disclaimers</h1>
 
                     
@@ -427,64 +310,6 @@ ID=&lt;yourid&gt;</code></pre>
 <h3>eZ Demo design</h3>
 
                     <p>If the eZ Demo design has higher priority than the eZ Exceed design it will overwrite, and break, the datetime FieldType.</p>
-                    
-<h1>Contributing</h1>
-
-                    
-<h2><a id="concepts" href="#concepts"></a> Important concepts</h2>
-
-                    <p>There are a few important concepts in eZ Exceed you need to grasp in order to use it, implement for it and customise it.</p>
-                    <p>Our core principles are</p>
-                    <ul>
-                        <li>Touch first</li>
-                        <li>Stay in context</li>
-                        <li>Forward-leaning</li>
-                    </ul>
-                    
-<h3>The Stack</h3>
-
-                    <p>The main interaction pattern in eZ Exceed is the stack:</p>
-                    <p>
-                        <img src="assets/img/01-stack.png" alt="The Stack">
-                    </p>
-                    <p>The stack allows editors to work with layered content without leaving the initial context. As the example screenshot shows the stack has a context path with <code>Sitemap -&gt; Object edit -&gt; Add location</code> and it makes it easy to see this <em>breadcrumb</em> as
-                        well as jump in it.</p>
-                    <p>The uniqueness of the stack is that everything you try to do in eZ Exceed simply opens a new level in the stack, meaning you never leave the page and have to juggle multiple tabs to keep sane.</p>
-                    <p>When an editor clicks an action inside eZ Exceed it <strong>pushes</strong> a stack level with some UI, and when the editor is done using that stack level a context is passed back to the overarching stack level — the initiator — with enough data to store
-                        the users interaction. For example clicking <em>Add location</em> pushes a <em>Sitemap</em> UI and it returns one, or several <code>locationId</code>s.</p>
-                    
-<h2><a id="contributing-submitting-an-issue" href="#contributing-submitting-an-issue"></a> Submitting an issue</h2>
-
-                    <p>You can submit issues in our <a href="https://github.com/KeyteqLabs/ezexceed/issues">GitHub project</a>, but make sure you&#39;ve read our <a href="https://github.com/KeyteqLabs/ezexceed/blob/dev/CONTRIBUTING.md">contributor documentation</a>
-                    </p>
-                    
-<h2><a id="contributing-translations" href="#contributing-translations"></a> Translations</h2>
-
-                    <p>We are very interested in simple translation pull requests to cover the most important languages:</p>
-                    <ul>
-                        <li>Spanish</li>
-                        <li>French</li>
-                        <li>German</li>
-                        <li>Italian</li>
-                    </ul>
-                    
-<h2><a id="contributing-patches" href="#contributing-patches"></a> Patches</h2>
-
-                    <p>Contributing with Pull Requests for bug fixes and / or new features is very welcommed, but please make sure you&#39;ve read our <a href="https://github.com/KeyteqLabs/ezexceed/blob/dev/CONTRIBUTING.md">contributor documentation</a>. If you are adding
-                        new, or changing existing functionality, please register this as an issue before you start coding so you know that the patch will be accepted before you undergo a lot of work.</p>
-                    
-<h2><a id="contributing-technologies" href="#contributing-technologies"></a> Technologies</h2>
-
-                    <p>Technologies used in eZ Exceed include, but are not limited to:</p>
-                    <ul>
-                        <li>Backbone.js (1.0)</li>
-                        <li>Underscore.js (1.4)</li>
-                        <li>jQuery (1.9)</li>
-                        <li>jQuery UI</li>
-                        <li>moment.js</li>
-                        <li>Handlebars.js</li>
-                        <li>Require.js</li>
-                    </ul>
                     
 <h1>Extensibility</h1>
 
@@ -558,37 +383,6 @@ ID=&lt;yourid&gt;</code></pre>
 <h2><a id="deployment-security" href="#deployment-security"></a> Security</h2>
 
                     
-<h1>Disclaimers</h1>
-
-                    
-<h2><a id="disclaimers-supported-web-browsers" href="#disclaimers-supported-web-browsers"></a> Supported web browsers</h2>
-
-                    <ul>
-                        <li>Latest Google Chrome</li>
-                        <li>Latest Mozilla Firefox</li>
-                        <li>Internet Explorer 8 or higher</li>
-                        <li>Apple Safari 5 or higher</li>
-                    </ul>
-                    <p>Make sure that JavaScript support is enabled in your web browser.</p>
-                    <p>Note: IE 8 &amp; 9 are only supported functionally; issues that only cause visual artifacts will not be prioritized unless they&#39;re easy to fix and does not limit the capabilities of modern browsers.</p>
-                    <hr>
-                    <p>Keeping your install outside of root (<code>/</code>) can cause errors inside the eZ Online Editor (<code>ezoe</code>).</p>
-                    
-<h2><a id="disclaimers-extensions" href="#disclaimers-extensions"></a> Extensions</h2>
-
-                    
-<h3>eZ Tags</h3>
-
-                    <p>You do not have to disable the extension, but we do not support editing of the eZ Tags Field yet.</p>
-                    
-<h3>eZ Form token</h3>
-
-                    <p>If you&#39;re running eZ Publish 5, Deactivate your eZ Form token legacy extension.</p>
-                    
-<h3>eZ Demo design</h3>
-
-                    <p>If the eZ Demo design has higher priority than the eZ Exceed design it will overwrite, and break, the datetime FieldType.</p>
-                    
 <h1>Contributing</h1>
 
                     
@@ -624,28 +418,6 @@ ID=&lt;yourid&gt;</code></pre>
                         <li>Handlebars.js</li>
                         <li>Require.js</li>
                     </ul>
-                    
-<h1>Getting help / Troubleshooting</h1>
-
-                    
-<h2><a id="getting-help-faq"></a> Frequently Asked Questions</h2>
-
-                    
-<h3>I followed all the steps to install eZ Exceed, but the toolbar isn&#39;t showing up. Why?</h3>
-
-                    <p>Ensure that your pagelayout template is rendering the toolbar. This is only necessary if you are overriding with your own custom pagelayout (eZ Publish 4.x) or if you are running eZ Publish 5.x.</p>
-                    
-<h4>eZ Publish 4.x:</h4>
-
-<pre><code class="lang-smarty">{include uri=&quot;design:parts/website_toolbar.tpl&quot; current_node_id=$module_result.node_id}</code></pre>
-
-                    
-<h4>eZ Publish 5.x:</h4>
-
-<pre><code class="lang-twig">{% ez_legacy_include &quot;design:parts/website_toolbar.tpl&quot; with {
-    &#39;current_node_id&#39;: app.request.attributes.get(&#39;locationId&#39;)
-} %}</code></pre>
-
                     
 <h1>Getting help / Troubleshooting</h1>
 
