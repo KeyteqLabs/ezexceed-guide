@@ -1,7 +1,7 @@
 Extensibility
 =============
 
-## <a id="extensibility-building-a-datatype" href="#extensibility-building-a-datatype"></a> Building a datatype for eZ Exceed
+## <a id="extensibility-building-a-datatype" href="#extensibility-building-a-datatype"></a> Building a FieldType for eZ Exceed
 
 Building FieldTypes that supports the eZ Exceed interface can require a custom design implementation for eZ Exceed.
 If your interface only requires basic controls like `input` fields this is supported out of the box, but if you have custom interaction in your FieldType you are required to implement this in a custom `ezexceed` design.
