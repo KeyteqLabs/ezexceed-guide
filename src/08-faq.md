@@ -5,8 +5,9 @@ Frequently Asked Questions
 
 ### I can't see any changes even though I have published them. Why?
 
-1. Very often this is because a site is configured with two translation languages where one is the default used for editing, and the other is the one actually being displayed. Ensure you are editing the correct translation, and if both languages are not used, make sure it is removed from the installation.
-2. If **#1** did not work, the issue is often cache blocks that are overly eager.
+Very often this is because a site is configured with two translation languages where one is the default used for editing, and the other is the one actually being displayed. Ensure you are editing the correct translation, and if both languages are not used, make sure it is removed from the installation.
+
+If this doesn't solve your problem, overly eager cache blocks are often to blame.
 
 ### I can't see my changes without publishing. Why?
 This most likely implies you are running eZ Publish 4.6 where previews of unpublished content is not supported
