@@ -443,20 +443,35 @@ ID=&lt;yourid&gt;</code></pre>
 
                     <p>Also, your editor users need the right set of permissions and policies. We do not require any special permissions over what eZ Publish would normally require, but do make sure the settings are indeed intact.</p>
                     <p>For a normal editor you should assign the following permissions:</p>
-<pre><code>content
-    create
-    edit
-    manage_locations
-
-ezoe
-    edit</code></pre>
-
+                    <ul>
+                        <li><code>content</code>
+                            <ul>
+                                <li><code>create</code>
+                                </li>
+                                <li><code>edit</code>
+                                </li>
+                                <li><code>manage_locations</code>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><code>ezoe</code>
+                            <ul>
+                                <li><code>edit</code>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                     <p>This should be sufficient for normal everyday use. For the best possible experience, permissions for <code>content/create</code> and <code>content/edit</code> should be limited to a specific <em>subtree</em>, as well as a limited subset of ContentTypes the
                         group in question should be able to edit.</p>
                     <p>If you are going to be using the Shareable preview URLs feature, make sure to also grant the desired user groups the following policy:</p>
-<pre><code>ezexceed
-    preview</code></pre>
-
+                    <ul>
+                        <li><code>ezexceed</code>
+                            <ul>
+                                <li><code>preview</code>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                     
 <h3>My jQuery plugins are gone / jQuery is overwritten. Why?</h3>
 
