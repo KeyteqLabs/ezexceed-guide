@@ -63,7 +63,7 @@ CategoryList[footer]=Footer fields
 
 ### eZ Exceed improved link
 
-eZ Exceed provides a better way to link to *Locations* – not only *Contents*. This is an editor plugin, and needs to be activated in the override settings, in `override/ezoe.ini.append.php`:
+eZ Exceed provides a better way to link to *Locations* – not only *Contents*. This is an editor plugin, and needs to be activated in the override settings, in `override/ezoe.ini.append.php`. Remember to add it to every editor layout it should be available for:
 
 ```ini
 [EditorSettings]
@@ -71,15 +71,29 @@ Plugins[]=ezexceedlink
 
 [EditorLayout]
 Buttons[]=ezexceedlink
+
+[EditorLayout_minimal]
+Buttons[]=ezexceedlink
 ```
 
+If configured correctly, the button will show up and look something like this:
+
+<img src="assets/img/02-improved-link.png" alt="eZ Exceed improved link">
+
 ## <a id="site-configuration-preview-url" href="#site-configuration-preview-url"></a> Shareable preview URLs
-In order to make it possible for anyone to preview a user's draft, the desired groups of users must be granted access to eZ Exceed's preview module. The following INI setting must also be set in order to make it work:
+
+In order to make it possible for anyone to preview a user's draft, the desired groups of users must be granted access to eZ Exceed's preview module, `ezexceed/preview`.
+
+You also need some settings; create or edit `override/ezexceed.ini.append.php`:
 
 ```ini
 [eZExceedPushNotification]
 SignKey=<yoursignkey>
 ```
+
+Pushing the toolbar's Preview button will now yield a shareable URL you can share with whomever you want, and it will look something like this:
+
+<img src="assets/img/03-shareable-preview-url.png" alt="Shareable preview URL">
 
 [Contact Keyteq](mailto:support@keyteq.no "Send email to support@keyteq.no") to obtain your SignKey.
 
@@ -87,7 +101,7 @@ SignKey=<yoursignkey>
 
 To be able to send Push Notifications to the users' iOS devices, you need both an ID and a SignKey. [Contact Keyteq](mailto:support@keyteq.no "Send email to support@keyteq.no") to obtain this info.
 
-Create or edit `ezexceed.ini` in the level that suit your needs best – override or siteaccess. Add the following block:
+Create or edit `override/ezexceed.ini.append.php` in the level that suit your needs best – override or siteaccess. Add the following block:
 
 ```ini
 [eZExceedPushNotification]

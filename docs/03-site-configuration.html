@@ -33,20 +33,28 @@ contentclass[fieldname]=half</code></pre>
 CategoryList[footer]=Footer fields</code></pre>
 <h2><a id="site-configuration-text-editor" href="#site-configuration-text-editor"></a> Text editor</h2>
 <h3>eZ Exceed improved link</h3>
-<p>eZ Exceed provides a better way to link to <em>Locations</em> – not only <em>Contents</em>. This is an editor plugin, and needs to be activated in the override settings, in <code>override/ezoe.ini.append.php</code>:</p>
+<p>eZ Exceed provides a better way to link to <em>Locations</em> – not only <em>Contents</em>. This is an editor plugin, and needs to be activated in the override settings, in <code>override/ezoe.ini.append.php</code>. Remember to add it to every editor layout it should be available for:</p>
 <pre><code class="lang-ini">[EditorSettings]
 Plugins[]=ezexceedlink
 
 [EditorLayout]
+Buttons[]=ezexceedlink
+
+[EditorLayout_minimal]
 Buttons[]=ezexceedlink</code></pre>
+<p>If configured correctly, the button will show up and look something like this:</p>
+<p><img src="assets/img/02-improved-link.png" alt="eZ Exceed improved link"></p>
 <h2><a id="site-configuration-preview-url" href="#site-configuration-preview-url"></a> Shareable preview URLs</h2>
-<p>In order to make it possible for anyone to preview a user&#39;s draft, the desired groups of users must be granted access to eZ Exceed&#39;s preview module. The following INI setting must also be set in order to make it work:</p>
+<p>In order to make it possible for anyone to preview a user&#39;s draft, the desired groups of users must be granted access to eZ Exceed&#39;s preview module, <code>ezexceed/preview</code>.</p>
+<p>You also need some settings; create or edit <code>override/ezexceed.ini.append.php</code>:</p>
 <pre><code class="lang-ini">[eZExceedPushNotification]
 SignKey=&lt;yoursignkey&gt;</code></pre>
+<p>Pushing the toolbar&#39;s Preview button will now yield a shareable URL you can share with whomever you want, and it will look something like this:</p>
+<p><img src="assets/img/03-shareable-preview-url.png" alt="Shareable preview URL"></p>
 <p><a href="mailto:support@keyteq.no" title="Send email to support@keyteq.no">Contact Keyteq</a> to obtain your SignKey.</p>
 <h2><a id="site-configuration-push-notifications" href="#site-configuration-push-notifications"></a> Push notifications for <a href="https://itunes.apple.com/app/id567405821" title="Exceed at iTunes App Store">the eZ Exceed iOS app</a></h2>
 <p>To be able to send Push Notifications to the users&#39; iOS devices, you need both an ID and a SignKey. <a href="mailto:support@keyteq.no" title="Send email to support@keyteq.no">Contact Keyteq</a> to obtain this info.</p>
-<p>Create or edit <code>ezexceed.ini</code> in the level that suit your needs best – override or siteaccess. Add the following block:</p>
+<p>Create or edit <code>override/ezexceed.ini.append.php</code> in the level that suit your needs best – override or siteaccess. Add the following block:</p>
 <pre><code class="lang-ini">[eZExceedPushNotification]
 SignKey=&lt;yoursignkey&gt;
 ID=&lt;yourid&gt;</code></pre>

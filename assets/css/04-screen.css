@@ -47,7 +47,7 @@
         .content h2 {
             font-size: 24px;
             font-weight: normal;
-            padding: 0 0 6px;
+            padding: 12px 0 6px;
             border-bottom: 1px solid #eee;
             margin: 0 0 12px;
             position: relative;
@@ -95,6 +95,11 @@
         .content ol ol {
             margin-bottom: 0;
         }
+        
+        .content ul p + ul,
+        .content ol p + ul,
+        .content ul p + ol,
+        .content ol p + ol { margin-top: -21px; }
         
         .container .content pre { margin: 0 0 24px; }
 

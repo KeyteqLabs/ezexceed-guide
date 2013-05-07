@@ -34,15 +34,24 @@ Also, your editor users need the right set of permissions and policies. We do no
 
 For a normal editor you should assign the following permissions:
 
-- content
-    - create
-    - edit
-    - manage_locations
+```
+content
+    create
+    edit
+    manage_locations
 
-- ezoe
-    - edit
+ezoe
+    edit
+```
 
-This should be sufficient for normal everyday use. For the best possible experience, `content -> create / edit` a specific *subtree*, as well as a limitation to the variety of ContentTypes the group in question can edit, should be specified.
+This should be sufficient for normal everyday use. For the best possible experience, permissions for `content/create` and `content/edit` should be limited to a specific *subtree*, as well as a limited subset of ContentTypes the group in question should be able to edit.
+
+If you are going to be using the Shareable preview URLs feature, make sure to also grant the desired user groups the following policy:
+
+```
+ezexceed
+    preview
+```
 
 ### My jQuery plugins are gone / jQuery is overwritten. Why?
 
