@@ -61,10 +61,6 @@ CategoryList[footer]=Footer fields
 
 ## <a id="site-configuration-text-editor" href="#site-configuration-text-editor"></a> Text editor
 
-### Typeface
-
-Change the default typeface inside the text editor to the same typeface used in the site's design. To do this, override `content.css` inside the TinyMCE iframe. This creates a better connection between the site being edited and the edit area.
-
 ### eZ Exceed improved link
 
 eZ Exceed provides a better way to link to *Locations* – not only *Contents*. This is an editor plugin, and needs to be activated in the override settings, in `override/ezoe.ini.append.php`:
