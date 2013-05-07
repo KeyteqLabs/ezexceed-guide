@@ -1,4 +1,23 @@
 <h1>Contributing</h1>
+<h2><a id="concepts" href="#concepts"></a> Important concepts</h2>
+<p>There are a few important concepts in eZ Exceed you need to grasp in order to use it, implement for it and customise it.</p>
+<p>Our core principles are</p>
+<ul>
+<li>Touch first</li>
+<li>Stay in context</li>
+<li>Forward-leaning</li>
+</ul>
+<h3>The Stack</h3>
+<p>The main interaction pattern in eZ Exceed is the stack:</p>
+<p><img src="assets/img/01-stack.png" alt="The Stack"></p>
+<p>The stack allows editors to work with layered content without leaving the initial context.
+As the example screenshot shows the stack has a context path with <code>Sitemap -&gt; Object edit -&gt; Add location</code> and
+it makes it easy to see this <em>breadcrumb</em> as well as jump in it.</p>
+<p>The uniqueness of the stack is that everything you try to do in eZ Exceed simply opens a new level
+in the stack, meaning you never leave the page and have to juggle multiple tabs to keep sane.</p>
+<p>When an editor clicks an action inside eZ Exceed it <strong>pushes</strong> a stack level with some UI, and when the editor is done using that stack level
+a context is passed back to the overarching stack level — the initiator — with enough data to store the users interaction.
+For example clicking <em>Add location</em> pushes a <em>Sitemap</em> UI and it returns one, or several <code>locationId</code>s.</p>
 <h2><a id="contributing-submitting-an-issue" href="#contributing-submitting-an-issue"></a> Submitting an issue</h2>
 <p>You can submit issues in our <a href="https://github.com/KeyteqLabs/ezexceed/issues">GitHub project</a>, but make sure you&#39;ve read our <a href="https://github.com/KeyteqLabs/ezexceed/blob/dev/CONTRIBUTING.md">contributor documentation</a></p>
 <h2><a id="contributing-translations" href="#contributing-translations"></a> Translations</h2>
