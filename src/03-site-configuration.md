@@ -67,7 +67,7 @@ Change the default typeface inside the text editor to the same typeface used in 
 
 ### eZ Exceed improved link
 
-eZ Exceed provides a better way to link to *Locations* – not only *Contents*. This is an editor plugin, and needs to be activated in the override settings, in `ezoe.ini`:
+eZ Exceed provides a better way to link to *Locations* – not only *Contents*. This is an editor plugin, and needs to be activated in the override settings, in `override/ezoe.ini.append.php`:
 
 ```ini
 [EditorSettings]
