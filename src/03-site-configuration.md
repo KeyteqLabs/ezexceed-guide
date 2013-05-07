@@ -52,7 +52,12 @@ Make the attributes order follow the order it displays on the page. E.g a footer
 
 ### Make use of FieldDefinitionGroups
 
-Group FieldDefinitions (e.g meta information) enabling the editor to open or close a group of FieldDefinitions. Another example for grouping is global attributes, e.g footer information, or other static information. You can create FieldDefinitionGroups in `content.ini`.
+Group FieldDefinitions (e.g meta information) enabling the editor to open or close a group of FieldDefinitions. Another example for grouping is global attributes, e.g footer information, or other static information. You can create FieldDefinitionGroups in `override/content.ini.append.php`:
+
+```ini
+[ClassAttributeSettings]
+CategoryList[footer]=Footer fields
+```
 
 ## <a id="site-configuration-text-editor" href="#site-configuration-text-editor"></a> Text editor
 

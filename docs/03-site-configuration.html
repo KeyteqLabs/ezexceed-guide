@@ -28,7 +28,9 @@ contentclass[fieldname]=half</code></pre>
 <h3>Order of FieldDefinitions</h3>
 <p>Make the attributes order follow the order it displays on the page. E.g a footer text FieldDefinition should reside at the bottom of the edit area, if it sits at the bottom of the page. This is called &#39;cognitive mapping&#39; and makes it easy for the editor to relate to the Content she&#39;s editing.</p>
 <h3>Make use of FieldDefinitionGroups</h3>
-<p>Group FieldDefinitions (e.g meta information) enabling the editor to open or close a group of FieldDefinitions. Another example for grouping is global attributes, e.g footer information, or other static information. You can create FieldDefinitionGroups in <code>content.ini</code>.</p>
+<p>Group FieldDefinitions (e.g meta information) enabling the editor to open or close a group of FieldDefinitions. Another example for grouping is global attributes, e.g footer information, or other static information. You can create FieldDefinitionGroups in <code>override/content.ini.append.php</code>:</p>
+<pre><code class="lang-ini">[ClassAttributeSettings]
+CategoryList[footer]=Footer fields</code></pre>
 <h2><a id="site-configuration-text-editor" href="#site-configuration-text-editor"></a> Text editor</h2>
 <h3>Typeface</h3>
 <p>Change the default typeface inside the text editor to the same typeface used in the site&#39;s design. To do this, override <code>content.css</code> inside the TinyMCE iframe. This creates a better connection between the site being edited and the edit area.</p>
