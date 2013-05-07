@@ -9,20 +9,23 @@
     
         @media (max-width: 767px) {
             .toc {
+                height: auto;
                 position: static;
-                top: auto;
-                margin-bottom: 40px;
             }
         }
         
         .toc .well {
-            position: absolute;
-            top: 0;
-            left: 0;
             margin: 36px 0 0;
             max-height: 85%;
             overflow: auto;
         }
+        
+            @media (max-width: 767px) {
+                .toc .well {
+                    margin: 20px 0 0;
+                    max-height: none;
+                }
+            }
     
         .toc a:link { text-decoration: none; }
         .toc a:hover { text-decoration: underline; }
