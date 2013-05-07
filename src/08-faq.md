@@ -11,6 +11,7 @@ Frequently Asked Questions
 ### I can't see my changes without publishing. Why?
 This most likely implies you are running eZ Publish 4.6 where previews of unpublished content is not supported
 
+
 ## <a id="frequently-asked-questions-developers" href="#frequently-asked-questions-developers"></a> Developers
 
 ### I followed all the steps to install eZ Exceed, but the toolbar isn't showing up. Why?
@@ -28,6 +29,20 @@ Ensure that your pagelayout template is rendering the toolbar. This is only nece
     'current_node_id': app.request.attributes.get('locationId')
 } %}
 ```
+  
+Also, your editor users need the right set of permissions and policies. We do not require any special permissions over what eZ Publish would normally require, but do make sure the settings are indeed intact.
+
+For a normal editor you should assign the following permissions:
+
+- content
+    - create
+    - edit
+    - manage_locations
+
+- ezoe
+    - edit
+
+This should be sufficient for normal everyday use. For the best possible experience, `content -> create / edit` a specific *subtree*, as well as a limitation to the variety of ContentTypes the group in question can edit, should be provided.
 
 ### My jQuery plugins are gone / jQuery is overwritten. Why?
 

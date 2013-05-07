@@ -431,6 +431,25 @@ ID=&lt;yourid&gt;</code></pre>
     &#39;current_node_id&#39;: app.request.attributes.get(&#39;locationId&#39;)
 } %}</code></pre>
 
+                    <p>Also, your editor users need the right set of permissions and policies. We do not require any special permissions over what eZ Publish would normally require, but do make sure the settings are indeed intact.</p>
+                    <p>For a normal editor you should assign the following permissions:</p>
+                    <ul>
+                        <li>
+                            <p>content</p>
+                            <ul>
+                                <li>create</li>
+                                <li>edit</li>
+                                <li>manage_locations</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>ezoe</p>
+                            <ul>
+                                <li>edit</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>This should be sufficient for normal everyday use. For the best possible experience, <code>content -&gt; create / edit</code> a specific <em>subtree</em>, as well as a limitation to the variety of ContentTypes the group in question can edit, should be provided.</p>
                     
 <h3>My jQuery plugins are gone / jQuery is overwritten. Why?</h3>
 
