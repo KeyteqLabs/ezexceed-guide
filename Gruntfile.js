@@ -8,6 +8,8 @@ module.exports = function(grunt) {
     {
         pkg: grunt.file.readJSON('package.json'),
 
+        clean: ['docs/*'],
+
         markdown: {
             docs: {
                 files: 'src/*.md',
@@ -83,7 +85,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-markdown');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-html-build');
 
-    grunt.registerTask('default', ['markdown', 'toc', 'htmlbuild']);
+    grunt.registerTask('default', ['clean', 'markdown', 'toc', 'htmlbuild']);
 };
