@@ -15,7 +15,7 @@ Put content you want the editor to be able to edit inside the ContentTypeGroup *
 
 In order to make it even easier to identify the different ContentTypes and tell them apart, assign unique icons to them. Unique icons for each ContentType makes for a much clearer interface, and editors will be more efficient if you set an icon, so please do.
 
-Create or edit the global `settings/override/icon.ini.append.php`:
+Create or edit the global `override/icon.ini.append.php`:
 
 ```ini
 [ClassIcons]

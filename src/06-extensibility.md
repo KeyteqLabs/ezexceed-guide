@@ -44,7 +44,7 @@ There are two methods you must implement to ensure your handler will work:
 
 #### render
 
-This method will be called when it's time for your GUI to display itself
+This method will be called when it's time for your GUI to display itself.
 
 #### parseEdited
 
