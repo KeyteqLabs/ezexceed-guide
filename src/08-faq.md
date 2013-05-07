@@ -55,7 +55,7 @@ This is due to how eZ Exceed supports the `ezie` extension. Specify your jQuery 
 ExternalScripts[jquery]=://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js
 ```
 
-```jade
+```smarty
 {ezscript_require(array('ezjsc::jquery'))}
 ```
 

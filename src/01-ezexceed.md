@@ -1,9 +1,7 @@
 eZ Exceed
 =========
 
-## <a id="introduction" href="#introduction"></a> Introduction
-
-A fresh and modern CMS interface built on top of eZ Publish
+– A fresh and modern CMS interface built on top of eZ Publish
 
 ## <a id="license" href="#license"></a> License
 

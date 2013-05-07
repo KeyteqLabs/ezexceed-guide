@@ -34,7 +34,7 @@
 <code>ezjsc::jquery</code> loading strategy to solve this.</p>
 <pre><code class="lang-ini">[eZJSCore]
 ExternalScripts[jquery]=://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js</code></pre>
-<pre><code class="lang-jade">{ezscript_require(array(&#39;ezjsc::jquery&#39;))}</code></pre>
+<pre><code class="lang-smarty">{ezscript_require(array(&#39;ezjsc::jquery&#39;))}</code></pre>
 <h3>TinyMCE breaks from time to time in Internet Explorer. Why?</h3>
 <p>This could be due to an awkward bug in IE where only 30 stylesheets can be loaded, and any stylesheets more than that will silently not load. The simplest way to get around this is to enable the packer in <code>ezjscore</code>.</p>
 <p>Turn on this in <code>settings/override/ezjscore.ini.append.php</code></p>
