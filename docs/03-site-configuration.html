@@ -6,12 +6,13 @@
 <p>Put content you want the editor to be able to edit inside the ContentTypeGroup <em>Content</em> – it will then get a more prominent place in the design. Put ContentTypes that are used in a technical manner, for settings or otherwise, inside a ContentTypeGroup of its own to hide it. This makes for a clearer interface for the editor.</p>
 <h3>ContentType icons</h3>
 <p>In order to make it even easier to identify the different ContentTypes and tell them apart, assign unique icons to them. Unique icons for each ContentType makes for a much clearer interface, and editors will be more efficient if you set an icon, so please do.</p>
-<p>Create or edit <code>icon.ini</code>:</p>
+<p>Create or edit the global <code>settings/override/icon.ini.append.php</code>:</p>
 <pre><code class="lang-ini">[ClassIcons]
 ClassMap[recipe]=Food.png
 ClassMap[cookbook]=Book.png
 ClassMap[pin]=Pushpin.png</code></pre>
-<p><a href="03/01-icons-available.md">Full overview of the available icons</a>.</p>
+<!-- [Full overview of the available icons](src/03/01-icons-available.md). -->
+
 <h2><a id="site-configuration-field-definition-setup" href="#site-configuration-field-definition-setup"></a> FieldDefinition setup</h2>
 <h3>Naming</h3>
 <p>Take care in naming FieldDefinitions, descriptions and states. Make it crystal clear and easy to understand. This makes up a good part of the experience – make it great.</p>

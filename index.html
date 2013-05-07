@@ -139,14 +139,13 @@
 
                         </li>
                         <li>
-                            <p>Activate the eZ Exceed extension in for every siteaccess where you want eZ Exceed enabled. In <code>site.ini</code>:</p>
-<pre><code class="lang-ini"> [ExtensionSettings]
- ActiveAccessExtensions[]=ezexceed</code></pre>
+                            <p>Activate the eZ Exceed extension along with its SiteDesign in every siteaccess where you want eZ Exceed enabled. In <code>siteaccess/yourdesign/site.ini.append.php</code>:</p>
+<pre><code class="lang-ini"> # Activates the extension itself:
+ [ExtensionSettings]
+ ActiveAccessExtensions[]=ezexceed
 
-                        </li>
-                        <li>
-                            <p>Add the eZ Exceed extension to the list of site designs for every siteaccess where you want eZ Exceed enabled. Once again, in <code>site.ini</code>:</p>
-<pre><code class="lang-ini"> [DesignSettings]
+ # Activate eZ Exceed&#39;s design; toolbars and overlays:
+ [DesignSettings]
  AdditionalSiteDesignList[]=ezexceed</code></pre>
 
                         </li>
@@ -174,13 +173,13 @@
 
                     <p>In order to make it even easier to identify the different ContentTypes and tell them apart, assign unique icons to them. Unique icons for each ContentType makes for a much clearer interface, and editors will be more efficient if you set an icon, so please
                         do.</p>
-                    <p>Create or edit <code>icon.ini</code>:</p>
+                    <p>Create or edit the global <code>settings/override/icon.ini.append.php</code>:</p>
 <pre><code class="lang-ini">[ClassIcons]
 ClassMap[recipe]=Food.png
 ClassMap[cookbook]=Book.png
 ClassMap[pin]=Pushpin.png</code></pre>
 
-                    <p><a href="03/01-icons-available.md">Full overview of the available icons</a>.</p>
+                    <!-- [Full overview of the available icons](src/03/01-icons-available.md). -->
                     
 <h2><a id="site-configuration-field-definition-setup" href="#site-configuration-field-definition-setup"></a> FieldDefinition setup</h2>
 
@@ -449,7 +448,7 @@ ID=&lt;yourid&gt;</code></pre>
                             </ul>
                         </li>
                     </ul>
-                    <p>This should be sufficient for normal everyday use. For the best possible experience, <code>content -&gt; create / edit</code> a specific <em>subtree</em>, as well as a limitation to the variety of ContentTypes the group in question can edit, should be provided.</p>
+                    <p>This should be sufficient for normal everyday use. For the best possible experience, <code>content -&gt; create / edit</code> a specific <em>subtree</em>, as well as a limitation to the variety of ContentTypes the group in question can edit, should be specified.</p>
                     
 <h3>My jQuery plugins are gone / jQuery is overwritten. Why?</h3>
 

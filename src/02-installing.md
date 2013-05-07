@@ -28,18 +28,16 @@ Installing the eZ Exceed extension
     mysql -h host -u user -D my-database-name -p < sql/mysql/schema.sql
     ```
 
-4. Activate the eZ Exceed extension in for every siteaccess where you want eZ Exceed enabled. In `site.ini`:
+4. Activate the eZ Exceed extension along with its SiteDesign in every siteaccess where you want eZ Exceed enabled. In `siteaccess/yourdesign/site.ini.append.php`:
 
     ```ini
+    # Activates the extension itself:
     [ExtensionSettings]
     ActiveAccessExtensions[]=ezexceed
-    ```
-
-5. Add the eZ Exceed extension to the list of site designs for every siteaccess where you want eZ Exceed enabled. Once again, in `site.ini`:
-
-    ```ini
+    
+    # Activate eZ Exceed's design; toolbars and overlays:
     [DesignSettings]
     AdditionalSiteDesignList[]=ezexceed
     ```
 
-6. Clear your caches and refresh!
+5. Clear your caches and refresh!

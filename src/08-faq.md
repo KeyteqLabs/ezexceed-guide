@@ -42,7 +42,7 @@ For a normal editor you should assign the following permissions:
 - ezoe
     - edit
 
-This should be sufficient for normal everyday use. For the best possible experience, `content -> create / edit` a specific *subtree*, as well as a limitation to the variety of ContentTypes the group in question can edit, should be provided.
+This should be sufficient for normal everyday use. For the best possible experience, `content -> create / edit` a specific *subtree*, as well as a limitation to the variety of ContentTypes the group in question can edit, should be specified.
 
 ### My jQuery plugins are gone / jQuery is overwritten. Why?
 
