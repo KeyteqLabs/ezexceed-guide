@@ -3,7 +3,7 @@ Important concepts
 
 There are a few important concepts in eZ Exceed you need to grasp in order to use it, implement for it and customise it.
 
-## <a id="important-concepts-core-principles" href="#important-concepts-core-principles"></a> Our core principles are
+## <a id="important-concepts-core-principles" href="#important-concepts-core-principles"></a> Core principles
 
 - Touch first
 - Stay in context
