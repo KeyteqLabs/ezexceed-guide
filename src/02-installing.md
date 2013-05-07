@@ -12,7 +12,7 @@ Installing the eZ Exceed extension
     - PHP version **5.3** or higher, 5.4 is recommended
     - Database server: MySQL **5** (UTF-8 is required)
 
-2. Install extension into /my/ez/extension/ezexceed
+2. Install extension into `/my/ez/extension/ezexceed`
 
     ```bash
     cd /my/ez/extension
