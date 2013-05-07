@@ -63,7 +63,7 @@ CategoryList[footer]=Footer fields
 
 ### eZ Exceed improved link
 
-eZ Exceed provides a better way to link to *Locations* – not only *Contents*. This is an editor plugin, and needs to be activated in the override settings, in `override/ezoe.ini.append.php`. Remember to add it to every editor layout it should be available for:
+eZ Exceed provides a better way to link to *Locations* – not only *Contents*. This is an editor plugin, and needs to be activated in the override settings, in `override/ezoe.ini.append.php`. Remember to add the button to all the editor layouts where you want it available:
 
 ```ini
 [EditorSettings]
