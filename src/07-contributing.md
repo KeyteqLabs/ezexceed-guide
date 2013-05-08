@@ -25,7 +25,7 @@ know that the patch will be accepted before you undergo a lot of work.
 Technologies used in eZ Exceed include, but are not limited to:
 
 * Backbone.js (1.0)
-* Underscore.js (1.4)
+* Lo-Dash (1.2.1)
 * jQuery (1.9)
 * jQuery UI
 * moment.js
