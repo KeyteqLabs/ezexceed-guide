@@ -1,7 +1,7 @@
 Important concepts
 ==================
 
-There are a few important concepts in eZ Exceed you need to grasp in order to use it, implement for it and customise it.
+There are a few important concepts in eZ Exceed you need to grasp in order to use it, implement for it and customize it.
 
 ## <a id="important-concepts-core-principles" href="#important-concepts-core-principles"></a> Core principles
 
