@@ -31,3 +31,7 @@ Technologies used in eZ Exceed include, but are not limited to:
 * moment.js
 * Handlebars.js
 * Require.js
+
+## <a id="contributing-coding-standard" href="#contributing-coding-standard"></a> Coding standard
+
+We follow the PHP Framework Interoperability Group's <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">coding standard</a>, and any submissions must comply.
