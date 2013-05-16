@@ -30,6 +30,8 @@
                         <ul>
                             <li><a href="#installing-common">Common</a>
                             </li>
+                            <li><a href="#installing-upgrading">Upgrading</a>
+                            </li>
                         </ul>
                         <h2>Site-configuration</h2>
                         <ul>
@@ -154,6 +156,22 @@
                             <p>Clear your caches and refresh!</p>
                         </li>
                     </ol>
+                    
+<h2><a id="installing-upgrading" href="#installing-upgrading"></a> Upgrading</h2>
+
+                    <p>You can safely upgrade your installation without experiencing any breaking changes inside of major versions. So going from 2.0 to 2.1 should just work. There might be breaking changes introduced when going from a 2.x to a 3.x version.</p>
+                    
+<h3>Running from git</h3>
+
+                    <p>If you are using eZ Exceed directly from git you will notice that every version is tagged using <a href="http://semver.org/">semver</a>. You can upgrade to the latest stable release by simply pulling the latest <code>master</code>
+                    </p>
+<pre><code class="lang-bash">git checkout master
+git pull</code></pre>
+
+                    <p>Upgrading to a specific version i.e. v2.0.0-rc.1 to v2.0.0-rc.3 can be done by checking out a specific tag</p>
+<pre><code class="lang-bash">git fetch origin master
+git checkout v2.0.0-rc.3</code></pre>
+
                     
 <h1>Site configuration</h1>
 
