@@ -1,0 +1,44 @@
+<h1>Frequently Asked Questions</h1>
+<h2><a id="frequently-asked-questions-editors" href="#frequently-asked-questions-editors"></a> Editors</h2>
+<h3>I can&#39;t see any changes even though I have published them. Why?</h3>
+<p>Very often this is because a site is configured with two translation languages where one is the default used for editing, and the other is the one actually being displayed. Ensure you are editing the correct translation, and if both languages are not used, make sure it is removed from the installation.</p>
+<p>If this doesn&#39;t solve your problem, overly eager cache blocks are often to blame.</p>
+<h3>I can&#39;t see my changes without publishing. Why?</h3>
+<p>This most likely implies you are running eZ Publish 4.6 where previews of unpublished content is not supported</p>
+<h2><a id="frequently-asked-questions-developers" href="#frequently-asked-questions-developers"></a> Developers</h2>
+<h3>I followed all the steps to install eZ Exceed, but the toolbar isn&#39;t showing up. Why?</h3>
+<p>Ensure that your pagelayout template is rendering the toolbar. This is only necessary if you are overriding with your own custom pagelayout (eZ Publish 4.x) or if you are running eZ Publish 5.x.</p>
+<h4>eZ Publish 4.x:</h4>
+<pre><code class="lang-smarty">{include uri=&quot;design:parts/website_toolbar.tpl&quot; current_node_id=$module_result.node_id}</code></pre>
+<h4>eZ Publish 5.x:</h4>
+<pre><code class="lang-twig">{% ez_legacy_include &quot;design:parts/website_toolbar.tpl&quot; with {
+    &#39;current_node_id&#39;: app.request.attributes.get(&#39;locationId&#39;)
+} %}</code></pre>
+<p>Also, your editor users need the right set of permissions and policies. We do not require any special permissions over what eZ Publish would normally require, but do make sure the settings are indeed intact.</p>
+<p>For a normal editor you should assign the following permissions:</p>
+<ul>
+<li><code>content/create</code></li>
+<li><code>content/edit</code></li>
+<li><code>content/manage_locations</code></li>
+<li><code>ezoe/edit</code></li>
+</ul>
+<p>This should be sufficient for normal everyday use. For the best possible experience, permissions for <code>content/create</code> and <code>content/edit</code> should be limited to a specific <em>subtree</em>, as well as a limited subset of ContentTypes the group in question should be able to edit.</p>
+<p>If you are going to be using the Shareable preview URLs feature, make sure to also grant the desired user groups the following policy:</p>
+<ul>
+<li><code>ezexceed/preview</code></li>
+</ul>
+<h3>My jQuery plugins are gone / jQuery is overwritten. Why?</h3>
+<p>This is due to how eZ Exceed supports the <code>ezie</code> extension. Specify your jQuery dependency through <code>ezjscore</code> and the
+<code>ezjsc::jquery</code> loading strategy to solve this.</p>
+<pre><code class="lang-ini">[eZJSCore]
+ExternalScripts[jquery]=://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js</code></pre>
+<pre><code class="lang-smarty">{ezscript_require(array(&#39;ezjsc::jquery&#39;))}</code></pre>
+<h3>TinyMCE breaks from time to time in Internet Explorer. Why?</h3>
+<p>This could be due to an awkward bug in IE where only 30 stylesheets can be loaded, and any stylesheets more than that will silently not load. The simplest way to get around this is to enable the packer in <code>ezjscore</code>.</p>
+<p>Turn on this in <code>settings/override/ezjscore.ini.append.php</code></p>
+<pre><code class="lang-ini">[eZJSCore]
+Packer=enabled
+
+[Packer]
+AppendLastModifiedTime=enabled</code></pre>
+

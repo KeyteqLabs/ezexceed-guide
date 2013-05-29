@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>eZ Exceed guide</title>
+        <link type="text/css" rel="stylesheet" href="assets/css/01-bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="assets/css/02-bootstrap-responsive.min.css" />
+        <link type="text/css" rel="stylesheet" href="assets/css/03-prism.css" />
+        <link type="text/css" rel="stylesheet" href="assets/css/04-screen.css" />
+        <link rel="icon" href="assets/gfx/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="assets/gfx/favicon.png" type="image/png" />
+    </head>
+    
+    <body>
+        <div id="ezexceed-docs" class="container">
+            <div class="row">
+                <div class="toc span3">
+                    <div class="well">
+                        
+<h2>Ezexceed</h2>
+                        <ul>
+                            <li><a href="#license">License</a>
+                            </li>
+                            <li><a href="#download">Download</a>
+                            </li>
+                        </ul>
+                        <h2>Installing</h2>
+                        <ul>
+                            <li><a href="#installing-common">Common</a>
+                            </li>
+                            <li><a href="#installing-upgrading">Upgrading</a>
+                            </li>
+                        </ul>
+                        <h2>Site-configuration</h2>
+                        <ul>
+                            <li><a href="#site-configuration-content-types">ContentTypes</a>
+                            </li>
+                            <li><a href="#site-configuration-field-definition-setup">FieldDefinition setup</a>
+                            </li>
+                            <li><a href="#site-configuration-text-editor">Text editor</a>
+                            </li>
+                            <li><a href="#site-configuration-preview-url">Shareable preview URLs</a>
+                            </li>
+                            <li><a href="#site-configuration-push-notifications">Push notifications for the eZ Exceed iOS app</a>
+                            </li>
+                        </ul>
+                        <h2>Disclaimers</h2>
+                        <ul>
+                            <li><a href="#disclaimers-supported-web-browsers">Supported web browsers</a>
+                            </li>
+                            <li><a href="#disclaimers-extensions">Extensions</a>
+                            </li>
+                        </ul>
+                        <h2>Important-concepts</h2>
+                        <ul>
+                            <li><a href="#important-concepts-core-principles">Core principles</a>
+                            </li>
+                            <li><a href="#important-concepts-the stack">The Stack</a>
+                            </li>
+                        </ul>
+                        <h2>Extensibility</h2>
+                        <ul>
+                            <li><a href="#extensibility-building-a-datatype">Building a FieldType for eZ Exceed</a>
+                            </li>
+                            <li><a href="#extensibility-creating-an-app">Creating an app</a>
+                            </li>
+                            <li><a href="#extensibility-apis">APIs</a>
+                            </li>
+                        </ul>
+                        <h2>Contributing</h2>
+                        <ul>
+                            <li><a href="#contributing-submitting-an-issue">Submitting an issue</a>
+                            </li>
+                            <li><a href="#contributing-translations">Translations</a>
+                            </li>
+                            <li><a href="#contributing-patches">Patches</a>
+                            </li>
+                            <li><a href="#contributing-technologies">Technologies</a>
+                            </li>
+                            <li><a href="#contributing-coding-standard">Coding standard</a>
+                            </li>
+                        </ul>
+                        <h2>Faq</h2>
+                        <ul>
+                            <li><a href="#frequently-asked-questions-editors">Editors</a>
+                            </li>
+                            <li><a href="#frequently-asked-questions-developers">Developers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content span9 offset3">
+                    
+<h1>eZ Exceed</h1>
+
+                    <p>– A fresh and modern CMS interface built on top of eZ Publish</p>
+                    
+<h2><a id="license" href="#license"></a> License</h2>
+
+                    
+<h2><a id="download" href="#download"></a> Download</h2>
+
+                    <p><a href="https://github.com/KeyteqLabs/ezexceed" title="eZ Exceed at GitHub">Download from GitHub</a>
+                    </p>
+                    
+<h1>Installing the eZ Exceed extension</h1>
+
+                    
+<h2><a id="installing-common" href="#installing-common"></a> Common</h2>
+
+                    <ol>
+                        <li>
+                            <p>Ensure dependencies are met:</p>
+                            <ul>
+                                <li>eZ Publish version <strong>4.7</strong> or higher
+                                    <ul>
+                                        <li>4.6 <em>might</em> work, but it&#39;s not a target</li>
+                                        <li>We are working on proper support for eZ Publish 5</li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://projects.ez.no/ezjscore" title="ezjscore at eZ Projects">ezjscore</a>  <strong>1.3.0</strong> or higher</li>
+                                <li><a href="https://github.com/ezsystems/ezwebin" title="ezwebin at GitHub">ezwebin</a>  <strong>1.8.0</strong> or higher</li>
+                                <li>Apache version <strong>1.3</strong> or <strong>2.x</strong> in <strong>prefork</strong> mode</li>
+                                <li>PHP version <strong>5.3</strong> or higher, 5.4 is recommended</li>
+                                <li>Database server: MySQL <strong>5</strong> (UTF-8 is required)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Install extension into <code>/my/ez/extension/ezexceed</code>
+                            </p>
+<pre><code class="lang-bash"> cd /my/ez/extension
+ git clone git@github.com:KeyteqLabs/ezexceed.git
+ cd ezexceed</code></pre>
+
+                            <p>eZ Exceed is currently only available as an <em>extension</em>. If you are running on eZ Publish 5, you have to enable legacy mode and install the eZ Exceed extension in your <code>/ezpublish_legacy/extension/</code> folder.</p>
+                        </li>
+                        <li>
+                            <p>Run the included SQL script to add eZ Exceed specifics to your database</p>
+<pre><code class="lang-bash"> mysql -h host -u user -D my-database-name -p &lt; sql/mysql/schema.sql</code></pre>
+
+                        </li>
+                        <li>
+                            <p>Activate the eZ Exceed extension along with its SiteDesign in every siteaccess where you want eZ Exceed enabled. In <code>siteaccess/yourdesign/site.ini.append.php</code>:</p>
+<pre><code class="lang-ini"> # Activates the extension itself:
+ [ExtensionSettings]
+ ActiveAccessExtensions[]=ezexceed
+
+ # Activate eZ Exceed&#39;s design; toolbars and overlays:
+ [DesignSettings]
+ AdditionalSiteDesignList[]=ezexceed</code></pre>
+
+                        </li>
+                        <li>
+                            <p>Clear your caches and refresh!</p>
+                        </li>
+                    </ol>
+                    
+<h2><a id="installing-upgrading" href="#installing-upgrading"></a> Upgrading</h2>
+
+                    <p>You can safely upgrade your installation without experiencing any breaking changes inside of major versions. So going from 2.0 to 2.1 should just work. There might be breaking changes introduced when going from a 2.x to a 3.x version.</p>
+                    
+<h3>Running from git</h3>
+
+                    <p>If you are using eZ Exceed directly from git you will notice that every version is tagged using <a href="http://semver.org/">semver</a>. You can upgrade to the latest stable release by simply pulling the latest <code>master</code>
+                    </p>
+<pre><code class="lang-bash">git checkout master
+git pull</code></pre>
+
+                    <p>Upgrading to a specific version i.e. v2.0.0-rc.1 to v2.0.0-rc.3 can be done by checking out a specific tag</p>
+<pre><code class="lang-bash">git fetch origin master
+git checkout v2.0.0-rc.3</code></pre>
+
+                    
+<h1>Site configuration</h1>
+
+                    
+<h2><a id="site-configuration-content-types" href="#site-configuration-content-types"></a> ContentTypes</h2>
+
+                    
+<h3>Clean up</h3>
+
+                    <p>Only keep the ContentTypes relevant for your site. Either move the ones you don&#39;t use out of the ContentTypeGroup <em>Content</em>, or delete them altogether. Less complexity gives better usability and thus faster editing.</p>
+                    
+<h3>Separate technical and editable ContentTypes</h3>
+
+                    <p>Put content you want the editor to be able to edit inside the ContentTypeGroup <em>Content</em> – it will then get a more prominent place in the design. Put ContentTypes that are used in a technical manner, for settings or otherwise, inside a ContentTypeGroup
+                        of its own to hide it. This makes for a clearer interface for the editor.</p>
+                    
+<h3>ContentType icons</h3>
+
+                    <p>In order to make it even easier to identify the different ContentTypes and tell them apart, assign unique icons to them. Unique icons for each ContentType makes for a much clearer interface, and editors will be more efficient if you set an icon, so please
+                        do.</p>
+                    <p>Create or edit the global <code>override/icon.ini.append.php</code>:</p>
+<pre><code class="lang-ini">[ClassIcons]
+ClassMap[recipe]=Food.png
+ClassMap[cookbook]=Book.png
+ClassMap[pin]=Pushpin.png</code></pre>
+
+                    <!-- [Full overview of the available icons](src/03/01-icons-available.md). -->
+                    
+<h2><a id="site-configuration-field-definition-setup" href="#site-configuration-field-definition-setup"></a> FieldDefinition setup</h2>
+
+                    
+<h3>Naming</h3>
+
+                    <p>Take care in naming FieldDefinitions, descriptions and states. Make it crystal clear and easy to understand. This makes up a good part of the experience – make it great.</p>
+                    
+<h3>Righty tighty</h3>
+
+                    <p>In order to make the Content edit layout tighter and more user friendly, consider editing <code>contenteditor.ini.append.php</code> inside the eZ Exceed extension to make many or most of the FieldDefinitions use only half of the available width and thus
+                        render side by side other less space consuming FieldDefinitions:</p>
+<pre><code class="lang-ini">[ByType]
+fieldid=half
+
+# or
+
+[ByClassIdentifier]
+contentclass[fieldname]=half</code></pre>
+
+                    
+<h3>Order of FieldDefinitions</h3>
+
+                    <p>Make the attributes order follow the order it displays on the page. E.g a footer text FieldDefinition should reside at the bottom of the edit area, if it sits at the bottom of the page. This is called &#39;cognitive mapping&#39; and makes it easy for
+                        the editor to relate to the Content she&#39;s editing.</p>
+                    
+<h3>Make use of FieldDefinitionGroups</h3>
+
+                    <p>Group FieldDefinitions (e.g meta information) enabling the editor to open or close a group of FieldDefinitions. Another example for grouping is global attributes, e.g footer information, or other static information. You can create FieldDefinitionGroups
+                        in <code>override/content.ini.append.php</code>:</p>
+<pre><code class="lang-ini">[ClassAttributeSettings]
+CategoryList[footer]=Footer fields</code></pre>
+
+                    
+<h2><a id="site-configuration-text-editor" href="#site-configuration-text-editor"></a> Text editor</h2>
+
+                    
+<h3>eZ Exceed improved link</h3>
+
+                    <p>eZ Exceed provides a better way to link to <em>Locations</em> – not only <em>Contents</em>. This is an editor plugin, and needs to be activated in the override settings, in <code>override/ezoe.ini.append.php</code>. Remember to add the button to all the
+                        editor layouts where you want it available:</p>
+<pre><code class="lang-ini">[EditorSettings]
+Plugins[]=ezexceedlink
+
+[EditorLayout]
+Buttons[]=ezexceedlink
+
+[EditorLayout_minimal]
+Buttons[]=ezexceedlink</code></pre>
+
+                    <p>If configured correctly, the button will show up and look something like this:</p>
+                    <p>
+                        <img src="assets/img/02-improved-link.png" alt="eZ Exceed improved link">
+                    </p>
+                    
+<h2><a id="site-configuration-preview-url" href="#site-configuration-preview-url"></a> Shareable preview URLs</h2>
+
+                    <p>In order to make it possible for anyone to preview a user&#39;s draft, the desired groups of users must be granted access to eZ Exceed&#39;s preview module, <code>ezexceed/preview</code>.</p>
+                    <p>You also need some settings; create or edit <code>override/ezexceed.ini.append.php</code>:</p>
+<pre><code class="lang-ini">[eZExceedPushNotification]
+SignKey=&lt;yoursignkey&gt;</code></pre>
+
+                    <p>Pushing the toolbar&#39;s Preview button will now yield a shareable URL you can share with whomever you want, and it will look something like this:</p>
+                    <p>
+                        <img src="assets/img/03-shareable-preview-url.png" alt="Shareable preview URL">
+                    </p>
+                    <p><a href="mailto:support@keyteq.no" title="Send email to support@keyteq.no">Contact Keyteq</a> to obtain your SignKey.</p>
+                    
+<h2><a id="site-configuration-push-notifications" href="#site-configuration-push-notifications"></a> Push notifications for <a href="https://itunes.apple.com/app/id567405821" title="Exceed at iTunes App Store">the eZ Exceed iOS app</a></h2>
+
+                    <p>To be able to send Push Notifications to the users&#39; iOS devices, you need both an ID and a SignKey. <a href="mailto:support@keyteq.no" title="Send email to support@keyteq.no">Contact Keyteq</a> to obtain this info.</p>
+                    <p>Create or edit <code>override/ezexceed.ini.append.php</code> in the level that suit your needs best – override or siteaccess. Add the following block:</p>
+<pre><code class="lang-ini">[eZExceedPushNotification]
+SignKey=&lt;yoursignkey&gt;
+ID=&lt;yourid&gt;</code></pre>
+
+                    
+<h1>Disclaimers</h1>
+
+                    
+<h2><a id="disclaimers-supported-web-browsers" href="#disclaimers-supported-web-browsers"></a> Supported web browsers</h2>
+
+                    <ul>
+                        <li>Latest Google Chrome</li>
+                        <li>Latest Mozilla Firefox</li>
+                        <li>Internet Explorer 8 or higher</li>
+                        <li>Apple Safari 5 or higher</li>
+                    </ul>
+                    <p>Make sure that JavaScript support is enabled in your web browser.</p>
+                    <p>Note: IE 8 &amp; 9 are only supported functionally; issues that only cause visual artifacts will not be prioritized unless they&#39;re easy to fix and does not limit the capabilities of modern browsers.</p>
+                    <hr>
+                    <p>Keeping your install outside of root (<code>/</code>) can cause errors inside the eZ Online Editor (<code>ezoe</code>).</p>
+                    
+<h2><a id="disclaimers-extensions" href="#disclaimers-extensions"></a> Extensions</h2>
+
+                    
+<h3>eZ Tags</h3>
+
+                    <p>You do not have to disable the extension, but we do not support editing of the eZ Tags Field yet.</p>
+                    
+<h3>eZ Form token</h3>
+
+                    <p>If you&#39;re running eZ Publish 5, deactivate your eZ Form token legacy extension.</p>
+                    
+<h3>eZ Demo design</h3>
+
+                    <p>If the eZ Demo design has higher priority than the eZ Exceed design it will overwrite, and break, the datetime FieldType.</p>
+                    
+<h1>Important concepts</h1>
+
+                    <p>There are a few important concepts in eZ Exceed you need to grasp in order to use it, implement for it and customize it.</p>
+                    
+<h2><a id="important-concepts-core-principles" href="#important-concepts-core-principles"></a> Core principles</h2>
+
+                    <ul>
+                        <li>Touch first</li>
+                        <li>Stay in context</li>
+                        <li>Forward-leaning</li>
+                    </ul>
+                    
+<h2><a id="important-concepts-the stack" href="#important-concepts-the-stack"></a> The Stack</h2>
+
+                    <p>The main interaction pattern in eZ Exceed is the stack:</p>
+                    <p>
+                        <img src="assets/img/01-stack.png" alt="The Stack">
+                    </p>
+                    <p>The stack allows editors to work with layered content without leaving the initial context. As the example screenshot shows the stack has a context path with <code>Sitemap -&gt; Object edit -&gt; Add location</code> and it makes it easy to see this <em>breadcrumb</em> as
+                        well as jump in it.</p>
+                    <p>The uniqueness of the stack is that everything you try to do in eZ Exceed simply opens a new level in the stack, meaning you never leave the page and have to juggle multiple tabs to keep sane.</p>
+                    <p>When an editor clicks an action inside eZ Exceed it <strong>pushes</strong> a stack level with some UI, and when the editor is done using that stack level a context is passed back to the overarching stack level — the initiator — with enough data to store
+                        the users interaction. For example clicking <em>Add location</em> pushes a <em>Sitemap</em> UI and it returns one, or several <code>locationId</code>s.</p>
+                    
+<h1>Extensibility</h1>
+
+                    
+<h2><a id="extensibility-building-a-datatype" href="#extensibility-building-a-datatype"></a> Building a FieldType for eZ Exceed</h2>
+
+                    <p>Building FieldTypes that supports the eZ Exceed interface can require a custom design implementation for eZ Exceed. If your interface only requires basic controls like <code>input</code> fields this is supported out of the box, but if you have custom interaction
+                        in your FieldType you are required to implement this in a custom <code>ezexceed</code> design.</p>
+                    
+<h3>Boilerplate markup</h3>
+
+                    <p>In your <code>content/datatype/edit/mytype.tpl</code> you can wrap your code in a <code>&lt;div&gt;</code> like this in order to instruct eZ Exceed to load a JavaScript module:</p>
+<pre><code class="lang-markup">&lt;div class=&quot;attribute-base&quot;
+    data-handler=&#39;mytype/main&#39;
+    data-paths=&#39;{
+        &quot;mytype&quot; : &quot;/extension/mytype/design/ezexceed/javascript/&quot;
+    }&#39;
+    data-url-root=&#39;{&quot;/&quot;|ezurl(&quot;no&quot;)}&#39;&gt;
+
+&lt;!-- My attributes markup --&gt;
+
+&lt;/div&gt;</code></pre>
+
+                    <p>The previous code basically instructs <em>eZ Exceed</em> to load a JavaScript module named <code>mytype/main.js</code> using <strong>Require.js</strong>. We will get to how you need to implement this JavaScript module in a second.</p>
+                    
+<h3>Boilerplate JavaScipt</h3>
+
+                    <p>We build JavaScript modules for eZ Exceed using <strong>Backbone.js</strong> and your <strong>handler</strong> needs to extend/quack like the module <code>edit/datatypes/base</code>:</p>
+<pre><code class="lang-javascript">define([&#39;edit/datatypes/base&#39;], function(Base)
+{
+    return Base.extend({
+        render: function() { return this; },
+        parseEdited: function() { return []; }
+    });
+});</code></pre>
+
+                    <p>There are two methods you must implement to ensure your handler will work:</p>
+                    
+<h4>render</h4>
+
+                    <p>This method will be called when it&#39;s time for your GUI to display itself.</p>
+                    
+<h4>parseEdited</h4>
+
+                    <p>This method is called when autosave is triggered for your Field, and it needs to return exactly what should be sent to the <code>content/save</code> module in eZ Publish.</p>
+                    
+<h3>Using the stack</h3>
+
+                    
+<h3>Saving data</h3>
+
+                    
+<h2><a id="extensibility-creating-an-app" href="#extensibility-creating-an-app"></a> Creating an app</h2>
+
+                    
+<h2><a id="extensibility-apis" href="#extensibility-apis"></a> APIs</h2>
+
+                    
+<h1>Contributing</h1>
+
+                    
+<h2><a id="contributing-submitting-an-issue" href="#contributing-submitting-an-issue"></a> Submitting an issue</h2>
+
+                    <p>You can submit issues in our <a href="https://github.com/KeyteqLabs/ezexceed/issues">GitHub project</a>, but make sure you&#39;ve read our <a href="https://github.com/KeyteqLabs/ezexceed/blob/dev/CONTRIBUTING.md">contributor documentation</a>
+                    </p>
+                    
+<h2><a id="contributing-translations" href="#contributing-translations"></a> Translations</h2>
+
+                    <p>We are very interested in simple translation pull requests to cover the most important languages:</p>
+                    <ul>
+                        <li>Spanish</li>
+                        <li>French</li>
+                        <li>German</li>
+                        <li>Italian</li>
+                    </ul>
+                    
+<h2><a id="contributing-patches" href="#contributing-patches"></a> Patches</h2>
+
+                    <p>Contributing with Pull Requests for bug fixes and / or new features is very welcommed, but please make sure you&#39;ve read our <a href="https://github.com/KeyteqLabs/ezexceed/blob/dev/CONTRIBUTING.md">contributor documentation</a>. If you are adding
+                        new, or changing existing functionality, please register this as an issue before you start coding so you know that the patch will be accepted before you undergo a lot of work.</p>
+                    
+<h2><a id="contributing-technologies" href="#contributing-technologies"></a> Technologies</h2>
+
+                    <p>Technologies used in eZ Exceed include, but are not limited to:</p>
+                    <ul>
+                        <li>Backbone.js (1.0)</li>
+                        <li>Lo-Dash (1.2.1)</li>
+                        <li>jQuery (1.9)</li>
+                        <li>jQuery UI</li>
+                        <li>moment.js</li>
+                        <li>Handlebars.js</li>
+                        <li>Require.js</li>
+                    </ul>
+                    
+<h2><a id="contributing-coding-standard" href="#contributing-coding-standard"></a> Coding standard</h2>
+
+                    <p>We follow the PHP Framework Interoperability Group&#39;s <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">coding standard</a>, and any submissions must comply.</p>
+                    
+<h1>Frequently Asked Questions</h1>
+
+                    
+<h2><a id="frequently-asked-questions-editors" href="#frequently-asked-questions-editors"></a> Editors</h2>
+
+                    
+<h3>I can&#39;t see any changes even though I have published them. Why?</h3>
+
+                    <p>Very often this is because a site is configured with two translation languages where one is the default used for editing, and the other is the one actually being displayed. Ensure you are editing the correct translation, and if both languages are not
+                        used, make sure it is removed from the installation.</p>
+                    <p>If this doesn&#39;t solve your problem, overly eager cache blocks are often to blame.</p>
+                    
+<h3>I can&#39;t see my changes without publishing. Why?</h3>
+
+                    <p>This most likely implies you are running eZ Publish 4.6 where previews of unpublished content is not supported</p>
+                    
+<h2><a id="frequently-asked-questions-developers" href="#frequently-asked-questions-developers"></a> Developers</h2>
+
+                    
+<h3>I followed all the steps to install eZ Exceed, but the toolbar isn&#39;t showing up. Why?</h3>
+
+                    <p>Ensure that your pagelayout template is rendering the toolbar. This is only necessary if you are overriding with your own custom pagelayout (eZ Publish 4.x) or if you are running eZ Publish 5.x.</p>
+                    
+<h4>eZ Publish 4.x:</h4>
+
+<pre><code class="lang-smarty">{include uri=&quot;design:parts/website_toolbar.tpl&quot; current_node_id=$module_result.node_id}</code></pre>
+
+                    
+<h4>eZ Publish 5.x:</h4>
+
+<pre><code class="lang-twig">{% ez_legacy_include &quot;design:parts/website_toolbar.tpl&quot; with {
+    &#39;current_node_id&#39;: app.request.attributes.get(&#39;locationId&#39;)
+} %}</code></pre>
+
+                    <p>Also, your editor users need the right set of permissions and policies. We do not require any special permissions over what eZ Publish would normally require, but do make sure the settings are indeed intact.</p>
+                    <p>For a normal editor you should assign the following permissions:</p>
+                    <ul>
+                        <li><code>content/create</code>
+                        </li>
+                        <li><code>content/edit</code>
+                        </li>
+                        <li><code>content/manage_locations</code>
+                        </li>
+                        <li><code>ezoe/edit</code>
+                        </li>
+                    </ul>
+                    <p>This should be sufficient for normal everyday use. For the best possible experience, permissions for <code>content/create</code> and <code>content/edit</code> should be limited to a specific <em>subtree</em>, as well as a limited subset of ContentTypes the
+                        group in question should be able to edit.</p>
+                    <p>If you are going to be using the Shareable preview URLs feature, make sure to also grant the desired user groups the following policy:</p>
+                    <ul>
+                        <li><code>ezexceed/preview</code>
+                        </li>
+                    </ul>
+                    
+<h3>My jQuery plugins are gone / jQuery is overwritten. Why?</h3>
+
+                    <p>This is due to how eZ Exceed supports the <code>ezie</code> extension. Specify your jQuery dependency through <code>ezjscore</code> and the
+<code>ezjsc::jquery</code> loading strategy to solve this.</p>
+<pre><code class="lang-ini">[eZJSCore]
+ExternalScripts[jquery]=://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js</code></pre>
+
+<pre><code class="lang-smarty">{ezscript_require(array(&#39;ezjsc::jquery&#39;))}</code></pre>
+
+                    
+<h3>TinyMCE breaks from time to time in Internet Explorer. Why?</h3>
+
+                    <p>This could be due to an awkward bug in IE where only 30 stylesheets can be loaded, and any stylesheets more than that will silently not load. The simplest way to get around this is to enable the packer in <code>ezjscore</code>.</p>
+                    <p>Turn on this in <code>settings/override/ezjscore.ini.append.php</code>
+                    </p>
+<pre><code class="lang-ini">[eZJSCore]
+Packer=enabled
+
+[Packer]
+AppendLastModifiedTime=enabled</code></pre>
+
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/js/prism.js"></script>
+        <script type="text/javascript" src="assets/js/prism-ini.js"></script>
+        <script type="text/javascript" src="assets/js/prism-smarty.js"></script>
+        <script type="text/javascript" src="assets/js/prism-twig.js"></script>
+    </body>
+
+</html>
