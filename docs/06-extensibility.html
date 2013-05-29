@@ -33,5 +33,28 @@ We will get to how you need to implement this JavaScript module in a second.</p>
 <h3>Using the stack</h3>
 <h3>Saving data</h3>
 <h2><a id="extensibility-creating-an-app" href="#extensibility-creating-an-app"></a> Creating an app</h2>
+<p>It is possible to create custom <strong>apps</strong> that will reside in the toolbar. This can range from a simple app that loads some content into the stack,
+to complete JavaScript applications running in eZ Exceed.
+This section will quickly walk you through building simple applications.</p>
+<h3>Configuring the application</h3>
+<p>All configuration happens through overriding <code>ezexceed.ini</code> on a pr app/button level.
+This example will render a popover once clicked, this popover will contain an iframe including our twitter widget.
+You can see this code in the <a href="https://github.com/KeyteqLabs/ezexceed-examples">ezexceed-examples</a> repository.</p>
+<pre><code class="lang-ini">[Toolbar]
+Buttons[]=twitter
+
+[Toolbar_twitter]
+Name=Tweets
+Icon=Share
+URL=/extension/ezexceed-examples/design/ezexceed/lib/twitter/widget.html
+Type=popover</code></pre>
+<p>Lets look at the configuration keys:</p>
+<ul>
+<li><code>Name</code> This is the name that will be used in the toolbar as well as the popover/stack heading</li>
+<li><code>Icon</code> Refers to the file name of a Helveticon. This Icon will be used in the toolbar + in the stack</li>
+<li><code>URL</code> Any URL that will work and serve up content to an iframe will work here. Static html, ez modules or external services.</li>
+<li><code>Type</code> You can choose between <em>stack</em> and <em>popover</em> depending on how much space your content requires.</li>
+<li><code>Module</code> Optional key that allows you to specify an AMD JS module that will be loaded and used. This requires more work on your part while also offers full flexibility.</li>
+</ul>
 <h2><a id="extensibility-apis" href="#extensibility-apis"></a> APIs</h2>
 

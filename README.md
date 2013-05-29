@@ -17,3 +17,5 @@ CLI tools while building:
 * `grunt` Manually build  the project
 * `grunt connect` Run a static webserver for the project
 * `grunt watch` Runs a watched that builds the project every time you modify a file
+
+The actual documentation site uses GitHub pages and the `gh-pages` branch is merged in from master.
