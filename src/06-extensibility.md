@@ -8,14 +8,18 @@ If your interface only requires basic controls like `input` fields this is suppo
 
 ### Boilerplate markup
 
+First you need to map your JavaScript namespace for AMD modules in `ezexceed.ini.append.php` like this:
+
+```ini
+[AMD]
+NS[myextension]=/extension/myextension/design/ezexceed/src
+```
+
 In your `content/datatype/edit/mytype.tpl` you can wrap your code in a `<div>` like this in order to instruct eZ Exceed to load a JavaScript module:
 
 ```markup
 <div class="attribute-base"
-    data-handler='mytype/main'
-    data-paths='{
-        "mytype" : "/extension/mytype/design/ezexceed/javascript/"
-    }'
+    data-handler='myextension/main'
     data-url-root='{"/"|ezurl("no")}'>
 
 <!-- My attributes markup -->
@@ -31,9 +35,9 @@ We will get to how you need to implement this JavaScript module in a second.
 We build JavaScript modules for eZ Exceed using **Backbone.js** and your **handler** needs to extend/quack like the module `edit/datatypes/base`:
 
 ```javascript
-define(['edit/datatypes/base'], function(Base)
+define(['shared/datatype'], function(Datatype)
 {
-    return Base.extend({
+    return Datatype.extend({
         render: function() { return this; },
         parseEdited: function() { return []; }
     });

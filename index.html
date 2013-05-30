@@ -341,12 +341,13 @@ ID=&lt;yourid&gt;</code></pre>
                     
 <h3>Boilerplate markup</h3>
 
+                    <p>First you need to map your JavaScript namespace for AMD modules in <code>ezexceed.ini.append.php</code> like this:</p>
+<pre><code class="lang-ini">[AMD]
+NS[myextension]=/extension/myextension/design/ezexceed/src</code></pre>
+
                     <p>In your <code>content/datatype/edit/mytype.tpl</code> you can wrap your code in a <code>&lt;div&gt;</code> like this in order to instruct eZ Exceed to load a JavaScript module:</p>
 <pre><code class="lang-markup">&lt;div class=&quot;attribute-base&quot;
-    data-handler=&#39;mytype/main&#39;
-    data-paths=&#39;{
-        &quot;mytype&quot; : &quot;/extension/mytype/design/ezexceed/javascript/&quot;
-    }&#39;
+    data-handler=&#39;myextension/main&#39;
     data-url-root=&#39;{&quot;/&quot;|ezurl(&quot;no&quot;)}&#39;&gt;
 
 &lt;!-- My attributes markup --&gt;
@@ -358,9 +359,9 @@ ID=&lt;yourid&gt;</code></pre>
 <h3>Boilerplate JavaScipt</h3>
 
                     <p>We build JavaScript modules for eZ Exceed using <strong>Backbone.js</strong> and your <strong>handler</strong> needs to extend/quack like the module <code>edit/datatypes/base</code>:</p>
-<pre><code class="lang-javascript">define([&#39;edit/datatypes/base&#39;], function(Base)
+<pre><code class="lang-javascript">define([&#39;shared/datatype&#39;], function(Datatype)
 {
-    return Base.extend({
+    return Datatype.extend({
         render: function() { return this; },
         parseEdited: function() { return []; }
     });
