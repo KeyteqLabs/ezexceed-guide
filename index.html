@@ -406,18 +406,19 @@ Type=popover</code></pre>
                         <li><code>URL</code> Any URL that will work and serve up content to an iframe will work here. Static html, ez modules or external services.</li>
                         <li><code>Type</code> You can choose between <em>stack</em> and <em>popover</em> depending on how much space your content requires.</li>
                         <li><code>Module</code> Optional key that allows you to specify an AMD JS module that will be loaded and used. This requires more work on your part while also offers full flexibility.</li>
-                        <li><code>NS</code> Optional key that should be the name of the extension. If this and the <code>module</code> is set, they will be used to load a proper JavaScript module.</li>
                     </ul>
                     
 <h3>Configuring an advanced application</h3>
 
-<pre><code class="lang-ini">[Toolbar]
+<pre><code class="lang-ini">[AMD]
+NS[ezexceed-examples]=/extension/ezexceed-examples/design/ezexceed/src
+
+[Toolbar]
 Buttons[]=clouds
 
 [Toolbar_clouds]
 Name=Clouds
 Icon=Cloud
-NS=ezexceed-examples
 Module=ezexceed-examples/clouds</code></pre>
 
                     

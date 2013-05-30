@@ -84,18 +84,19 @@ Lets look at the configuration keys:
 * `URL` Any URL that will work and serve up content to an iframe will work here. Static html, ez modules or external services.
 * `Type` You can choose between *stack* and *popover* depending on how much space your content requires.
 * `Module` Optional key that allows you to specify an AMD JS module that will be loaded and used. This requires more work on your part while also offers full flexibility.
-* `NS` Optional key that should be the name of the extension. If this and the `module` is set, they will be used to load a proper JavaScript module.
 
 ### Configuring an advanced application
 
 ```ini
+[AMD]
+NS[ezexceed-examples]=/extension/ezexceed-examples/design/ezexceed/src
+
 [Toolbar]
 Buttons[]=clouds
 
 [Toolbar_clouds]
 Name=Clouds
 Icon=Cloud
-NS=ezexceed-examples
 Module=ezexceed-examples/clouds
 ```
 
