@@ -84,5 +84,42 @@ Lets look at the configuration keys:
 * `URL` Any URL that will work and serve up content to an iframe will work here. Static html, ez modules or external services.
 * `Type` You can choose between *stack* and *popover* depending on how much space your content requires.
 * `Module` Optional key that allows you to specify an AMD JS module that will be loaded and used. This requires more work on your part while also offers full flexibility.
+* `NS` Optional key that should be the name of the extension. If this and the `module` is set, they will be used to load a proper JavaScript module.
+
+### Configuring an advanced application
+
+```ini
+[Toolbar]
+Buttons[]=clouds
+
+[Toolbar_clouds]
+Name=Clouds
+Icon=Cloud
+NS=ezexceed-examples
+Module=ezexceed-examples/clouds
+```
+
+### Writing a basic JavaScript module
+
+eZ Exceed JavaScript modules are really just [AMD modules](https://github.com/amdjs/amdjs-api/wiki/AMD) loaded by [Require.js](http://requirejs.org).
+The gist of it is that the `ezexceed-examples/clouds` module will be resolved to `/extension/ezexceed-examples/design/ezexceed-examples/javascript/clouds.js`,
+and this file is in turn supposed to serve up a valid Module by using the `define()` function, like this:
+
+```javascript
+define(['backbone', 'jquery-safe'], function(Backbone, $)
+{
+    return Backbone.View.extend({
+        render: function()
+        {
+            this.$el.html('Hello world');
+            return this;
+        }
+    });
+});
+```
+
+As you can see, the module takes a set of dependencies and in the callback it simply returns a `Backbone.View` _class_ that eZ Exceed in due time will render into the configured container (stack/popover).
+You should check out the [Backbone.js documentation](http://backbonejs.org) for more information on Backbone, most things you want will be specifics to Backbone.
+Read on to get to what sort of APIs eZ Exceed itself provides to make your life simpler.
 
 ## <a id="extensibility-apis" href="#extensibility-apis"></a> APIs
