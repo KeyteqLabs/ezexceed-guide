@@ -25,13 +25,7 @@ We will get to how you need to implement this JavaScript module in a second.</p>
         parseEdited: function() { return []; }
     });
 });</code></pre>
-<p>There are two methods you must implement to ensure your handler will work:</p>
-<h4>render</h4>
-<p>This method will be called when it&#39;s time for your GUI to display itself.</p>
-<h4>parseEdited</h4>
-<p>This method is called when autosave is triggered for your Field, and it needs to return exactly what should be sent to the <code>content/save</code> module in eZ Publish.</p>
-<h3>Using the stack</h3>
-<h3>Saving data</h3>
+<p>See its <a href="#extensibility-api-shared">API-documentation</a></p>
 <h2><a id="extensibility-creating-an-app" href="#extensibility-creating-an-app"></a> Creating an app</h2>
 <p>It is possible to create custom <strong>apps</strong> that will reside in the toolbar. This can range from a simple app that loads some content into the stack,
 to complete JavaScript applications running in eZ Exceed.
@@ -85,4 +79,116 @@ and this file is in turn supposed to serve up a valid Module by using the <code>
 You should check out the <a href="http://backbonejs.org">Backbone.js documentation</a> for more information on Backbone, most things you want will be specifics to Backbone.
 Read on to get to what sort of APIs eZ Exceed itself provides to make your life simpler.</p>
 <h2><a id="extensibility-apis" href="#extensibility-apis"></a> APIs</h2>
+<p>These are the openly shared APIs you can use in your application</p>
+<h3><a id="extensibility-api-stack" href="#extensibility-api-stack"></a> Stack</h3>
+<h4>push(<code>view</code>, <code>options</code>, <code>context</code>)</h4>
+<p>Push a view constructor that will be rendered as a new stack item.</p>
+<pre><code class="lang-javascript">var options = {
+    render: true
+};
+var context = {
+    heading: &#39;My Stack item&#39;,
+    icon: &#39;Cloud&#39;
+};
+eZExceed.stack.push(Backbone.View, options, context);</code></pre>
+<p>The <strong>options</strong> argument will be passed as the options object to Backbone.View. Notice that the following values are overriden:</p>
+<ul>
+<li><code>el</code> This will be the stack item your view can fill</li>
+<li><code>heading</code> A reference to the heading text element so you can update it</li>
+</ul>
+<p>The <strong>context</strong> argument contains data that will be sent into the stacks template that initally renders its header. It supports the following keys:</p>
+<ul>
+<li><code>heading</code> Text string that will be translated from the <code>eze</code> context, and then set as heading</li>
+<li><code>icon</code> Is a filename, without fileending, being one of the included Helveticon icons.</li>
+<li><code>autosave</code> You can disable the autosave control that by default is rendered and active in the heading. Setting this to false will make sure autosave can&#39;t happen in your stack item.</li>
+</ul>
+<h4>pop([<code>arg</code>, ...])</h4>
+<p>Pop the current stack item, in time showing the underlying item.
+Notice that its possible to pass an arbitrary number of arguments to pop, this will make those arguments propagate into any event listeners for the pop.
+By default, when passing zero arguments, the <code>this.model</code> of the view will be sent.</p>
+<p>You would normally use <code>pop</code> inside a view if some action should force it to close from within.</p>
+<h3>eZExceed.stack Events</h3>
+<p>There are two events you can listen to:</p>
+<h4>destruct</h4>
+<p>Called when a view destructs, this can be handy when you push a helper view to for example make a selection, and need to pass values back from that view:</p>
+<pre><code class="lang-javascript">// Inside View#1
+var context = {heading:&#39;Make a selection&#39;,icon:&#39;Select&#39;};
+var selectView = eZExceed.stack.push(SelectionView, {render:true}, context);
+selectView.once(&#39;destruct&#39;, this.saveSelection);</code></pre>
+<h4>push</h4>
+<p>You can also listen to new views getting pushed on the stack in general.</p>
+<pre><code class="lang-javascript">eZExceed.stack.on(&#39;push&#39;, doSomething);</code></pre>
+<h3><a id="extensibility-api-shared" href="#extensibility-api-shared"></a> Shared classes</h3>
+<p>eZ Exceed provides a bunch of javascript classes you can inherit from to both speed up development as well as making sure everything looks and feels good.
+There are move goodness under <code>shared/</code> but you should refrain to use anything that is not documented as the APIs aren&#39;t entirely stable.</p>
+<h4>shared/view</h4>
+<p>Instead of using Backbone.View directly, you should always default to using this view as your base.
+It provides some conveniences:</p>
+<ul>
+<li><code>click</code> events are translated to fast taps on touch devices</li>
+<li>You get <a href="http://nervetattoo.github.io/backbone.keys/">backbone.keys</a> enabled on desktops</li>
+<li>You can more easily render the Exceed loader by using the _loader method: <strong>this._loader(options)</strong></li>
+<li>Hiding/showing the entire element is done by <code>this.hide()</code> and <code>this.show()</code>, or for sub elements by passing them as argument.</li>
+</ul>
+<h4>shared/datatype</h4>
+<p>This is the view you should inherit for creating FieldType interface handlers
+If your fieldtype consists of just textboxes, this default implementation should suffice, but if its more complex you need to override.</p>
+<p>Methods:</p>
+<h5>render</h5>
+<p>This method will be called when it&#39;s time for your GUI to display itself.
+Make sure you return <code>this</code> for chaining support.</p>
+<h5>parseEdited</h5>
+<p>This method is called when autosave is triggered for your Field, and it needs to return exactly what should be sent to the <code>content/save</code> module in eZ Publish.
+Looking at the <strong>objectrelationlist</strong> FieldType explains how we can save something more complex:</p>
+<pre><code class="lang-javascript">parseEdited : function()
+{
+    var values = [];
+
+    // Helper to create the name of the &lt;input&gt; attribute with pre/postfix
+    var inputName = this.buildName(&#39;data_object_relation_list&#39;);
+
+    if (this.collection.length &gt; 0) {
+        // Return an object for each id:
+        // {...data_object_relation_list... : id}
+        // Which will be an array [obj,obj,obj]
+        values = this.collection.map(function(model)
+            {
+                //return model.id;
+                var obj = {};
+                obj[inputName] = model.id;
+                return obj;
+            });
+    }
+    else {
+        // Theres a special syntax for empty values
+        var value = {};
+        value[inputName] = &#39;no_relation&#39;;
+        values = [value];
+    }
+    return values;
+}</code></pre>
+<h4>shared/selectable</h4>
+<p>Turn any select box into an upgraded version:</p>
+<pre><code class="lang-javascript">define([&#39;shared/view&#39;, &#39;shared/selectable&#39;], function(View, selectable) {
+    return View.extend({
+        render: function() {
+            selectable(this.$(&#39;select&#39;));
+            return this
+        }
+    });
+});</code></pre>
+<h4>shared/funky</h4>
+<p>A fp utilty library for writing functional code:
+Consider these examples:</p>
+<pre><code class="lang-javascript">// Truthy
+locations.filter(Funky.truthyProp(&#39;canCreate&#39;));
+
+// Equality
+locations.filter(Funky.equalProp(&#39;id&#39;, this.subtree.id));
+
+// Toggling
+this.mutable = false;
+var toggle = Funky.toggleProp(&#39;mutable&#39;);
+toggle(); // true
+toggle(); // false</code></pre>
 

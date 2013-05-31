@@ -44,19 +44,7 @@ define(['shared/datatype'], function(Datatype)
 });
 ```
 
-There are two methods you must implement to ensure your handler will work:
-
-#### render
-
-This method will be called when it's time for your GUI to display itself.
-
-#### parseEdited
-
-This method is called when autosave is triggered for your Field, and it needs to return exactly what should be sent to the `content/save` module in eZ Publish.
-
-### Using the stack
-
-### Saving data
+See its [API-documentation](#extensibility-api-shared)
 
 ## <a id="extensibility-creating-an-app" href="#extensibility-creating-an-app"></a> Creating an app
 
@@ -128,3 +116,160 @@ You should check out the [Backbone.js documentation](http://backbonejs.org) for 
 Read on to get to what sort of APIs eZ Exceed itself provides to make your life simpler.
 
 ## <a id="extensibility-apis" href="#extensibility-apis"></a> APIs
+
+These are the openly shared APIs you can use in your application
+
+### <a id="extensibility-api-stack" href="#extensibility-api-stack"></a> Stack
+
+#### push(`view`, `options`, `context`)
+
+Push a view constructor that will be rendered as a new stack item.
+
+```javascript
+var options = {
+    render: true
+};
+var context = {
+    heading: 'My Stack item',
+    icon: 'Cloud'
+};
+eZExceed.stack.push(Backbone.View, options, context);
+```
+
+The **options** argument will be passed as the options object to Backbone.View. Notice that the following values are overriden:
+
+* `el` This will be the stack item your view can fill
+* `heading` A reference to the heading text element so you can update it
+
+The **context** argument contains data that will be sent into the stacks template that initally renders its header. It supports the following keys:
+
+* `heading` Text string that will be translated from the `eze` context, and then set as heading
+* `icon` Is a filename, without fileending, being one of the included Helveticon icons.
+* `autosave` You can disable the autosave control that by default is rendered and active in the heading. Setting this to false will make sure autosave can't happen in your stack item.
+
+#### pop([`arg`, ...])
+
+Pop the current stack item, in time showing the underlying item.
+Notice that its possible to pass an arbitrary number of arguments to pop, this will make those arguments propagate into any event listeners for the pop.
+By default, when passing zero arguments, the `this.model` of the view will be sent.
+
+You would normally use `pop` inside a view if some action should force it to close from within.
+
+### eZExceed.stack Events
+
+There are two events you can listen to:
+
+#### destruct
+
+Called when a view destructs, this can be handy when you push a helper view to for example make a selection, and need to pass values back from that view:
+
+```javascript
+// Inside View#1
+var context = {heading:'Make a selection',icon:'Select'};
+var selectView = eZExceed.stack.push(SelectionView, {render:true}, context);
+selectView.once('destruct', this.saveSelection);
+```
+
+#### push
+
+You can also listen to new views getting pushed on the stack in general.
+
+```javascript
+eZExceed.stack.on('push', doSomething);
+```
+
+### <a id="extensibility-api-shared" href="#extensibility-api-shared"></a> Shared classes
+
+eZ Exceed provides a bunch of javascript classes you can inherit from to both speed up development as well as making sure everything looks and feels good.
+There are move goodness under `shared/` but you should refrain to use anything that is not documented as the APIs aren't entirely stable.
+
+#### shared/view
+
+Instead of using Backbone.View directly, you should always default to using this view as your base.
+It provides some conveniences:
+
+* `click` events are translated to fast taps on touch devices
+* You get [backbone.keys](http://nervetattoo.github.io/backbone.keys/) enabled on desktops
+* You can more easily render the Exceed loader by using the _loader method: **this._loader(options)**
+* Hiding/showing the entire element is done by `this.hide()` and `this.show()`, or for sub elements by passing them as argument.
+
+#### shared/datatype
+
+This is the view you should inherit for creating FieldType interface handlers
+If your fieldtype consists of just textboxes, this default implementation should suffice, but if its more complex you need to override.
+
+Methods:
+
+##### render
+
+This method will be called when it's time for your GUI to display itself.
+Make sure you return `this` for chaining support.
+
+##### parseEdited
+
+This method is called when autosave is triggered for your Field, and it needs to return exactly what should be sent to the `content/save` module in eZ Publish.
+Looking at the **objectrelationlist** FieldType explains how we can save something more complex:
+
+```javascript
+parseEdited : function()
+{
+    var values = [];
+
+    // Helper to create the name of the <input> attribute with pre/postfix
+    var inputName = this.buildName('data_object_relation_list');
+
+    if (this.collection.length > 0) {
+        // Return an object for each id:
+        // {...data_object_relation_list... : id}
+        // Which will be an array [obj,obj,obj]
+        values = this.collection.map(function(model)
+            {
+                //return model.id;
+                var obj = {};
+                obj[inputName] = model.id;
+                return obj;
+            });
+    }
+    else {
+        // Theres a special syntax for empty values
+        var value = {};
+        value[inputName] = 'no_relation';
+        values = [value];
+    }
+    return values;
+}
+```
+
+#### shared/selectable
+
+Turn any select box into an upgraded version:
+
+```javascript
+define(['shared/view', 'shared/selectable'], function(View, selectable) {
+    return View.extend({
+        render: function() {
+            selectable(this.$('select'));
+            return this
+        }
+    });
+});
+```
+
+#### shared/funky
+
+A fp utilty library for writing functional code:
+Consider these examples:
+
+```javascript
+// Truthy
+locations.filter(Funky.truthyProp('canCreate'));
+
+// Equality
+locations.filter(Funky.equalProp('id', this.subtree.id));
+
+// Toggling
+this.mutable = false;
+var toggle = Funky.toggleProp('mutable');
+toggle(); // true
+toggle(); // false
+```
