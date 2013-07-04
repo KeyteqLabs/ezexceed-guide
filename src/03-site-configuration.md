@@ -115,7 +115,7 @@ With eZ Exceed, you can have pencils right where your content is. This is also t
 
 ### eZ Publish 4.x
 
-```jinja
+```html+smarty
 ...
 {if $zone.blocks|count()|gt(0)}
     {foreach $zone.blocks as $block}
@@ -136,7 +136,7 @@ With eZ Exceed, you can have pencils right where your content is. This is also t
 This requires that you activate the <a href="https://github.com/KeyteqLabs/eZExceedBundle">eZExceedBundle</a>.
 
 ```jinja
-{% for zone in zones ‰}
+{% for zone in zones %}
     {% if zone.blocks %}
         {% for block in zone.blocks %}
             {% include 'KTQeZExceedBundle::zone-block-top.html.twig' with { 'block': block } %}
