@@ -108,3 +108,41 @@ Create or edit `override/ezexceed.ini.append.php` in the level that suit your ne
 SignKey=<yoursignkey>
 ID=<yourid>
 ```
+
+## <a id="site-configuration-ezflow-pencil" href="#ite-configuration-ezflow-pencil"></a> eZ Flow pencil
+
+With eZ Exceed, you can have pencils right where your content is. This is also true for eZ Flow blocks. For the pencils to be added for each block, you have to do some minor modifications to your zone templates;
+
+### eZ Publish 4.x
+
+```smarty
+...
+{if $zone.blocks|count()|gt(0)}
+    {foreach $zone.blocks as $block}
+        ...
+        {if or($validblocks, $blockshascontent, and($manualaddingdisabled, $notfetching))}
+            {include uri='design:parts/zone_block_top.tpl'}
+            {block_view_gui block=$block node=$node pathids=$pathids view_parameters=$view_parameters}
+            {include uri='design:parts/zone_block_bottom.tpl'}
+        {else}
+            {skip}
+        {/if}
+    {/foreach}
+{/if}
+```
+
+### eZ Publish 5.x
+
+This requires that you activate the <a href="https://github.com/KeyteqLabs/eZExceedBundle">eZExceedBundle</a>.
+
+```twig
+{% for zone in zones %}
+    {% if zone.blocks %}
+        {% for block in zone.blocks %}
+            {% include 'KTQeZExceedBundle::zone-block-top.html.twig' with { 'block': block } %}
+            {{ render(controller('ez_page:viewBlock', { 'block': block } )) }}
+            {% include 'KTQeZExceedBundle::zone-block-bottom.html.twig' %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+```
