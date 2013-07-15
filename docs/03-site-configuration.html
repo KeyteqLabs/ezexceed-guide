@@ -58,10 +58,10 @@ SignKey=&lt;yoursignkey&gt;</code></pre>
 <pre><code class="lang-ini">[eZExceedPushNotification]
 SignKey=&lt;yoursignkey&gt;
 ID=&lt;yourid&gt;</code></pre>
-<h2><a id="site-configuration-ezflow-pencil" href="#ite-configuration-ezflow-pencil"> eZ Flow pencil</h2>
+<h2><a id="site-configuration-ezflow-pencil" href="#ite-configuration-ezflow-pencil"></a> eZ Flow pencil</h2>
 <p>With eZ Exceed, you can have pencils right where your content is. This is also true for eZ Flow blocks. For the pencils to be added for each block, you have to do some minor modifications to your zone templates;</p>
 <h3>eZ Publish 4.x</h3>
-<pre><code class="lang-jinja">...
+<pre><code class="lang-smarty">...
 {if $zone.blocks|count()|gt(0)}
     {foreach $zone.blocks as $block}
         ...
@@ -76,7 +76,7 @@ ID=&lt;yourid&gt;</code></pre>
 {/if}</code></pre>
 <h3>eZ Publish 5.x</h3>
 <p>This requires that you activate the <a href="https://github.com/KeyteqLabs/eZExceedBundle">eZExceedBundle</a>.</p>
-<pre><code class="lang-jinja">{% for zone in zones ‰}
+<pre><code class="lang-twig">{% for zone in zones %}
     {% if zone.blocks %}
         {% for block in zone.blocks %}
             {% include &#39;KTQeZExceedBundle::zone-block-top.html.twig&#39; with { &#39;block&#39;: block } %}

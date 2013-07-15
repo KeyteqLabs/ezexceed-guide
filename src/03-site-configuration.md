@@ -109,13 +109,13 @@ SignKey=<yoursignkey>
 ID=<yourid>
 ```
 
-## <a id="site-configuration-ezflow-pencil" href="#ite-configuration-ezflow-pencil"> eZ Flow pencil
+## <a id="site-configuration-ezflow-pencil" href="#ite-configuration-ezflow-pencil"></a> eZ Flow pencil
 
 With eZ Exceed, you can have pencils right where your content is. This is also true for eZ Flow blocks. For the pencils to be added for each block, you have to do some minor modifications to your zone templates;
 
 ### eZ Publish 4.x
 
-```html+smarty
+```smarty
 ...
 {if $zone.blocks|count()|gt(0)}
     {foreach $zone.blocks as $block}
@@ -135,7 +135,7 @@ With eZ Exceed, you can have pencils right where your content is. This is also t
 
 This requires that you activate the <a href="https://github.com/KeyteqLabs/eZExceedBundle">eZExceedBundle</a>.
 
-```jinja
+```twig
 {% for zone in zones %}
     {% if zone.blocks %}
         {% for block in zone.blocks %}
