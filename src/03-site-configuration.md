@@ -139,9 +139,8 @@ This requires that you activate the <a href="https://github.com/KeyteqLabs/eZExc
 {% for zone in zones %}
     {% if zone.blocks %}
         {% for block in zone.blocks %}
-            {% include 'KTQeZExceedBundle::zone-block-top.html.twig' with { 'block': block } %}
+	    {{ pencil(block) }}
             {{ render(controller('ez_page:viewBlock', { 'block': block } )) }}
-            {% include 'KTQeZExceedBundle::zone-block-bottom.html.twig' %}
         {% endfor %}
     {% endif %}
 {% endfor %}

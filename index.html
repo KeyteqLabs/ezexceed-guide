@@ -309,9 +309,8 @@ ID=&lt;yourid&gt;</code></pre>
 <pre><code class="lang-twig">{% for zone in zones %}
     {% if zone.blocks %}
         {% for block in zone.blocks %}
-            {% include &#39;KTQeZExceedBundle::zone-block-top.html.twig&#39; with { &#39;block&#39;: block } %}
+        {{ pencil(block) }}
             {{ render(controller(&#39;ez_page:viewBlock&#39;, { &#39;block&#39;: block } )) }}
-            {% include &#39;KTQeZExceedBundle::zone-block-bottom.html.twig&#39; %}
         {% endfor %}
     {% endif %}
 {% endfor %}</code></pre>
