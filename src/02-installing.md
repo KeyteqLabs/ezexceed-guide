@@ -8,6 +8,7 @@ Installing the eZ Exceed extension
         - We are working on proper support for eZ Publish 5
     - [ezjscore](http://projects.ez.no/ezjscore "ezjscore at eZ Projects") **1.3.0** or higher
     - [ezwebin](https://github.com/ezsystems/ezwebin "ezwebin at GitHub") **1.8.0** or higher  
+    - [ezwt](https://github.com/ezsystems/ezwt "ezwt at GitHub") **1.4.0** or higher  
     - Apache version **1.3** or **2.x** in **prefork** mode
     - PHP version **5.3** or higher, 5.4 is recommended
     - Database server: MySQL **5** (UTF-8 is required)
