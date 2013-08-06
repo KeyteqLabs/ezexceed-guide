@@ -35,6 +35,7 @@ Also, your editor users need the right set of permissions and policies. We do no
 
 For a normal editor you should assign the following permissions:
 
+- `websitetoolbar/use`
 - `content/create`
 - `content/edit`
 - `content/manage_locations`
