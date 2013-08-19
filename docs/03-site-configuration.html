@@ -79,9 +79,16 @@ ID=&lt;yourid&gt;</code></pre>
 <pre><code class="lang-twig">{% for zone in zones %}
     {% if zone.blocks %}
         {% for block in zone.blocks %}
-        {{ pencil(block) }}
+            {{ pencil(block) }}
             {{ render(controller(&#39;ez_page:viewBlock&#39;, { &#39;block&#39;: block } )) }}
         {% endfor %}
     {% endif %}
 {% endfor %}</code></pre>
+<h2><a id="site-configuration-ezflow-timeline" href="site-configuration-ezflow-timeline"></a> eZ Flow Timeline</h2>
+<p>For updating of the ezflow blocks using the Preview -&gt; Timeline tool, you need to wrap your rendered block like this:</p>
+<pre><code class="lang-html">&lt;div id=&quot;address-{{block.zoneId}}-{{block.id}}&quot;&gt;
+{{ render(controller(&#39;ez_page:viewBlock&#39;, { &#39;block&#39;: block } )) }}
+&lt;/div&gt;</code></pre>
+<p>This makes it possible for eZ Exceed to determine what part of the DOM to update.
+Using the #address- prefixed id is required for eZ Exceed 2.0.x.</p>
 
