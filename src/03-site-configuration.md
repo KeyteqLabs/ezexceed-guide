@@ -139,10 +139,22 @@ This requires that you activate the <a href="https://github.com/KeyteqLabs/eZExc
 {% for zone in zones %}
     {% if zone.blocks %}
         {% for block in zone.blocks %}
-            {% include 'KTQeZExceedBundle::zone-block-top.html.twig' with { 'block': block } %}
+            {{ pencil(block) }}
             {{ render(controller('ez_page:viewBlock', { 'block': block } )) }}
-            {% include 'KTQeZExceedBundle::zone-block-bottom.html.twig' %}
         {% endfor %}
     {% endif %}
 {% endfor %}
 ```
+
+## <a id="site-configuration-ezflow-timeline" href="site-configuration-ezflow-timeline"></a> eZ Flow Timeline
+
+For updating of the ezflow blocks using the Preview -> Timeline tool, you need to wrap your rendered block like this:
+
+```html
+<div id="address-{{block.zoneId}}-{{block.id}}">
+{{ render(controller('ez_page:viewBlock', { 'block': block } )) }}
+</div>
+```
+
+This makes it possible for eZ Exceed to determine what part of the DOM to update.
+Using the #address- prefixed id is required for eZ Exceed 2.0.x.

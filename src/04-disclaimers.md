@@ -22,7 +22,7 @@ Keeping your install outside of root (`/`) can cause errors inside the eZ Online
 You do not have to disable the extension, but we do not support editing of the eZ Tags Field yet.
 
 ### eZ Form token
-If you're running eZ Publish 5, deactivate your eZ Form token legacy extension.
+If you're running eZ Publish 5, deactivate your eZ Form token legacy extension and disable the form token in ez Publish 5.
 
 ### eZ Demo design
 If the eZ Demo design has higher priority than the eZ Exceed design it will overwrite, and break, the datetime FieldType.
