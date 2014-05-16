@@ -11,12 +11,13 @@
 <h4>eZ Publish 4.x:</h4>
 <pre><code class="lang-smarty">{include uri=&quot;design:parts/website_toolbar.tpl&quot; current_node_id=$module_result.node_id}</code></pre>
 <h4>eZ Publish 5.x:</h4>
-<pre><code class="lang-twig">{% ez_legacy_include &quot;design:parts/website_toolbar.tpl&quot; with {
-    &#39;current_node_id&#39;: app.request.attributes.get(&#39;locationId&#39;)
-} %}</code></pre>
+<pre><code class="lang-twig">{% if location is defined %}
+    {% include &quot;design:parts/website_toolbar.tpl&quot; with {current_node_id: location.id } %}
+{% endif %}</code></pre>
 <p>Also, your editor users need the right set of permissions and policies. We do not require any special permissions over what eZ Publish would normally require, but do make sure the settings are indeed intact.</p>
 <p>For a normal editor you should assign the following permissions:</p>
 <ul>
+<li><code>ezexceed/use</code></li>
 <li><code>content/create</code></li>
 <li><code>content/edit</code></li>
 <li><code>content/manage_locations</code></li>

@@ -26,15 +26,16 @@ Ensure that your pagelayout template is rendering the toolbar. This is only nece
 #### eZ Publish 5.x:
 
 ```twig
-{% ez_legacy_include "design:parts/website_toolbar.tpl" with {
-    'current_node_id': app.request.attributes.get('locationId')
-} %}
+{% if location is defined %}
+    {% include "design:parts/website_toolbar.tpl" with {current_node_id: location.id } %}
+{% endif %}
 ```
   
 Also, your editor users need the right set of permissions and policies. We do not require any special permissions over what eZ Publish would normally require, but do make sure the settings are indeed intact.
 
 For a normal editor you should assign the following permissions:
 
+- `ezexceed/use`
 - `content/create`
 - `content/edit`
 - `content/manage_locations`
